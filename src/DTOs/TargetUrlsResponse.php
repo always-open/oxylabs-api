@@ -13,4 +13,4 @@ class TargetUrlsResponse
     {
         return new self($data);
     }
-} 
+}

@@ -30,7 +30,7 @@ class AmazonSearchRequest
             'end_page' => $this->endPage,
             'sort' => $this->sort,
             'category' => $this->category,
-            'locale' => $this->locale
+            'locale' => $this->locale,
         ]);
     }
-} 
+}

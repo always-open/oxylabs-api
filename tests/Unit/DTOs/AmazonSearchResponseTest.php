@@ -21,4 +21,4 @@ class AmazonSearchResponseTest extends TestCase
 
         $this->assertEquals($data, $response->data);
     }
-} 
+}

@@ -2,18 +2,18 @@
 
 namespace AlwaysOpen\OxylabsApi;
 
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
-use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsRequest;
-use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsResponse;
 use AlwaysOpen\OxylabsApi\DTOs\ShowcaseRequest;
 use AlwaysOpen\OxylabsApi\DTOs\ShowcaseResponse;
+use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsRequest;
+use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsResponse;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiClient
@@ -39,10 +39,10 @@ class OxylabsApiClient
     {
         return match ($this->authMethod) {
             'basic' => [
-                'Authorization' => 'Basic ' . base64_encode($this->username . ':' . $this->password)
+                'Authorization' => 'Basic ' . base64_encode($this->username . ':' . $this->password),
             ],
             'bearer' => [
-                'Authorization' => 'Bearer ' . $this->password
+                'Authorization' => 'Bearer ' . $this->password,
             ],
             default => throw new \InvalidArgumentException('Invalid authentication method')
         };
@@ -95,4 +95,4 @@ class OxylabsApiClient
 
         return ShowcaseResponse::fromArray($response->json());
     }
-} 
+}

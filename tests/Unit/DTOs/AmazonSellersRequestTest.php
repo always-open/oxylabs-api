@@ -28,8 +28,8 @@ class AmazonSellersRequestTest extends TestCase
                     'location' => true,
                     'shipping' => true,
                     'returns' => true,
-                    'metadata' => true
-                ]
+                    'metadata' => true,
+                ],
             ],
             context: [
                 [
@@ -37,38 +37,38 @@ class AmazonSellersRequestTest extends TestCase
                     'value' => [
                         'Accept-Language' => 'en-US',
                         'Content-Type' => 'application/octet-stream',
-                        'Custom-Header-Name' => 'custom header content'
-                    ]
+                        'Custom-Header-Name' => 'custom header content',
+                    ],
                 ],
                 [
                     'key' => 'cookies',
                     'value' => [
                         [
                             'key' => 'NID',
-                            'value' => '1234567890'
+                            'value' => '1234567890',
                         ],
                         [
                             'key' => '1P JAR',
-                            'value' => '0987654321'
-                        ]
-                    ]
+                            'value' => '0987654321',
+                        ],
+                    ],
                 ],
                 [
                     'key' => 'follow_redirects',
-                    'value' => true
+                    'value' => true,
                 ],
                 [
                     'key' => 'http_method',
-                    'value' => 'get'
+                    'value' => 'get',
                 ],
                 [
                     'key' => 'content',
-                    'value' => 'YmFzZTY0RW5jb2RlZFBPU1RCb2R5'
+                    'value' => 'YmFzZTY0RW5jb2RlZFBPU1RCb2R5',
                 ],
                 [
                     'key' => 'successful_status_codes',
-                    'value' => [808, 909]
-                ]
+                    'value' => [808, 909],
+                ],
             ]
         );
 
@@ -85,8 +85,8 @@ class AmazonSellersRequestTest extends TestCase
                     'location' => true,
                     'shipping' => true,
                     'returns' => true,
-                    'metadata' => true
-                ]
+                    'metadata' => true,
+                ],
             ],
             'context' => [
                 [
@@ -94,39 +94,39 @@ class AmazonSellersRequestTest extends TestCase
                     'value' => [
                         'Accept-Language' => 'en-US',
                         'Content-Type' => 'application/octet-stream',
-                        'Custom-Header-Name' => 'custom header content'
-                    ]
+                        'Custom-Header-Name' => 'custom header content',
+                    ],
                 ],
                 [
                     'key' => 'cookies',
                     'value' => [
                         [
                             'key' => 'NID',
-                            'value' => '1234567890'
+                            'value' => '1234567890',
                         ],
                         [
                             'key' => '1P JAR',
-                            'value' => '0987654321'
-                        ]
-                    ]
+                            'value' => '0987654321',
+                        ],
+                    ],
                 ],
                 [
                     'key' => 'follow_redirects',
-                    'value' => true
+                    'value' => true,
                 ],
                 [
                     'key' => 'http_method',
-                    'value' => 'get'
+                    'value' => 'get',
                 ],
                 [
                     'key' => 'content',
-                    'value' => 'YmFzZTY0RW5jb2RlZFBPU1RCb2R5'
+                    'value' => 'YmFzZTY0RW5jb2RlZFBPU1RCb2R5',
                 ],
                 [
                     'key' => 'successful_status_codes',
-                    'value' => [808, 909]
-                ]
-            ]
+                    'value' => [808, 909],
+                ],
+            ],
         ], $request->toArray());
     }
-} 
+}

@@ -20,7 +20,7 @@ class AmazonProductRequest
             'domain' => $this->domain,
             'asin' => $this->asin,
             'parse' => $this->parse,
-            'context' => $this->context
+            'context' => $this->context,
         ]);
     }
-} 
+}

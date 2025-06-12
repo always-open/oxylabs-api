@@ -20,7 +20,7 @@ class AmazonSellersRequest
             'domain' => $this->domain,
             'query' => $this->query,
             'parse' => $this->parse,
-            'context' => $this->context
+            'context' => $this->context,
         ]);
     }
-} 
+}

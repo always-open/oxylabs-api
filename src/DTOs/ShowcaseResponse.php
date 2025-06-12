@@ -13,4 +13,4 @@ class ShowcaseResponse
     {
         return new self($data);
     }
-} 
+}

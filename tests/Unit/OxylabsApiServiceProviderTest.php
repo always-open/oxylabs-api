@@ -2,7 +2,6 @@
 
 namespace AlwaysOpen\OxylabsApi\Tests\Unit;
 
-use AlwaysOpen\OxylabsApi\OxylabsApiClient;
 use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
 use Orchestra\Testbench\TestCase;
 
@@ -17,9 +16,9 @@ class OxylabsApiServiceProviderTest extends TestCase
     {
         $this->artisan('vendor:publish', [
             '--provider' => OxylabsApiServiceProvider::class,
-            '--tag' => 'config'
+            '--tag' => 'config',
         ]);
 
         $this->assertFileExists(config_path('oxylabs-api.php'));
     }
-} 
+}

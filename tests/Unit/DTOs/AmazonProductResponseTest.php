@@ -21,4 +21,4 @@ class AmazonProductResponseTest extends TestCase
 
         $this->assertEquals($data, $response->data);
     }
-} 
+}

@@ -20,7 +20,7 @@ class TargetUrlsRequest
             'domain' => $this->domain,
             'url' => $this->url,
             'parse' => $this->parse,
-            'context' => $this->context
+            'context' => $this->context,
         ]);
     }
-} 
+}

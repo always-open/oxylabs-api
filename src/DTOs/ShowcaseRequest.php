@@ -20,7 +20,7 @@ class ShowcaseRequest
             'url' => $this->url,
             'user_agent_type' => $this->userAgentType,
             'geo_location' => $this->geoLocation,
-            'context' => $this->context
+            'context' => $this->context,
         ]);
     }
-} 
+}

@@ -10,4 +10,4 @@ class OxylabsApiFacade extends Facade
     {
         return OxylabsApiClient::class;
     }
-} 
+}

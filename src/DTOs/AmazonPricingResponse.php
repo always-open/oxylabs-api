@@ -13,4 +13,4 @@ class AmazonPricingResponse
     {
         return new self($data);
     }
-} 
+}

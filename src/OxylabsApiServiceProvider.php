@@ -24,4 +24,4 @@ class OxylabsApiServiceProvider extends ServiceProvider
             __DIR__ . '/../config/oxylabs-api.php' => config_path('oxylabs-api.php'),
         ], 'config');
     }
-} 
+}

@@ -13,4 +13,4 @@ class AmazonSearchResponse
     {
         return new self($data);
     }
-} 
+}

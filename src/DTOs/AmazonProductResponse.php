@@ -13,4 +13,4 @@ class AmazonProductResponse
     {
         return new self($data);
     }
-} 
+}

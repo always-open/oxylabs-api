@@ -2,4 +2,6 @@
 
 namespace AlwaysOpen\OxylabsApi;
 
-class OxylabsApi {}
+class OxylabsApi
+{
+}

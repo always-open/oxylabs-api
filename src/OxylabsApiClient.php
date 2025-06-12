@@ -32,7 +32,7 @@ class OxylabsApiClient
         $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url'), '/');
         $this->username = $username ?? config('oxylabs-api.username') ?? '';
         $this->password = $password ?? config('oxylabs-api.password') ?? '';
-        $this->authMethod = $authMethod ?? config('oxylabs-api.auth_method');
+        $this->authMethod = $authMethod ?? config('oxylabs-api.auth_method') ?? 'basic';
     }
 
     protected function getAuthHeader(): array

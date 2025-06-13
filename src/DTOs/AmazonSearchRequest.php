@@ -15,8 +15,7 @@ class AmazonSearchRequest
         public readonly ?string $sort = null,
         public readonly ?string $category = null,
         public readonly ?string $locale = null
-    ) {
-    }
+    ) {}
 
     public function toArray(): array
     {

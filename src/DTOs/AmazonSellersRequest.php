@@ -10,8 +10,7 @@ class AmazonSellersRequest
         public readonly string $query,
         public readonly ?array $parse = null,
         public readonly ?array $context = null
-    ) {
-    }
+    ) {}
 
     public function toArray(): array
     {

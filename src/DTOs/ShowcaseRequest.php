@@ -10,8 +10,7 @@ class ShowcaseRequest
         public readonly ?string $userAgentType = null,
         public readonly ?string $geoLocation = null,
         public readonly ?array $context = null
-    ) {
-    }
+    ) {}
 
     public function toArray(): array
     {

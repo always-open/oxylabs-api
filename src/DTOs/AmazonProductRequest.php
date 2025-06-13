@@ -10,8 +10,7 @@ class AmazonProductRequest
         public readonly string $asin,
         public readonly ?array $parse = null,
         public readonly ?array $context = null
-    ) {
-    }
+    ) {}
 
     public function toArray(): array
     {

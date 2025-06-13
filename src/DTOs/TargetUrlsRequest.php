@@ -10,8 +10,7 @@ class TargetUrlsRequest
         public readonly string $url,
         public readonly ?array $parse = null,
         public readonly ?array $context = null
-    ) {
-    }
+    ) {}
 
     public function toArray(): array
     {

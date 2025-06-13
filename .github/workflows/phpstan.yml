@@ -2,20 +2,27 @@ name: PHPStan
 
 on:
   push:
-    branches: [main, 1.x]
-  pull_request:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+      - '.github/workflows/phpstan.yml'
 
 jobs:
   phpstan:
-    name: PHPStan
-
+    name: phpstan
     runs-on: ubuntu-latest
-
+    timeout-minutes: 5
     steps:
-      - name: "Checkout"
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: PHPStan
-        uses: docker://oskarstark/phpstan-ga
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
         with:
-          args: analyse src/ --level=5
+          php-version: '8.3'
+          coverage: none
+
+      - name: Install composer dependencies
+        uses: ramsey/composer-install@v3
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan --error-format=github

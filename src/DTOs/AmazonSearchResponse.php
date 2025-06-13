@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class AmazonSearchResponse
+use Spatie\LaravelData\Data;
+
+class AmazonSearchResponse extends Data
 {
     public function __construct(
         public readonly array $data

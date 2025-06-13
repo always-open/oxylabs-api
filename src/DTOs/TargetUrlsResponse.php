@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class TargetUrlsResponse
+use Spatie\LaravelData\Data;
+
+class TargetUrlsResponse extends Data
 {
     public function __construct(
         public readonly array $data

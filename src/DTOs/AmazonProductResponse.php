@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class AmazonProductResponse
+use Spatie\LaravelData\Data;
+
+class AmazonProductResponse extends Data
 {
     public function __construct(
         public readonly array $data

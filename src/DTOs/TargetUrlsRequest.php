@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class TargetUrlsRequest
+use Spatie\LaravelData\Data;
+
+class TargetUrlsRequest extends Data
 {
     public function __construct(
         public readonly string $source,

@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class AmazonProductRequest
+use Spatie\LaravelData\Data;
+
+class AmazonProductRequest extends Data
 {
     public function __construct(
         public readonly string $source,

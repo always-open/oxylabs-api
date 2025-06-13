@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class ShowcaseResponse
+use Spatie\LaravelData\Data;
+
+class ShowcaseResponse extends Data
 {
     public function __construct(
         public readonly array $data

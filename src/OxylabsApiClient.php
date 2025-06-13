@@ -19,8 +19,11 @@ use Illuminate\Support\Facades\Http;
 class OxylabsApiClient
 {
     protected string $baseUrl;
+
     protected string $username;
+
     protected string $password;
+
     protected string $authMethod;
 
     public function __construct(
@@ -39,10 +42,10 @@ class OxylabsApiClient
     {
         return match ($this->authMethod) {
             'basic' => [
-                'Authorization' => 'Basic ' . base64_encode($this->username . ':' . $this->password),
+                'Authorization' => 'Basic '.base64_encode($this->username.':'.$this->password),
             ],
             'bearer' => [
-                'Authorization' => 'Bearer ' . $this->password,
+                'Authorization' => 'Bearer '.$this->password,
             ],
             default => throw new \InvalidArgumentException('Invalid authentication method')
         };
@@ -51,7 +54,7 @@ class OxylabsApiClient
     public function amazonProduct(AmazonProductRequest $request): AmazonProductResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl . '/amazon/product', $request->toArray());
+            ->post($this->baseUrl.'/amazon/product', $request->toArray());
 
         return AmazonProductResponse::fromArray($response->json());
     }
@@ -59,7 +62,7 @@ class OxylabsApiClient
     public function amazonSearch(AmazonSearchRequest $request): AmazonSearchResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl . '/amazon/search', $request->toArray());
+            ->post($this->baseUrl.'/amazon/search', $request->toArray());
 
         return AmazonSearchResponse::fromArray($response->json());
     }
@@ -67,7 +70,7 @@ class OxylabsApiClient
     public function amazonPricing(AmazonPricingRequest $request): AmazonPricingResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl . '/amazon/pricing', $request->toArray());
+            ->post($this->baseUrl.'/amazon/pricing', $request->toArray());
 
         return AmazonPricingResponse::fromArray($response->json());
     }
@@ -75,7 +78,7 @@ class OxylabsApiClient
     public function amazonSellers(AmazonSellersRequest $request): AmazonSellersResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl . '/amazon/sellers', $request->toArray());
+            ->post($this->baseUrl.'/amazon/sellers', $request->toArray());
 
         return AmazonSellersResponse::fromArray($response->json());
     }
@@ -83,7 +86,7 @@ class OxylabsApiClient
     public function targetUrls(TargetUrlsRequest $request): TargetUrlsResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl . '/target/urls', $request->toArray());
+            ->post($this->baseUrl.'/target/urls', $request->toArray());
 
         return TargetUrlsResponse::fromArray($response->json());
     }
@@ -91,7 +94,7 @@ class OxylabsApiClient
     public function showcase(ShowcaseRequest $request): ShowcaseResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl . '/showcase', $request->toArray());
+            ->post($this->baseUrl.'/showcase', $request->toArray());
 
         return ShowcaseResponse::fromArray($response->json());
     }

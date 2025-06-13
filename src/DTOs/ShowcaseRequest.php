@@ -12,8 +12,7 @@ class ShowcaseRequest extends Data
         public readonly ?string $userAgentType = null,
         public readonly ?string $geoLocation = null,
         public readonly ?array $context = null
-    ) {
-    }
+    ) {}
 
     public function toArray(): array
     {

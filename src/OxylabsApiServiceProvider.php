@@ -21,7 +21,7 @@ class OxylabsApiServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/oxylabs-api.php' => config_path('oxylabs-api.php'),
+            __DIR__.'/../config/oxylabs-api.php' => config_path('oxylabs-api.php'),
         ], 'config');
     }
 }

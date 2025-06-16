@@ -2,7 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class UniversalResponse extends BaseResponse
+use Spatie\LaravelData\Data;
+
+class UniversalResponse extends Data
 {
     protected array $results;
     protected ?array $parsed_content = null;

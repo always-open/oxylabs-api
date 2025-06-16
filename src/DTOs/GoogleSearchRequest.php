@@ -2,29 +2,19 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-class GoogleSearchRequest extends BaseRequest
-{
-    protected string $query;
-    protected ?string $geo_location = null;
-    protected ?string $user_agent_type = null;
-    protected ?bool $parse = null;
-    protected ?bool $render = null;
-    protected ?array $context = null;
+use Spatie\LaravelData\Data;
 
+class GoogleSearchRequest extends Data
+{
     public function __construct(
-        string $query,
-        ?string $geo_location = null,
-        ?string $user_agent_type = null,
-        ?bool $parse = null,
-        ?bool $render = null,
-        ?array $context = null
-    ) {
-        $this->query = $query;
-        $this->geo_location = $geo_location;
-        $this->user_agent_type = $user_agent_type;
-        $this->parse = $parse;
-        $this->render = $render;
-        $this->context = $context;
+        public readonly string  $query,
+        public readonly ?string $geo_location = null,
+        public readonly ?string $user_agent_type = null,
+        public readonly ?bool   $parse = null,
+        public readonly ?bool   $render = null,
+        public readonly ?array  $context = null
+    )
+    {
     }
 
     public function toArray(): array

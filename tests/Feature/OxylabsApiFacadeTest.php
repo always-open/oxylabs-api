@@ -10,10 +10,6 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
-use AlwaysOpen\OxylabsApi\DTOs\ShowcaseRequest;
-use AlwaysOpen\OxylabsApi\DTOs\ShowcaseResponse;
-use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsRequest;
-use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsResponse;
 use AlwaysOpen\OxylabsApi\OxylabsApiFacade;
 use Illuminate\Support\Facades\Http;
 use Orchestra\Testbench\TestCase;
@@ -98,5 +94,4 @@ class OxylabsApiFacadeTest extends TestCase
         $this->assertInstanceOf(AmazonSellersResponse::class, $response);
         $this->assertEquals(['test' => 'data'], $response->data);
     }
-
 }

@@ -5,10 +5,15 @@ namespace AlwaysOpen\OxylabsApi\DTOs;
 class GoogleSearchRequest extends BaseRequest
 {
     protected string $query;
+
     protected ?string $geo_location = null;
+
     protected ?string $user_agent_type = null;
+
     protected ?bool $parse = null;
+
     protected ?bool $render = null;
+
     protected ?array $context = null;
 
     public function __construct(
@@ -38,4 +43,4 @@ class GoogleSearchRequest extends BaseRequest
             'context' => $this->context,
         ]);
     }
-} 
+}

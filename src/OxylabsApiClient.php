@@ -2,28 +2,25 @@
 
 namespace AlwaysOpen\OxylabsApi;
 
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
-use AlwaysOpen\OxylabsApi\DTOs\ShowcaseRequest;
-use AlwaysOpen\OxylabsApi\DTOs\ShowcaseResponse;
-use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsRequest;
-use AlwaysOpen\OxylabsApi\DTOs\TargetUrlsResponse;
+use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
+use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchResponse;
+use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
+use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiClient
 {
     protected string $baseUrl;
-
     protected string $username;
-
     protected string $password;
-
     protected string $authMethod;
 
     public function __construct(
@@ -32,7 +29,7 @@ class OxylabsApiClient
         ?string $password = null,
         ?string $authMethod = null,
     ) {
-        $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url', 'https://api.oxylabs.io/v1'), '/');
+        $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url', 'https://data.oxylabs.io/v1/querieshttps://realtime.oxylabs.io/v1'), '/');
         $this->username = $username ?? config('oxylabs-api.username') ?? '';
         $this->password = $password ?? config('oxylabs-api.password') ?? '';
         $this->authMethod = $authMethod ?? config('oxylabs-api.auth_method') ?? 'basic';
@@ -51,51 +48,54 @@ class OxylabsApiClient
         };
     }
 
-    public function amazonProduct(AmazonProductRequest $request): AmazonProductResponse
+    protected function makeRequest(string $source, array $payload): array
     {
         $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl.'/amazon/product', $request->toArray());
+            ->post($this->baseUrl.'/queries', [
+                'source' => $source,
+                ...$payload
+            ]);
 
-        return AmazonProductResponse::fromArray($response->json());
+        if (!$response->successful()) {
+            throw new \RuntimeException('API request failed: ' . $response->body());
+        }
+
+        return $response->json();
+    }
+
+    public function amazonProduct(AmazonProductRequest $request): AmazonProductResponse
+    {
+        $response = $this->makeRequest('amazon_product', $request->toArray());
+        return AmazonProductResponse::fromArray($response);
     }
 
     public function amazonSearch(AmazonSearchRequest $request): AmazonSearchResponse
     {
-        $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl.'/amazon/search', $request->toArray());
-
-        return AmazonSearchResponse::fromArray($response->json());
+        $response = $this->makeRequest('amazon_search', $request->toArray());
+        return AmazonSearchResponse::fromArray($response);
     }
 
     public function amazonPricing(AmazonPricingRequest $request): AmazonPricingResponse
     {
-        $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl.'/amazon/pricing', $request->toArray());
-
-        return AmazonPricingResponse::fromArray($response->json());
+        $response = $this->makeRequest('amazon_pricing', $request->toArray());
+        return AmazonPricingResponse::fromArray($response);
     }
 
     public function amazonSellers(AmazonSellersRequest $request): AmazonSellersResponse
     {
-        $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl.'/amazon/sellers', $request->toArray());
-
-        return AmazonSellersResponse::fromArray($response->json());
+        $response = $this->makeRequest('amazon_sellers', $request->toArray());
+        return AmazonSellersResponse::fromArray($response);
     }
 
-    public function targetUrls(TargetUrlsRequest $request): TargetUrlsResponse
+    public function googleSearch(GoogleSearchRequest $request): GoogleSearchResponse
     {
-        $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl.'/target/urls', $request->toArray());
-
-        return TargetUrlsResponse::fromArray($response->json());
+        $response = $this->makeRequest('google_search', $request->toArray());
+        return GoogleSearchResponse::fromArray($response);
     }
 
-    public function showcase(ShowcaseRequest $request): ShowcaseResponse
+    public function universal(UniversalRequest $request): UniversalResponse
     {
-        $response = Http::withHeaders($this->getAuthHeader())
-            ->post($this->baseUrl.'/showcase', $request->toArray());
-
-        return ShowcaseResponse::fromArray($response->json());
+        $response = $this->makeRequest('universal', $request->toArray());
+        return UniversalResponse::fromArray($response);
     }
 }

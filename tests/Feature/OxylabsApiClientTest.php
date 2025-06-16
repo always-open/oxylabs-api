@@ -23,7 +23,7 @@ class OxylabsApiClientTest extends TestCase
     public function test_amazon_product()
     {
         Http::fake([
-            'api.oxylabs.io/v1/amazon/product' => Http::response(['test' => 'data'], 200),
+            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -43,7 +43,7 @@ class OxylabsApiClientTest extends TestCase
     public function test_amazon_search()
     {
         Http::fake([
-            'api.oxylabs.io/v1/amazon/search' => Http::response(['test' => 'data'], 200),
+            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -63,7 +63,7 @@ class OxylabsApiClientTest extends TestCase
     public function test_amazon_pricing()
     {
         Http::fake([
-            'api.oxylabs.io/v1/amazon/pricing' => Http::response(['test' => 'data'], 200),
+            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -83,7 +83,7 @@ class OxylabsApiClientTest extends TestCase
     public function test_amazon_sellers()
     {
         Http::fake([
-            'api.oxylabs.io/v1/amazon/sellers' => Http::response(['test' => 'data'], 200),
+            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -97,45 +97,6 @@ class OxylabsApiClientTest extends TestCase
         $response = $client->amazonSellers($request);
 
         $this->assertInstanceOf(AmazonSellersResponse::class, $response);
-        $this->assertEquals(['test' => 'data'], $response->data);
-    }
-
-    public function test_target_urls()
-    {
-        Http::fake([
-            'api.oxylabs.io/v1/target/urls' => Http::response(['test' => 'data'], 200),
-        ]);
-
-        $client = new OxylabsApiClient(username: 'user', password: 'pass');
-
-        $request = new TargetUrlsRequest(
-            source: 'universal',
-            domain: 'com',
-            url: 'https://example.com'
-        );
-
-        $response = $client->targetUrls($request);
-
-        $this->assertInstanceOf(TargetUrlsResponse::class, $response);
-        $this->assertEquals(['test' => 'data'], $response->data);
-    }
-
-    public function test_showcase()
-    {
-        Http::fake([
-            'api.oxylabs.io/v1/showcase' => Http::response(['test' => 'data'], 200),
-        ]);
-
-        $client = new OxylabsApiClient(username: 'user', password: 'pass');
-
-        $request = new ShowcaseRequest(
-            source: 'universal',
-            url: 'https://example.com'
-        );
-
-        $response = $client->showcase($request);
-
-        $this->assertInstanceOf(ShowcaseResponse::class, $response);
         $this->assertEquals(['test' => 'data'], $response->data);
     }
 }

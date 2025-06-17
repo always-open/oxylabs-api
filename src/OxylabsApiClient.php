@@ -68,7 +68,7 @@ class OxylabsApiClient
         return $response->json();
     }
 
-    protected function makeBatchRequest(BatchRequest $payload): BatchResponse
+    public function makeBatchRequest(BatchRequest $payload): BatchResponse
     {
         $response = Http::withHeaders($this->getAuthHeader())
             ->post($this->baseUrl.'/queries/batch', $payload->toArray());

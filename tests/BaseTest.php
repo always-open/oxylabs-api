@@ -12,12 +12,12 @@ class BaseTest extends TestCase
     {
         parent::setUp();
 
-        Http::preventStrayRequests();
-
         $this->artisan('vendor:publish', [
             '--provider' => OxylabsApiServiceProvider::class,
             '--tag' => 'config',
         ]);
+
+        Http::preventStrayRequests();
     }
 
     protected function getFixtureJsonContent(string $name): array

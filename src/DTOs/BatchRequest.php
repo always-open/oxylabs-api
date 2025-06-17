@@ -10,14 +10,14 @@ class BatchRequest extends Data
      * @throws \Exception
      */
     public function __construct(
-        public readonly string  $source,
-        public readonly string  $domain,
-        public readonly ?array  $query = null,
-        public readonly ?array  $url = null,
-        public readonly bool    $parse = true,
+        public readonly string $source,
+        public readonly string $domain,
+        public readonly ?array $query = null,
+        public readonly ?array $url = null,
+        public readonly bool $parse = true,
         public readonly ?string $callback_url = null,
         public readonly ?string $geo_location = null,
-        public readonly ?array  $context = null,
+        public readonly ?array $context = null,
     ) {
         if (
             ($this->query === null && $this->url === null)

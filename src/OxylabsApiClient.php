@@ -16,6 +16,9 @@ use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
+use Illuminate\Http\Client\ConnectionException;
+use Illuminate\Http\Client\Factory;
+use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiClient
@@ -53,9 +56,17 @@ class OxylabsApiClient
         };
     }
 
+    protected function getBaseRequest() : Factory|PendingRequest
+    {
+        return Http::withHeaders($this->getAuthHeader());
+    }
+
+    /**
+     * @throws ConnectionException
+     */
     protected function makeRequest(string $source, array $payload): array
     {
-        $response = Http::withHeaders($this->getAuthHeader())
+        $response = $this->getBaseRequest()
             ->post($this->baseUrl.'/queries', [
                 'source' => $source,
                 ...$payload,
@@ -68,9 +79,37 @@ class OxylabsApiClient
         return $response->json();
     }
 
+    /**
+     * @throws ConnectionException
+     */
+    public function getResult(string $job_id) : array
+    {
+        $response = $this->getBaseRequest()
+            ->get($this->baseUrl."/queries/$job_id/results");
+
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
+        }
+
+        return $response->json();
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getAmazonProductResult(string $job_id) : AmazonProductResponse
+    {
+        $response = $this->getResult($job_id);
+
+        return AmazonProductResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
     public function makeBatchRequest(BatchRequest $payload): BatchResponse
     {
-        $response = Http::withHeaders($this->getAuthHeader())
+        $response = $this->getBaseRequest()
             ->post($this->baseUrl.'/queries/batch', $payload->toArray());
 
         if (! $response->successful()) {

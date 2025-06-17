@@ -7,15 +7,13 @@ use Spatie\LaravelData\Data;
 class UniversalRequest extends Data
 {
     public function __construct(
-        public readonly string  $url,
+        public readonly string $url,
         public readonly ?string $geo_location = null,
         public readonly ?string $user_agent_type = null,
-        public readonly ?bool   $parse = null,
-        public readonly ?bool   $render = null,
-        public readonly ?array  $context = null
-    )
-    {
-    }
+        public readonly ?bool $parse = null,
+        public readonly ?bool $render = null,
+        public readonly ?array $context = null
+    ) {}
 
     public function toArray(): array
     {
@@ -28,4 +26,4 @@ class UniversalRequest extends Data
             'context' => $this->context,
         ]);
     }
-} 
+}

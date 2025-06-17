@@ -17,8 +17,6 @@ class BaseTest extends TestCase
             '--tag' => 'config',
         ]);
 
-        $this->artisan('cache:clear');
-
         Http::preventStrayRequests();
 
         $this->refreshApplication();

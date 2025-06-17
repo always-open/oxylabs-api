@@ -34,7 +34,7 @@ class OxylabsApiClient
         ?string $password = null,
         ?string $authMethod = null,
     ) {
-        $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url', 'https://data.oxylabs.io/v1/querieshttps://realtime.oxylabs.io/v1'), '/');
+        $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url', 'https://data.oxylabs.io/v1/queries'), '/');
         $this->username = $username ?? config('oxylabs-api.username') ?? '';
         $this->password = $password ?? config('oxylabs-api.password') ?? '';
         $this->authMethod = $authMethod ?? config('oxylabs-api.auth_method') ?? 'basic';

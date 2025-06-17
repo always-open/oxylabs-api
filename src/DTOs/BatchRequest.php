@@ -11,8 +11,8 @@ class BatchRequest extends Data
      */
     public function __construct(
         public readonly string $source,
-        public readonly ?array $query = null,
-        public readonly ?array $url = null,
+        public readonly ?array $query,
+        public readonly ?array $url,
         public readonly string $asin,
         public readonly bool $parse = true,
         public readonly ?string $callback_url = null,

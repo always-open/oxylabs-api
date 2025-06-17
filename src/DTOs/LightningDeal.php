@@ -10,6 +10,5 @@ class LightningDeal extends Data
         public readonly string $percent_claimed,
         public readonly string $price_text,
         public readonly string $expires,
-    ) {
-    }
+    ) {}
 }

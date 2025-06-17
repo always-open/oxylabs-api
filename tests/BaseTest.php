@@ -20,7 +20,7 @@ class BaseTest extends TestCase
         ]);
     }
 
-    protected function getFixtureJsonContent(string $name) : array
+    protected function getFixtureJsonContent(string $name): array
     {
         $content = $this->getFixtureContent($name);
 
@@ -30,9 +30,10 @@ class BaseTest extends TestCase
 
         return [];
     }
+
     protected function getFixtureContent(string $name): false|string
     {
-        return file_get_contents(__DIR__ . "/Fixtures/{$name}");
+        return file_get_contents(__DIR__."/Fixtures/{$name}");
     }
 
     protected function getPackageProviders($app)

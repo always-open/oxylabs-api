@@ -14,6 +14,5 @@ class ProductDetails extends Data
         public readonly string $product_dimensions,
         public readonly string $date_first_available,
         public readonly string $is_discontinued_by_manufacturer,
-    ) {
-    }
+    ) {}
 }

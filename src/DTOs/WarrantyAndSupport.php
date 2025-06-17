@@ -10,6 +10,5 @@ class WarrantyAndSupport extends Data
         public readonly string $description,
         /* @var Link[] $links */
         public readonly array $links,
-    ) {
-    }
+    ) {}
 }

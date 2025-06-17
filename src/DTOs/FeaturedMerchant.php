@@ -12,6 +12,5 @@ class FeaturedMerchant extends Data
         public readonly string $seller_id,
         public readonly string $shipped_from,
         public readonly bool $is_amazon_fulfilled,
-    ) {
-    }
+    ) {}
 }

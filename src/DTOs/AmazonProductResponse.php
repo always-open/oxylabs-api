@@ -10,6 +10,5 @@ class AmazonProductResponse extends Data
         /* @var AmazonProductResult[] $results */
         public readonly array $results,
         public readonly Job $job,
-    ) {
-    }
+    ) {}
 }

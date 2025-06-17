@@ -11,7 +11,7 @@ class Job extends Data
 {
     public function __construct(
         public readonly int $client_id,
-        #[WithCast(DateTimeInterfaceCast::class, format: "Y-m-d H:i:s")]
+        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly Carbon $created_at,
         public readonly string $domain,
         public readonly string $id,
@@ -23,7 +23,7 @@ class Job extends Data
         public readonly string $source,
         public readonly int $start_page,
         public readonly string $status,
-        #[WithCast(DateTimeInterfaceCast::class, format: "Y-m-d H:i:s")]
+        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly Carbon $updated_at,
         public readonly ?string $callback_url = null,
         public readonly ?array $context = null,
@@ -47,6 +47,5 @@ class Job extends Data
         public readonly ?string $client_notes = null,
         /* @var ResultLink[]|null */
         public readonly ?array $_links = null,
-    ) {
-    }
+    ) {}
 }

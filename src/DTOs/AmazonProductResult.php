@@ -70,11 +70,10 @@ class AmazonProductResult extends Data
         public readonly ?bool $amazon_choice = null,
         public readonly ?float $coupon_discount_percentage = null,
         public readonly ?string $parent_asin = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: "Y-m-d H:i:s")]
+        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly ?Carbon $created_at = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: "Y-m-d H:i:s")]
+        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly ?Carbon $updated_at = null,
         public readonly ?bool $is_prime_pantry = null,
-    ) {
-    }
+    ) {}
 }

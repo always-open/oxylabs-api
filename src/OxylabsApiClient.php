@@ -2,12 +2,12 @@
 
 namespace AlwaysOpen\OxylabsApi;
 
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
@@ -19,8 +19,11 @@ use Illuminate\Support\Facades\Http;
 class OxylabsApiClient
 {
     protected string $baseUrl;
+
     protected string $username;
+
     protected string $password;
+
     protected string $authMethod;
 
     public function __construct(
@@ -53,11 +56,11 @@ class OxylabsApiClient
         $response = Http::withHeaders($this->getAuthHeader())
             ->post($this->baseUrl.'/queries', [
                 'source' => $source,
-                ...$payload
+                ...$payload,
             ]);
 
-        if (!$response->successful()) {
-            throw new \RuntimeException('API request failed: ' . $response->body());
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return $response->json();
@@ -66,36 +69,42 @@ class OxylabsApiClient
     public function amazonProduct(AmazonProductRequest $request): AmazonProductResponse
     {
         $response = $this->makeRequest('amazon_product', $request->toArray());
+
         return AmazonProductResponse::fromArray($response);
     }
 
     public function amazonSearch(AmazonSearchRequest $request): AmazonSearchResponse
     {
         $response = $this->makeRequest('amazon_search', $request->toArray());
+
         return AmazonSearchResponse::fromArray($response);
     }
 
     public function amazonPricing(AmazonPricingRequest $request): AmazonPricingResponse
     {
         $response = $this->makeRequest('amazon_pricing', $request->toArray());
+
         return AmazonPricingResponse::fromArray($response);
     }
 
     public function amazonSellers(AmazonSellersRequest $request): AmazonSellersResponse
     {
         $response = $this->makeRequest('amazon_sellers', $request->toArray());
+
         return AmazonSellersResponse::fromArray($response);
     }
 
     public function googleSearch(GoogleSearchRequest $request): GoogleSearchResponse
     {
         $response = $this->makeRequest('google_search', $request->toArray());
+
         return GoogleSearchResponse::fromArray($response);
     }
 
     public function universal(UniversalRequest $request): UniversalResponse
     {
         $response = $this->makeRequest('universal', $request->toArray());
+
         return UniversalResponse::fromArray($response);
     }
 }

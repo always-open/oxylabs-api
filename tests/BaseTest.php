@@ -20,6 +20,8 @@ class BaseTest extends TestCase
         $this->artisan('cache:clear');
 
         Http::preventStrayRequests();
+
+        $this->refreshApplication();
     }
 
     protected function getFixtureJsonContent(string $name): array

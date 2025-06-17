@@ -3,10 +3,9 @@
 namespace AlwaysOpen\OxylabsApi\Tests\Unit;
 
 use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
-use Orchestra\Testbench\TestCase;
-use Spatie\LaravelData\LaravelDataServiceProvider;
+use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 
-class OxylabsApiServiceProviderTest extends TestCase
+class OxylabsApiServiceProviderTest extends BaseTest
 {
     protected function getPackageProviders($app)
     {

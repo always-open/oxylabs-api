@@ -5,16 +5,15 @@ namespace AlwaysOpen\OxylabsApi\Tests\Feature;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
 use AlwaysOpen\OxylabsApi\OxylabsApiFacade;
+use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Support\Facades\Http;
-use Orchestra\Testbench\TestCase;
 
-class OxylabsApiFacadeTest extends TestCase
+class OxylabsApiFacadeTest extends BaseTest
 {
     protected function setUp(): void
     {
@@ -26,7 +25,7 @@ class OxylabsApiFacadeTest extends TestCase
     public function test_amazon_product()
     {
         Http::fake([
-            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('amazon_product_response.json'), 200),
         ]);
 
         $request = new AmazonProductRequest(
@@ -37,8 +36,7 @@ class OxylabsApiFacadeTest extends TestCase
 
         $response = OxylabsApiFacade::amazonProduct($request);
 
-        $this->assertInstanceOf(AmazonProductResponse::class, $response);
-        $this->assertEquals(['test' => 'data'], $response->data);
+        $this->assertCount(1, $response->results);
     }
 
     public function test_amazon_search()

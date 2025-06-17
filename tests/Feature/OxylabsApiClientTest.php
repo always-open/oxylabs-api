@@ -5,8 +5,6 @@ namespace AlwaysOpen\OxylabsApi\Tests\Feature;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResult;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
@@ -28,7 +26,7 @@ class OxylabsApiClientTest extends BaseTest
     public function test_amazon_product()
     {
         Http::fake([
-            'data.oxylabs.io/v1/queries' => Http::response(json_decode(file_get_contents('../Fixtures/amazon_product_response.json'), true), 200)]);
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('amazon_product_response.json'), 200)]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
 

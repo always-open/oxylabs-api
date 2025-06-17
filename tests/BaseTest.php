@@ -3,6 +3,7 @@
 namespace AlwaysOpen\OxylabsApi\Tests;
 
 use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
+use Illuminate\Support\Facades\Http;
 use Orchestra\Testbench\TestCase;
 
 class BaseTest extends TestCase
@@ -10,10 +11,28 @@ class BaseTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
+
+        Http::preventStrayRequests();
+
         $this->artisan('vendor:publish', [
             '--provider' => OxylabsApiServiceProvider::class,
             '--tag' => 'config',
         ]);
+    }
+
+    protected function getFixtureJsonContent(string $name) : array
+    {
+        $content = $this->getFixtureContent($name);
+
+        if ($content) {
+            return json_decode($content, true);
+        }
+
+        return [];
+    }
+    protected function getFixtureContent(string $name): false|string
+    {
+        return file_get_contents(__DIR__ . "/Fixtures/{$name}");
     }
 
     protected function getPackageProviders($app)

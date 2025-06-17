@@ -4,6 +4,7 @@ namespace AlwaysOpen\OxylabsApi\Tests\Unit;
 
 use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
 use Orchestra\Testbench\TestCase;
+use Spatie\LaravelData\LaravelDataServiceProvider;
 
 class OxylabsApiServiceProviderTest extends TestCase
 {

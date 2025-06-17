@@ -1,0 +1,706 @@
+{
+  "results": [
+    {
+      "content": {
+        "ads": [
+          {
+            "pos": 1,
+            "asin": "B003FDG4K4",
+            "type": "organic_also_viewed",
+            "price": 28.41,
+            "title": "Orgain Organic Nutritional Protein Shake, Creamy Chocolate Fudge - 16g Grass Fed Whey Protein, Meal Replacement, 20 Vitamins & Minerals, Fruits & Vegetables, Gluten Free, Non-GMO, 11 Fl Oz (12 Pack)",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/81ZMDwl3B4L._AC_UL165_SR165,165_.jpg",
+              "https://m.media-amazon.com/images/I/01GK70BG4uL.svg",
+              "https://m.media-amazon.com/images/I/019h+CPo68L.svg",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/21AGu0JFvKL.svg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 28.41,
+            "reviews_count": 46,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 2,
+            "asin": "B087XSL57C",
+            "type": "organic_also_viewed",
+            "price": 35.99,
+            "title": "Orgain Organic Vegan Protein Shake, Creamy Chocolate - 20g Plant Based Protein, Ready to Drink, Fruits & Vegetables, Gluten Free, Kosher, No Soy or Dairy Ingredients, 11 Fl Oz (Pack of 12)",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/81Nl24APnkL._AC_UL165_SR165,165_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 35.99,
+            "reviews_count": 42,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 3,
+            "asin": "B003FDC2I2",
+            "type": "organic_also_viewed",
+            "price": 28.41,
+            "title": "Orgain Organic Nutritional Protein Shake, Vanilla Bean - 16g Grass Fed Whey Protein, Meal Replacement, 20 Vitamins & Minerals, Fruits & Vegetables, Gluten Free, Non-GMO, 11 Fl Oz (12 Pack)",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/81AzY-077gL._AC_UL165_SR165,165_.jpg",
+              "https://m.media-amazon.com/images/I/01GK70BG4uL.svg",
+              "https://m.media-amazon.com/images/I/019h+CPo68L.svg",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/21AGu0JFvKL.svg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 28.41,
+            "reviews_count": 44,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 4,
+            "asin": "B08F82M84H",
+            "type": "organic_also_viewed",
+            "price": 57.49,
+            "title": "KATE FARMS Organic Vegan Plant Based 1.4 Sole-Source Nutrition Shake, Vanilla Flavor, 20g of protein, 28 Vitamins and Minerals, High Calorie Meal Replacement Drink, Protein Shake, Gluten Free and Non-GMO, 11 Fl oz (Pack of 12)",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/71SahPZ2sxL._AC_UL165_SR165,165_.jpg",
+              "https://m.media-amazon.com/images/I/01GK70BG4uL.svg",
+              "https://m.media-amazon.com/images/I/019h+CPo68L.svg",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/21AGu0JFvKL.svg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 57.49,
+            "reviews_count": 43,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 5,
+            "asin": "B08FNY6QTX",
+            "type": "organic_also_viewed",
+            "price": 39,
+            "title": "KATE FARMS Organic Nutrition Shake, Vanilla, 16g Protein, 27 Vitamins and Minerals, Protein Meal Replacement Drink, Protein Shake, 11 oz (12 Pack)",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/71z6CU6+RNL._AC_UL165_SR165,165_.jpg",
+              "https://m.media-amazon.com/images/I/01GK70BG4uL.svg",
+              "https://m.media-amazon.com/images/I/019h+CPo68L.svg",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/31P6BHLM8wL._SS180_.png",
+              "https://m.media-amazon.com/images/I/21AGu0JFvKL.svg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 39,
+            "reviews_count": 44,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 6,
+            "asin": "B085LSZCJ7",
+            "type": "organic_also_viewed",
+            "price": 45.94,
+            "title": "Lean Body Ready-to-Drink, Plant-Based Vegan Chocolate Protein Shake, 30g Protein, No Artificial Flavors, Sweeteners or Colors, Non GMO, Gluten Free, Premium Pea & Rice Blend (Pack of 12)",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/81im6ILkEAL._AC_UL165_SR165,165_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 45.94,
+            "reviews_count": 44,
+            "is_prime_eligible": false
+          }
+        ],
+        "url": "https://www.amazon.com/dp/B00JTX7SH2?language=en_US",
+        "asin": "B00JTX7SH2",
+        "page": 1,
+        "brand": "Orgain",
+        "price": 31.68,
+        "stock": "In Stock",
+        "title": "Orgain Organic Nutritional Vegan Protein Shake, Smooth Chocolate - 16g Plant Based Protein, Meal Replacement, 22 Vitamins & Minerals, Fruits & Vegetables, Gluten Free, Non-GMO, 11 Fl Oz (Pack of 12)",
+        "buybox": [
+          {
+            "price": 31.68,
+            "stock": "In Stock",
+            "condition": " One-time purchase: ",
+            "delivery_details": [
+              {
+                "date": {
+                  "by": "Sunday, June 22"
+                },
+                "type": "FREE delivery"
+              },
+              {
+                "date": {
+                  "by": "Sunday, June 22"
+                },
+                "type": "FREE delivery"
+              },
+              {
+                "date": {
+                  "by": "Prime members"
+                },
+                "type": "Or"
+              }
+            ]
+          },
+          {
+            "price": 31.68,
+            "delivery_details": [
+              {
+                "date": {
+                  "by": "Sunday, June 22"
+                },
+                "type": "FREE delivery"
+              }
+            ]
+          },
+          {
+            "price": 30.1,
+            "stock": "In Stock",
+            "condition": " Subscribe & Save ",
+            "delivery_details": [
+              {
+                "date": {
+                  "by": "Sunday, June 22"
+                },
+                "type": "FREE delivery"
+              },
+              {
+                "date": {
+                  "by": "Sunday, June 22"
+                },
+                "type": "FREE delivery"
+              },
+              {
+                "date": {
+                  "by": "Prime members"
+                },
+                "type": "Or"
+              }
+            ]
+          },
+          {
+            "price": 30.1,
+            "delivery_details": [
+              {
+                "date": {
+                  "by": "Sunday, June 22"
+                },
+                "type": "FREE delivery"
+              }
+            ]
+          },
+          {
+            "price": -1,
+            "condition": " 2 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 3 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 1 month (Most common) "
+          },
+          {
+            "price": -1,
+            "condition": " 5 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 6 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 7 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 2 months "
+          },
+          {
+            "price": -1,
+            "condition": " 3 months "
+          },
+          {
+            "price": -1,
+            "condition": " 4 months "
+          },
+          {
+            "price": -1,
+            "condition": " 5 months "
+          },
+          {
+            "price": -1,
+            "condition": " 6 months "
+          },
+          {
+            "price": -1,
+            "condition": " 2 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 3 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 1 month (Most common) "
+          },
+          {
+            "price": -1,
+            "condition": " 5 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 6 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 7 weeks "
+          },
+          {
+            "price": -1,
+            "condition": " 2 months "
+          },
+          {
+            "price": -1,
+            "condition": " 3 months "
+          },
+          {
+            "price": -1,
+            "condition": " 4 months "
+          },
+          {
+            "price": -1,
+            "condition": " 5 months "
+          },
+          {
+            "price": -1,
+            "condition": " 6 months "
+          }
+        ],
+        "coupon": "",
+        "images": [
+          "https://m.media-amazon.com/images/I/814b1+2eooL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/91Tzj7NlDTL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/715HIOcgfzL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81ISIZc6EBL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81YwH-cwI6L._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81NKfs9HSUL._AC_SL1500_.jpg",
+          "https://m.media-amazon.com/images/I/81RR0Lm1IdL._AC_SL1500_.jpg"
+        ],
+        "rating": 4.3,
+        "reviews": [
+          {
+            "id": "R3N4ZMR7UJFTI2",
+            "title": "5.0 out of 5 stars I actually really like the taste of this Orgain Protein drink",
+            "author": "Lisa Ann",
+            "rating": 5,
+            "content": "I have tried so many protein drinks, trying to find a protein drink that settled well in my digestive track, tasted good & doesn’t leave a bad taste in my mouth, was not at all easy. I would spend money way over my budget, from the most expensive protein drinks to the least expensive, determined to find the best protein drink. Well, it’s just me now in my older years, and I just don’t go to Costco like I used to. When I did go to Costco one time this year, while I was looking down the protein drink aisle, I nice, polite shopper, was in the same aisle looking at the Orgain protein drinks next to me. This younger, athletic looking shopper, picked up two big boxes of the Orgain, Plant Based, chocolate flavored protein drinks. He told me he tried several protein drinks that were Plant Based, and this Orgain protein drink was the best by far. He told me this protein drink is a daily routine, and he really likes it. I appreciated him sharing his thoughts with me, and he seemed so sincere and nice, offering to place the big box of Orgain in my cart for me, I decided to buy the only flavor of Orgain Costco carries, the chocolate. My favorite flavor is usually vanilla, however I did like the Orgain Chocoloate flavor & there was no after taste,no stomach problems, and one protein drink kept me full enough from early morning until close to noon that day. I found this Vanilla Bean Flavor Orgain on Amazon, ordered this several times, and I am very pleased. This is a bit over my budget, however the extra few dollars is worth it for me. I am now considering actually signing up for the monthly auto pay, to get this product each month, save money, and have it delivered regularly. I am getting older, and Amazon is making my life easier by delivering this product to me. I never ever planned on signing up for auto pay, for automatic monthly delivery for any product in my life. I just don’t do that. Well, I might change my mind with this product, since Amazon offers a better price if I sign up for auto delivery on my Prime account. I drink this once or twice a day, and I actually can say, This product is officially the only protein drink i will drink. I just hope this will always be affordable for me. I am very very happy I found a protein drink I really like.",
+            "timestamp": "Reviewed in the United States July 8, 2024",
+            "profile_id": "AGDDRVHLWP73N5VNYBNAEEXJD2PQ",
+            "is_verified": true,
+            "review_from": "Top reviews from the United States",
+            "helpful_count": 29,
+            "product_attributes": "Flavor Name: Vanilla, Size: 11 Fl Oz (Pack of 12)"
+          },
+          {
+            "id": "R2OPUJ6ZZGG3NM",
+            "title": "5.0 out of 5 stars Good stuff, but sweet",
+            "author": "Jen Rich",
+            "rating": 5,
+            "content": "This was really yummy but I usually drink unsweetened almond milk, so it was a little too sweet for me. But it's great to have a smoothie on the go.",
+            "timestamp": "Reviewed in the United States May 17, 2025",
+            "profile_id": "AH2PKUX2GA42VNQ3IAV5BRXDFRTQ",
+            "is_verified": true,
+            "review_from": "Top reviews from the United States",
+            "product_attributes": "Flavor Name: Vanilla, Size: 11 Fl Oz (Pack of 12)"
+          },
+          {
+            "id": "R2WHOTQ9N928TU",
+            "title": "5.0 out of 5 stars A great shake!",
+            "author": "Gipsy Kings fan",
+            "rating": 5,
+            "content": "Orgain Vegan Nutritional Shake is delicious and nutritious. The Sweet Vanilla Bean flavor tastes something like commercial vanilla flavored rice milk, but is a little thicker and sweeter. It's high-protein (16 grams per bottle) from all vegan sources like brown rice and chia seeds. It also contains vitamins and even fruits and vegetables. I think one of the photo views has all the nutritional info, so you can click on it to get a bigger view to see all the info. It really sticks to your ribs and keeps you going for a while between meals. The bottle is very handy; you can drink some and replace the top, and put it in the fridge for later. It's much more convenient than protein powders you have to mix with water yourself.I have a chronic health problem and a recent blood test showed I wasn't getting enough protein. I'm also not supposed to lose any more weight. Since I'm vegetarian and almost never eat eggs, this is a good way to get extra protein and other nutrients. It is sweetened with brown rice syrup and cane juice, so some people with diabetes may not be able to use it. Orgain was developed by a doctor who is a cancer survivor. When he was sick he needed to use those canned nutritional drinks, which not only tasted terrible, they were full of unhealthy ingredients like high fructose corn syrup. Orgain is not inexpensive because of its high quality, but it is worth it to me. Be aware that Orgain also has a non-vegan version made with milk protein and whey protein. It is over 99% lactose-free, but contains considerably more potassium than the vegan version (not good for people with kidney disease). The bottle looks very similar except it's green and white instead of blue and white.Since making this purchase I bought more Orgain from the Orgain company, including one pack of the Chocolate flavor. I agree with the person who wrote the most helpful critical review that the Chocolate flavor doesn't taste very good, but it's not that bad, so I'll drink them up. It just doesn't taste much like chocolate. I'll stick with the Vanilla flavor.UPDATE NOVEMBER 2014: Actually the chocolate tastes OK when chilled. The main reason for this update is the effect I believe Orgain has had on my health. I have chronic kidney disease. The way the kidney function is measured is by a waste product in the blood called creatinine. The higher the number, the worse the kidney function. In April 2013, my creatinine had gone up to 5.34, so my kidney specialist said I needed to prepare for dialysis. I felt OK, but surgery must be done to put a vascular access in your arm, since it takes 3 months for the access to be ready to use. I had the surgery in August 2013. My creatinine was fluctuating up and down; it never got as bad as 5.34 again, but the really big improvement was in August of this year. In May of this year, I was at 4.20, and then in August I was way down to 3.38, which my doctor said was \"astonishing.\" I was not doing anything different in terms of diet, exercise, or nutritional supplements EXCEPT I had started drinking an Orgain shake every day in the middle of July. I've continued to drink it every day. I just had another blood test, and I was down a tenth of a point to 3.28, which again my doctor said was \"astonishing\" and \"amazing.\" I've never had a dramatic improvement like this before. Of course I can't prove it or make any medical claims, but I think it has to be the Orgain that had made the difference.UPDATE 2016: I still recommend this shake, but with a warning for people who can't resist sweets. These do have sugar (cane juice). The chocolate ones tasted so good, especially when chilled, I got to the point where I was downing four of them a day! My blood glucose went up to 101 which is very high for me; normally it's around 70. I had to give up my beloved Orgain shakes, and my blood glucose went back down to 70.",
+            "timestamp": "Reviewed in the United States August 11, 2014",
+            "profile_id": "AE6IXUMGAQJOCDYN673P2AYKWPXA",
+            "is_verified": true,
+            "review_from": "Top reviews from the United States",
+            "helpful_count": 153,
+            "product_attributes": "Flavor Name: Vanilla, Size: 11 Fl Oz (Pack of 12)"
+          },
+          {
+            "id": "R3DFL002W77YIX",
+            "title": "4.0 out of 5 stars Pretty good",
+            "author": "Steven",
+            "rating": 4,
+            "content": "It has a smooth, velvety texture and it has a chocolate flavor that's good. The flavor kind of reminds me of slim fast. It's good but it doesn't stand out chocolate-wise. It definitely does the job of being filling and being a good meal replacement but the flavor doesn't really stand out. It's nothing you look forward to drinking but it satisfies you enough if that makes any sense.",
+            "timestamp": "Reviewed in the United States March 26, 2025",
+            "profile_id": "AH6Y4PNT3HCRXJ7FRQEHSZD6XVUQ",
+            "is_verified": true,
+            "review_from": "Top reviews from the United States",
+            "helpful_count": 1,
+            "product_attributes": "Flavor Name: Chocolate, Size: 11 Fl Oz (Pack of 12)"
+          },
+          {
+            "id": "RE5H72XC8WMVG",
+            "title": "5.0 out of 5 stars Great protein drink!",
+            "author": "Amy",
+            "rating": 5,
+            "content": "I love these protein drinks. They aren’t thick like most. They also aren’t very sweet.",
+            "timestamp": "Reviewed in the United States May 15, 2025",
+            "profile_id": "AEOIBU4VX6JE6QO4RWMQAFGYXNKQ",
+            "is_verified": true,
+            "review_from": "Top reviews from the United States",
+            "product_attributes": "Flavor Name: Vanilla, Size: 11 Fl Oz (Pack of 4)"
+          },
+          {
+            "id": "R3INVV44C7F1LS",
+            "title": "3.0 out of 5 stars Pretty mid in my opinion",
+            "author": "Amazon Customer",
+            "rating": 3,
+            "content": "not sure i like this protein shake. i ordered the vanilla bean flavour but theres something about it that is off. it doesn’t have much of a taste to me and it’s kind of bland. i may as well use it as a milk substitute in my cereal so that it doesn’t go to waste. i personally prefer the plant based Ensure product. i was however testing out another brand why i chose this.",
+            "timestamp": "Reviewed in the United States June 4, 2025",
+            "profile_id": "AGXNGMFOD62PYJUS7E4V2EJI6ZCQ",
+            "is_verified": true,
+            "review_from": "Top reviews from the United States",
+            "product_attributes": "Flavor Name: Vanilla, Size: 11 Fl Oz (Pack of 12)"
+          },
+          {
+            "id": "R2G1D989KD6FFA",
+            "title": "Good product",
+            "author": "Came with safety cap open, amazon don’t allow returns in food items damn",
+            "rating": 5,
+            "content": "Great Product, please can you make available to Australia again!",
+            "timestamp": "Reviewed in Australia September 17, 2023",
+            "is_verified": true,
+            "review_from": "Top reviews from other countries",
+            "product_attributes": "Flavor Name: Chocolate, Size: 11 Fl Oz (Pack of 12)"
+          }
+        ],
+        "category": [
+          {
+            "ladder": [
+              {
+                "url": "/grocery-breakfast-foods-snacks-organic/b/ref=dp_bc_1?ie=UTF8&node=16310101",
+                "name": "Grocery & Gourmet Food"
+              },
+              {
+                "url": "/Beverages-Coffee-Tea-Water-Grocery/b/ref=dp_bc_2?ie=UTF8&node=16310231",
+                "name": "Beverages"
+              },
+              {
+                "url": "/Cold-Beverages/b/ref=dp_bc_3?ie=UTF8&node=14808787011",
+                "name": "Bottled Beverages, Water & Drink Mixes"
+              },
+              {
+                "url": "/Meal-Replacement-Protein-Drinks/b/ref=dp_bc_4?ie=UTF8&node=11136975011",
+                "name": "Meal Replacement & Protein Drinks"
+              },
+              {
+                "url": "/Protein-Drinks/b/ref=dp_bc_5?ie=UTF8&node=5782436011",
+                "name": "Protein Drinks"
+              }
+            ]
+          }
+        ],
+        "currency": "USD",
+        "delivery": [
+          {
+            "date": {
+              "by": "Sunday, June 22"
+            },
+            "type": "FREE delivery"
+          },
+          {
+            "date": {
+              "by": "Friday, June 20"
+            },
+            "type": "get FREE delivery Prime members"
+          }
+        ],
+        "page_type": "Product",
+        "price_sns": 2,
+        "store_url": "/stores/Orgain/page/23B0D55F-4E42-4EB7-AAD7-235C4F96E4E3?is_byline_deeplink=true&deeplink=8E14EC89-E06D-4430-82B5-556AAF3382C6&redirect_store_id=23B0D55F-4E42-4EB7-AAD7-235C4F96E4E3&lp_asin=B00JTX7SH2&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto",
+        "variation": [
+          {
+            "asin": "B00JTX7SH2",
+            "selected": true,
+            "dimensions": {
+              "Size": "11 Fl Oz (Pack of 12)",
+              "Flavor Name": "Chocolate"
+            }
+          },
+          {
+            "asin": "B078159TND",
+            "selected": false,
+            "dimensions": {
+              "Size": "11 Fl Oz (Pack of 4)",
+              "Flavor Name": "Vanilla"
+            }
+          },
+          {
+            "asin": "B00JTX7SHC",
+            "selected": false,
+            "dimensions": {
+              "Size": "11 Fl Oz (Pack of 12)",
+              "Flavor Name": "Vanilla"
+            }
+          },
+          {
+            "asin": "B078K5NL9S",
+            "selected": false,
+            "dimensions": {
+              "Size": "11 Fl Oz (Pack of 4)",
+              "Flavor Name": "Chocolate"
+            }
+          }
+        ],
+        "has_videos": true,
+        "sales_rank": [
+          {
+            "rank": 552,
+            "ladder": [
+              {
+                "url": "/gp/bestsellers/grocery/ref=pd_zg_ts_grocery",
+                "name": "Grocery & Gourmet Food"
+              }
+            ]
+          },
+          {
+            "rank": 18,
+            "ladder": [
+              {
+                "url": "/gp/bestsellers/grocery/5782436011/ref=pd_zg_hrsr_grocery",
+                "name": "Protein Drinks"
+              }
+            ]
+          }
+        ],
+        "asin_in_url": "B00JTX7SH2",
+        "buy_it_with": [
+          {
+            "asin": "B003FDC2I2",
+            "price": 28.41,
+            "title": "Orgain Organic Nutritional Protein Shake, Vanilla Bean - 16g Grass Fed Whey Protein, Meal Replacement, 20 Vitamins & Minerals, Fruits & Vegetables, Gluten Free, Non-GMO, 11 Fl Oz (12 Pack)"
+          },
+          {
+            "asin": "B003FDG4K4",
+            "price": 28.41,
+            "title": "Orgain Organic Nutritional Protein Shake, Creamy Chocolate Fudge - 16g Grass Fed Whey Protein, Meal Replacement, 20 Vitamins & Minerals, Fruits & Vegetables, Gluten Free, Non-GMO, 11 Fl Oz (12 Pack)"
+          }
+        ],
+        "description": "For those in need of a shake that’s as delicious as it is nutritious, look no further. We’re serious about good, clean nutrition, and when we say “good” – we mean it in every sense of the word! It can’t just be good for you; it’s got to taste GOOD too (great actually)! These powerhouses were no exception and were designed to make plant-protein as smooth, creamy, and grit-free as possible, all while providing delicious and optimal all-in-one nutrition. Conveniently portable and packed with 16 grams of plant-based protein per serving, every shake is Certified USDA Organic and made with high-quality ingredients, like an organic blend of fruits and veggies powder, and 22 essential vitamins and minerals, including B12, Zinc, Vitamin C, and Vitamin D to help in immune support. You also won’t find any GMOs, carrageenan, soy, gluten, or artificial colors, flavors, sweeteners, or preservative in these nutritional powerhouses. Not to mention, they’re perfect for the busy professional, parent, athlete, or anyone needing a quick snack during their day and are available to enjoy in two enticing flavors: creamy chocolate and vanilla bean. Good, clean, and all-in-one nutrition ready for you to take it on the go, whenever and wherever you need it.",
+        "parent_asin": "B0DPB6DCMB",
+        "price_upper": 31.68,
+        "pricing_str": "New (2) from $31.68$31.68 FREE Shipping on orders over $35.00 shipped by Amazon.",
+        "pricing_url": "https://www.amazon.com/gp/offer-listing/B00JTX7SH2/ref=dp_olp_NEW_mbc?ie=UTF8&condition=NEW",
+        "manufacturer": "Orgain",
+        "max_quantity": 30,
+        "price_buybox": 31.68,
+        "product_name": "Orgain Organic Nutritional Vegan Protein Shake, Smooth Chocolate - 16g Plant Based Protein, Meal Replacement, 22 Vitamins & Minerals, Fruits & Vegetables, Gluten Free, Non-GMO, 11 Fl Oz (Pack of 12)",
+        "sales_volume": "5K+ bought in past month",
+        "bullet_points": "CLEANER INGREDIENTS: Orgain Vegan Nutritional Shakes serve up complete nutrition including 16g of organic plant-based protein, over 22 vitamins and minerals, 10 Organic fruits and vegetables powder (including Acai, Spinach, Kale) & 240 Calories per Serving\nHIGHER STANDARDS: Non-GMO, no carrageenan, gluten-free, no soy ingredients, no lactose or dairy ingredients, kosher, no artificial colors, flavors, sweeteners, or preservatives. Oh yeah, it's Certified USDA Organic, too.\nPOWERED BY PLANTS: Includes real, plant-based protein from pea and chia to help you take on your day. Every shake is made from hand-selected ingredients for maximum nutrition and a smooth, creamy, and grit-free experience.\nVITAMINS & MINERALS: Support your daily nutrition with an excellent source of Vitamin B12, Zinc, Vitamin C, Vitamin E, Biotin, Calcium & Niacin. We make shakes that give you the power of nutrition to help you stay fueled and full for your busy day.\nON THE GO NUTRITION: Ideal for healthy, on the go nourishment for men and women; These are great as a supplement to your diet and nutrition needs and perfect for busy lifestyles, meal replacement, a quick breakfast or snack, and pre or post workouts\nWHAT TO EXPECT: Includes 12 (11 Fl Oz) Orgain Organic Vegan Nutritional Shakes, Smooth Chocolate, Ready to Drink.",
+        "price_initial": 0,
+        "pricing_count": 1,
+        "reviews_count": 12007,
+        "sns_discounts": [
+          "5%",
+          "15%"
+        ],
+        "developer_info": [],
+        "price_shipping": 0,
+        "product_details": {
+          "asin": "B00JTX7SH2",
+          "manufacturer": "Orgain Inc.",
+          "country_of_origin": "USA",
+          "item_model_number": "851770003216",
+          "product_dimensions": "2.5 x 2.5 x 5.6 inches; 11 ounces",
+          "date_first_available": "April 21, 2014",
+          "is_discontinued_by_manufacturer": "No"
+        },
+        "featured_merchant": {
+          "link": "",
+          "name": "Amazon.com",
+          "seller_id": "",
+          "shipped_from": "Amazon.com",
+          "is_amazon_fulfilled": true
+        },
+        "is_prime_eligible": true,
+        "parse_status_code": 12000,
+        "review_ai_summary": "Customers find the protein shake to be a good source of protein and appreciate its plant-based ingredients, with one customer noting it's made with fruits and veggies. The product is filling, keeping customers satisfied for several hours, and they consider it high-quality. The taste receives mixed feedback, with some loving it while others find it just \"OK.\" The texture is generally smooth, though some customers describe it as grainy, and while some say it's gentle on their stomach, others report stomach discomfort. Value for money opinions are divided between those who find it excellent and those who consider it unaffordable.",
+        "product_dimensions": "2.5 x 2.5 x 5.6 inches; 11 ounces",
+        "discount_percentage": 5,
+        "price_strikethrough": 31.68,
+        "important_information": [
+          {
+            "title": "Safety Information",
+            "description": "This product is labelled to United States standards and may differ from similar products sold elsewhere in its ingredients, labeling and allergen warnings. If you experience any allergic reaction, please discontinue use."
+          },
+          {
+            "title": "Ingredients",
+            "description": "Filtered Water, Orgain Organic Protein Blend™ (Organic Pea Protein, Organic Chia Seeds), Organic Rice Dextrins, Organic Cane Sugar, Organic Natural Flavors, Organic High Oleic Sunflower Oil, Organic Alkalized Cocoa. Orgain Vitamin & Minerals Blend™, (Sodium Ascorbate, Magnesium Sulfate, Zinc Gluconate, Dl-Alpha Tocopheryl Acetate, Niacinamide, Vitamin A Palmitate, Potassium, Iodide, Copper Gluconate, Biotin, Calcium D-Pantothenate, Cyanocobalamin, Copper Gluconate, Biotin, Calcium D-Pantothenate, Cyanocobalamin, Ergocalciferol, Folic Acid, Thiamine Hydrochloride, Pyridoxine Hydrocloride, Riboflavin), Orgainc Rice Bran Extract, Tricalcium Phosphate, Trisodium Phosphate, Tripotassium Citrate, Potassium Chloride, Gellan Gum, Orgain Organic Fruit Blend™ (Orgainc Acai, Organic Apple, Organic Banana, Organic Blueberry, Organic Raspberry), Orgain Organic Veggie Blend™ (Organic Tomato, Organic Spinach, Organic Beet, Organic Carrot, Organic Kale), Natural Flavor"
+          },
+          {
+            "title": "Legal Disclaimer",
+            "description": "Statements regarding dietary supplements have not been evaluated by the FDA and are not intended to diagnose, treat, cure, or prevent any disease or health condition."
+          }
+        ],
+        "answered_questions_count": 0,
+        "rating_stars_distribution": [
+          {
+            "rating": 5,
+            "percentage": 70
+          },
+          {
+            "rating": 4,
+            "percentage": 13
+          },
+          {
+            "rating": 3,
+            "percentage": 7
+          },
+          {
+            "rating": 2,
+            "percentage": 3
+          },
+          {
+            "rating": 1,
+            "percentage": 7
+          }
+        ],
+        "frequently_bought_together": [
+          {
+            "asin": "B00JTX7SH2"
+          },
+          {
+            "asin": "B003FDC2I2"
+          },
+          {
+            "asin": "B003FDG4K4"
+          }
+        ]
+      },
+      "created_at": "2025-06-17 19:18:37",
+      "updated_at": "2025-06-17 19:18:41",
+      "page": 1,
+      "url": "https://www.amazon.com/dp/B00JTX7SH2?language=en_US",
+      "job_id": "7340820181859465217",
+      "is_render_forced": false,
+      "status_code": 200,
+      "parser_type": "",
+      "parser_preset": null
+    }
+  ],
+  "job": {
+    "callback_url": null,
+    "client_id": 79375,
+    "context": [
+      {
+        "key": "force_headers",
+        "value": false
+      },
+      {
+        "key": "force_cookies",
+        "value": false
+      },
+      {
+        "key": "hc_policy",
+        "value": true
+      },
+      {
+        "key": "autoselect_variant",
+        "value": false
+      },
+      {
+        "key": "check_empty_geo",
+        "value": null
+      },
+      {
+        "key": "safe_search",
+        "value": true
+      },
+      {
+        "key": "currency",
+        "value": null
+      }
+    ],
+    "created_at": "2025-06-17 19:18:37",
+    "domain": "com",
+    "geo_location": null,
+    "id": "7340820181859465217",
+    "limit": 10,
+    "locale": null,
+    "pages": 1,
+    "parse": true,
+    "parser_type": null,
+    "parser_preset": null,
+    "parsing_instructions": null,
+    "browser_instructions": null,
+    "render": null,
+    "xhr": false,
+    "markdown": false,
+    "url": null,
+    "query": "B00JTX7SH2",
+    "source": "amazon_product",
+    "start_page": 1,
+    "status": "done",
+    "storage_type": null,
+    "storage_url": null,
+    "subdomain": "www",
+    "content_encoding": "utf-8",
+    "updated_at": "2025-06-17 19:18:41",
+    "user_agent_type": "desktop",
+    "session_info": null,
+    "statuses": [],
+    "proxy_plan": null,
+    "client_notes": null,
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http://data.oxylabs.io/v1/queries/7340820181859465217",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http://data.oxylabs.io/v1/queries/7340820181859465217/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7340820181859465217/results/1/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http://data.oxylabs.io/v1/queries/7340820181859465217/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7340820181859465217/results/1/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7340820181859465217/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7340820181859465217/results/1/content?type=parsed"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
+}

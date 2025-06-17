@@ -16,7 +16,7 @@ class BatchResponse extends Data
         public readonly int $limit,
         public readonly int $pages,
         public readonly string $status,
-        /** @var Link[] $_links */
+        /** @var ResultLink[] $_links */
         public readonly ?array $_links = null,
         public readonly ?string $storage_type = null,
         public readonly ?string $storage_url = null,

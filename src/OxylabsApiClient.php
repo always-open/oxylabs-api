@@ -84,7 +84,7 @@ class OxylabsApiClient
     {
         $response = $this->makeRequest('amazon_product', $request->toArray());
 
-        return AmazonProductResponse::fromArray($response);
+        return AmazonProductResponse::from($response);
     }
 
     public function amazonSearch(AmazonSearchRequest $request): AmazonSearchResponse

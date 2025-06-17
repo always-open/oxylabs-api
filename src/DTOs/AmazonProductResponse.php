@@ -7,11 +7,9 @@ use Spatie\LaravelData\Data;
 class AmazonProductResponse extends Data
 {
     public function __construct(
-        public readonly array $data
-    ) {}
-
-    public static function fromArray(array $data): self
-    {
-        return new self($data);
+        /* @var AmazonProductResult[] $results */
+        public readonly array $results,
+        public readonly Job $job,
+    ) {
     }
 }

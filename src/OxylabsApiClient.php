@@ -56,7 +56,7 @@ class OxylabsApiClient
         };
     }
 
-    protected function getBaseRequest() : Factory|PendingRequest
+    protected function getBaseRequest(): Factory|PendingRequest
     {
         return Http::withHeaders($this->getAuthHeader());
     }
@@ -82,7 +82,7 @@ class OxylabsApiClient
     /**
      * @throws ConnectionException
      */
-    public function getResult(string $job_id) : array
+    public function getResult(string $job_id): array
     {
         $response = $this->getBaseRequest()
             ->get($this->baseUrl."/queries/$job_id/results");
@@ -97,7 +97,7 @@ class OxylabsApiClient
     /**
      * @throws ConnectionException
      */
-    public function getAmazonProductResult(string $job_id) : AmazonProductResponse
+    public function getAmazonProductResult(string $job_id): AmazonProductResponse
     {
         $response = $this->getResult($job_id);
 

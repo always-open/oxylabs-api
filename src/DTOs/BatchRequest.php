@@ -10,14 +10,14 @@ class BatchRequest extends Data
      * @throws \Exception
      */
     public function __construct(
-        public readonly string $source,
-        public readonly ?array $query = null,
-        public readonly ?array $url = null,
-        public readonly string $asin,
-        public readonly bool $parse = true,
+        public readonly string  $source,
+        public readonly string  $domain,
+        public readonly ?array  $query = null,
+        public readonly ?array  $url = null,
+        public readonly bool    $parse = true,
         public readonly ?string $callback_url = null,
         public readonly ?string $geo_location = null,
-        public readonly ?array $context = null,
+        public readonly ?array  $context = null,
     ) {
         if (
             ($this->query === null && $this->url === null)
@@ -33,8 +33,11 @@ class BatchRequest extends Data
         return array_filter([
             'source' => $this->source,
             'domain' => $this->domain,
-            'asin' => $this->asin,
+            'query' => $this->query,
+            'url' => $this->url,
             'parse' => $this->parse,
+            'callback_url' => $this->callback_url,
+            'geo_location' => $this->geo_location,
             'context' => $this->context,
         ]);
     }

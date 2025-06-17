@@ -10,6 +10,8 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
+use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
+use AlwaysOpen\OxylabsApi\DTOs\BatchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
@@ -64,6 +66,18 @@ class OxylabsApiClient
         }
 
         return $response->json();
+    }
+
+    protected function makeBatchRequest(BatchRequest $payload): BatchResponse
+    {
+        $response = Http::withHeaders($this->getAuthHeader())
+            ->post($this->baseUrl.'/queries/batch', $payload->toArray());
+
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
+        }
+
+        return BatchResponse::from($response->json());
     }
 
     public function amazonProduct(AmazonProductRequest $request): AmazonProductResponse

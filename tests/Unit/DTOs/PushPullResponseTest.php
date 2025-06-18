@@ -19,6 +19,6 @@ class PushPullResponseTest extends BaseTest
     {
         $batch = PushPullJobResponse::from($this->getFixtureJsonContent('push_pull_job.json'));
         $this->assertInstanceOf(PushPullJobResponse::class, $batch);
-        $this->assertEquals('12345678900987654321', $batch->id);
+        $this->assertEquals('7341123701204603905', $batch->id);
     }
 }

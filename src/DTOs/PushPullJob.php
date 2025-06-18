@@ -7,7 +7,7 @@ use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
 
-class Job extends Data
+class PushPullJob extends Data
 {
     public function __construct(
         public readonly int $client_id,
@@ -48,4 +48,19 @@ class Job extends Data
         /* @var ResultLink[]|null */
         public readonly ?array $_links = null,
     ) {}
+
+    public function isDone() : bool
+    {
+        return strtolower($this->status) === 'done';
+    }
+
+    public function isPending() : bool
+    {
+        return strtolower($this->status) === 'pending';
+    }
+
+    public function isFaulted() : bool
+    {
+        return strtolower($this->status) === 'faulted';
+    }
 }

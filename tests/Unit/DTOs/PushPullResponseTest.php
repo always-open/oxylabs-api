@@ -2,12 +2,9 @@
 
 namespace AlwaysOpen\OxylabsApi\Tests\Unit\DTOs;
 
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJobResponse;
-use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
-use Orchestra\Testbench\TestCase;
 
 class PushPullResponseTest extends BaseTest
 {

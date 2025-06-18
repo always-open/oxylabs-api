@@ -19,7 +19,13 @@ class PushPullJobResponse extends Data
         public readonly string $id,
         public readonly int $limit,
         public readonly int $pages,
+        public readonly bool $parse,
         public readonly string $status,
+        public readonly ?string $render = null,
+        public readonly ?string $url = null,
+        public readonly ?string $query = null,
+        public readonly ?string $source = null,
+        public readonly ?int $start_page = null,
         /** @var ResultLink[] $_links */
         public readonly ?array $_links = null,
         public readonly ?string $storage_type = null,
@@ -32,7 +38,5 @@ class PushPullJobResponse extends Data
         public readonly ?string $callback_url = null,
         public readonly ?string $client_notes = null,
         public readonly array|int|null $statuses = null,
-        /* @var ResultLink[]|null */
-        public readonly ?array $links = null,
     ) {}
 }

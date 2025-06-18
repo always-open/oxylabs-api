@@ -90,7 +90,7 @@
       "pages": 1,
       "parse": false,
       "render": null,
-      "url": "https://www.example.com",
+      "query": "B012345435",
       "source": "universal",
       "start_page": 1,
       "status": "pending",

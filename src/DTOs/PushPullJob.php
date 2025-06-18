@@ -49,17 +49,17 @@ class PushPullJob extends Data
         public readonly ?array $_links = null,
     ) {}
 
-    public function isDone() : bool
+    public function isDone(): bool
     {
         return strtolower($this->status) === 'done';
     }
 
-    public function isPending() : bool
+    public function isPending(): bool
     {
         return strtolower($this->status) === 'pending';
     }
 
-    public function isFaulted() : bool
+    public function isFaulted(): bool
     {
         return strtolower($this->status) === 'faulted';
     }

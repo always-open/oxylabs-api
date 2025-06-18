@@ -3,21 +3,15 @@
 namespace AlwaysOpen\OxylabsApi;
 
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
 use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
-use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
-use AlwaysOpen\OxylabsApi\DTOs\PushPullJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
-use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\PendingRequest;
@@ -38,8 +32,7 @@ class OxylabsApiClient
         ?string $username = null,
         ?string $password = null,
         ?string $authMethod = null,
-    )
-    {
+    ) {
         $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url', 'https://data.oxylabs.io/v1/'), '/');
         $this->username = $username ?? config('oxylabs-api.username') ?? '';
         $this->password = $password ?? config('oxylabs-api.password') ?? '';
@@ -50,10 +43,10 @@ class OxylabsApiClient
     {
         return match ($this->authMethod) {
             'basic' => [
-                'Authorization' => 'Basic ' . base64_encode($this->username . ':' . $this->password),
+                'Authorization' => 'Basic '.base64_encode($this->username.':'.$this->password),
             ],
             'bearer' => [
-                'Authorization' => 'Bearer ' . $this->password,
+                'Authorization' => 'Bearer '.$this->password,
             ],
             default => throw new \InvalidArgumentException('Invalid authentication method')
         };
@@ -70,13 +63,13 @@ class OxylabsApiClient
     protected function makeRequest(string $source, array $payload): PushPullJob
     {
         $response = $this->getBaseRequest()
-            ->post($this->baseUrl . '/queries', [
+            ->post($this->baseUrl.'/queries', [
                 'source' => $source,
                 ...$payload,
             ]);
 
-        if (!$response->successful()) {
-            throw new \RuntimeException('API request failed: ' . $response->body());
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return PushPullJob::from($response->json());
@@ -88,10 +81,10 @@ class OxylabsApiClient
     public function getResult(string $job_id): array
     {
         $response = $this->getBaseRequest()
-            ->get($this->baseUrl . "/queries/$job_id/results");
+            ->get($this->baseUrl."/queries/$job_id/results");
 
-        if (!$response->successful()) {
-            throw new \RuntimeException('API request failed: ' . $response->body());
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return $response->json();
@@ -110,23 +103,22 @@ class OxylabsApiClient
     public function getPushPullJob(string $job_id): PushPullJob
     {
         $response = $this->getBaseRequest()
-            ->get($this->baseUrl . "/queries/$job_id");
+            ->get($this->baseUrl."/queries/$job_id");
 
-        if (!$response->successful()) {
-            throw new \RuntimeException('API request failed: ' . $response->body());
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return PushPullJob::from($response->json());
     }
 
     public function getPushPullResults(
-        string  $job_id,
-        bool    $check_status = false,
-        int     $status_check_limit = 5,
-        int     $status_wait_seconds = 3,
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
         ?string $type = null
-    ): array
-    {
+    ): array {
         if ($check_status) {
             $count = 0;
             do {
@@ -140,10 +132,10 @@ class OxylabsApiClient
         }
 
         $response = $this->getBaseRequest()
-            ->get($this->baseUrl . "/queries/$job_id/results" . ($type ? "/?type=$type" : ""));
+            ->get($this->baseUrl."/queries/$job_id/results".($type ? "/?type=$type" : ''));
 
-        if (!$response->successful()) {
-            throw new \RuntimeException('API request failed: ' . $response->body());
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return $response->json();
@@ -151,11 +143,10 @@ class OxylabsApiClient
 
     public function getAmazonProductResults(
         string $job_id,
-        bool   $check_status = false,
-        int    $status_check_limit = 5,
-        int    $status_wait_seconds = 3,
-    ): AmazonProductResponse
-    {
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+    ): AmazonProductResponse {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
 
         return AmazonProductResponse::from($response);
@@ -167,10 +158,10 @@ class OxylabsApiClient
     public function makeBatchRequest(BatchRequest $payload): PushPullBatchJobResponse
     {
         $response = $this->getBaseRequest()
-            ->post($this->baseUrl . '/queries/batch', $payload->toArray());
+            ->post($this->baseUrl.'/queries/batch', $payload->toArray());
 
-        if (!$response->successful()) {
-            throw new \RuntimeException('API request failed: ' . $response->body());
+        if (! $response->successful()) {
+            throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return PushPullBatchJobResponse::from($response->json());

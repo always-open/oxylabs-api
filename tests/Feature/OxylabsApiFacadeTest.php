@@ -26,7 +26,7 @@ class OxylabsApiFacadeTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7341123701204603905/results' => Http::response($this->getFixtureJsonContent('push_pull_job_result.json'), 200)
+            'data.oxylabs.io/v1/queries/7341123701204603905/results' => Http::response($this->getFixtureJsonContent('push_pull_job_result.json'), 200),
         ]);
 
         $request = new AmazonProductRequest(
@@ -45,57 +45,57 @@ class OxylabsApiFacadeTest extends BaseTest
         $this->assertCount(1, $result_response->results);
     }
 
-//    public function test_amazon_search()
-//    {
-//        Http::fake([
-//            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
-//        ]);
-//
-//        $request = new AmazonSearchRequest(
-//            source: 'amazon',
-//            domain: 'com',
-//            query: 'test'
-//        );
-//
-//        $response = OxylabsApiFacade::amazonSearch($request);
-//
-//        $this->assertInstanceOf(AmazonSearchResponse::class, $response);
-//        $this->assertEquals(['test' => 'data'], $response->data);
-//    }
-//
-//    public function test_amazon_pricing()
-//    {
-//        Http::fake([
-//            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
-//        ]);
-//
-//        $request = new AmazonPricingRequest(
-//            source: 'amazon',
-//            domain: 'com',
-//            asin: 'B0000000'
-//        );
-//
-//        $response = OxylabsApiFacade::amazonPricing($request);
-//
-//        $this->assertInstanceOf(AmazonPricingResponse::class, $response);
-//        $this->assertEquals(['test' => 'data'], $response->data);
-//    }
-//
-//    public function test_amazon_sellers()
-//    {
-//        Http::fake([
-//            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
-//        ]);
-//
-//        $request = new AmazonSellersRequest(
-//            source: 'amazon',
-//            domain: 'com',
-//            query: 'test'
-//        );
-//
-//        $response = OxylabsApiFacade::amazonSellers($request);
-//
-//        $this->assertInstanceOf(AmazonSellersResponse::class, $response);
-//        $this->assertEquals(['test' => 'data'], $response->data);
-//    }
+    //    public function test_amazon_search()
+    //    {
+    //        Http::fake([
+    //            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
+    //        ]);
+    //
+    //        $request = new AmazonSearchRequest(
+    //            source: 'amazon',
+    //            domain: 'com',
+    //            query: 'test'
+    //        );
+    //
+    //        $response = OxylabsApiFacade::amazonSearch($request);
+    //
+    //        $this->assertInstanceOf(AmazonSearchResponse::class, $response);
+    //        $this->assertEquals(['test' => 'data'], $response->data);
+    //    }
+    //
+    //    public function test_amazon_pricing()
+    //    {
+    //        Http::fake([
+    //            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
+    //        ]);
+    //
+    //        $request = new AmazonPricingRequest(
+    //            source: 'amazon',
+    //            domain: 'com',
+    //            asin: 'B0000000'
+    //        );
+    //
+    //        $response = OxylabsApiFacade::amazonPricing($request);
+    //
+    //        $this->assertInstanceOf(AmazonPricingResponse::class, $response);
+    //        $this->assertEquals(['test' => 'data'], $response->data);
+    //    }
+    //
+    //    public function test_amazon_sellers()
+    //    {
+    //        Http::fake([
+    //            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
+    //        ]);
+    //
+    //        $request = new AmazonSellersRequest(
+    //            source: 'amazon',
+    //            domain: 'com',
+    //            query: 'test'
+    //        );
+    //
+    //        $response = OxylabsApiFacade::amazonSellers($request);
+    //
+    //        $this->assertInstanceOf(AmazonSellersResponse::class, $response);
+    //        $this->assertEquals(['test' => 'data'], $response->data);
+    //    }
 }

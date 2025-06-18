@@ -10,19 +10,11 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
-use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiClientTest extends BaseTest
 {
-    protected function getPackageProviders($app)
-    {
-        return [
-            OxylabsApiServiceProvider::class,
-        ];
-    }
-
     public function test_amazon_product()
     {
         Http::fake([

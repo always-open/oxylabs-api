@@ -1,0 +1,116 @@
+{
+  "queries": [
+    {
+      "callback_url": "https://your.callback.url",
+      "client_id": 5,
+      "context": [
+        {
+          "key": "results_language",
+          "value": null
+        },
+        {
+          "key": "safe_search",
+          "value": null
+        },
+        {
+          "key": "tbm",
+          "value": null
+        },
+        {
+          "key": "cr",
+          "value": null
+        },
+        {
+          "key": "filter",
+          "value": null
+        }
+      ],
+      "created_at": "2024-06-26 00:00:01",
+      "domain": "com",
+      "geo_location": "United States",
+      "id": "12345678900987654321",
+      "limit": 10,
+      "locale": null,
+      "pages": 1,
+      "parse": false,
+      "render": null,
+      "url": "https://www.example.com",
+      "source": "universal",
+      "start_page": 1,
+      "status": "pending",
+      "storage_type": "s3",
+      "storage_url": "YOUR_BUCKET_NAME/12345678900987654321.json",
+      "subdomain": "www",
+      "updated_at": "2024-06-26 00:00:01",
+      "user_agent_type": "desktop",
+      "_links": [
+        {
+          "rel": "self",
+          "href": "http://data.oxylabs.io/v1/queries/12345678900987654321",
+          "method": "GET"
+        },
+        {
+          "rel": "results",
+          "href": "http://data.oxylabs.io/v1/queries/12345678900987654321/results",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "callback_url": "https://your.callback.url",
+      "client_id": 5,
+      "context": [
+        {
+          "key": "results_language",
+          "value": null
+        },
+        {
+          "key": "safe_search",
+          "value": null
+        },
+        {
+          "key": "tbm",
+          "value": null
+        },
+        {
+          "key": "cr",
+          "value": null
+        },
+        {
+          "key": "filter",
+          "value": null
+        }
+      ],
+      "created_at": "2024-06-26 00:00:02",
+      "domain": "com",
+      "geo_location": "United States",
+      "id": "12345678900987654325",
+      "limit": 10,
+      "locale": null,
+      "pages": 1,
+      "parse": false,
+      "render": null,
+      "url": "https://www.example.com",
+      "source": "universal",
+      "start_page": 1,
+      "status": "pending",
+      "storage_type": "s3",
+      "storage_url": "YOUR_BUCKET_NAME/12345678900987654325.json",
+      "subdomain": "www",
+      "updated_at": "2024-06-26 00:00:01",
+      "user_agent_type": "desktop",
+      "_links": [
+        {
+          "rel": "self",
+          "href": "http://data.oxylabs.io/v1/queries/12345678900987654325",
+          "method": "GET"
+        },
+        {
+          "rel": "results",
+          "href": "http://data.oxylabs.io/v1/queries/12345678900987654325/results",
+          "method": "GET"
+        }
+      ]
+    }
+  ]
+}

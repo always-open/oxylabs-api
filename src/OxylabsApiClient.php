@@ -11,9 +11,9 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
 use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
-use AlwaysOpen\OxylabsApi\DTOs\BatchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchResponse;
+use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use Illuminate\Http\Client\ConnectionException;
@@ -107,7 +107,7 @@ class OxylabsApiClient
     /**
      * @throws ConnectionException
      */
-    public function makeBatchRequest(BatchRequest $payload): BatchResponse
+    public function makeBatchRequest(BatchRequest $payload): PushPullBatchJobResponse
     {
         $response = $this->getBaseRequest()
             ->post($this->baseUrl.'/queries/batch', $payload->toArray());
@@ -116,7 +116,7 @@ class OxylabsApiClient
             throw new \RuntimeException('API request failed: '.$response->body());
         }
 
-        return BatchResponse::from($response->json());
+        return PushPullBatchJobResponse::from($response->json());
     }
 
     public function amazonProduct(AmazonProductRequest $request): AmazonProductResponse

@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
@@ -25,7 +26,7 @@ class PushPullJobResponse extends Data
         public readonly ?string $query = null,
         public readonly ?string $source = null,
         public readonly ?int $start_page = null,
-        /** @var ResultLink[] $_links */
+        #[DataCollectionOf(ResultLink::class)]
         public readonly ?array $_links = null,
         public readonly ?string $storage_type = null,
         public readonly ?string $storage_url = null,

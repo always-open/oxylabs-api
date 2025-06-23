@@ -3,6 +3,7 @@
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
 use Illuminate\Support\Carbon;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
@@ -45,7 +46,7 @@ class PushPullJob extends Data
         public readonly ?array $statuses = null,
         public readonly ?string $proxy_plan = null,
         public readonly ?string $client_notes = null,
-        /* @var ResultLink[]|null */
+        #[DataCollectionOf(ResultLink::class)]
         public readonly ?array $_links = null,
     ) {}
 

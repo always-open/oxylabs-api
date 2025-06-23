@@ -4,21 +4,17 @@ namespace AlwaysOpen\OxylabsApi\Tests\Unit\DTOs;
 
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
+use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Orchestra\Testbench\TestCase;
 
-class AmazonPricingResponseTest extends TestCase
+class AmazonPricingResponseTest extends BaseTest
 {
-    protected function getPackageProviders($app)
-    {
-        return [OxylabsApiServiceProvider::class];
-    }
-
     public function test_from_array()
     {
-        $data = ['test' => 'data'];
+        $data = $this->getFixtureJsonContent('amazon_pricing_results.json');
 
-        $response = AmazonPricingResponse::fromArray($data);
+        $response = AmazonPricingResponse::from($data);
 
-        $this->assertEquals($data, $response->data);
+        $this->assertEquals($data['results'][0]['url'], $response->results[0]->url);
     }
 }

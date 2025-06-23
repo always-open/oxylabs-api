@@ -4,15 +4,11 @@ namespace AlwaysOpen\OxylabsApi\Tests\Unit\DTOs;
 
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
+use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Orchestra\Testbench\TestCase;
 
-class AmazonProductRequestTest extends TestCase
+class AmazonProductRequestTest extends BaseTest
 {
-    protected function getPackageProviders($app)
-    {
-        return [OxylabsApiServiceProvider::class];
-    }
-
     public function test_to_array()
     {
         $request = new AmazonProductRequest(

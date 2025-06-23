@@ -3,9 +3,7 @@
 namespace AlwaysOpen\OxylabsApi\Tests\Unit\DTOs;
 
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
-use AlwaysOpen\OxylabsApi\OxylabsApiServiceProvider;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
-use Orchestra\Testbench\TestCase;
 
 class AmazonPricingResponseTest extends BaseTest
 {

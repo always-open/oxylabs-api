@@ -2,10 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
 
 class AmazonPricingResultContent extends Data

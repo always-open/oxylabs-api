@@ -45,7 +45,7 @@ class AmazonProductResultContent extends Data
         public readonly ?int $pricing_count = null,
         public readonly ?string $pricing_url = null,
         public readonly ?string $pricing_str = null,
-        public readonly FeaturedMerchant|null $featured_merchant = null,
+        public readonly ?FeaturedMerchant $featured_merchant = null,
         public readonly ?array $sales_rank = null,
         public readonly ?array $sns_discounts = null,
         public readonly ?array $developer_info = null,

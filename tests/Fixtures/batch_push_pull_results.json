@@ -2,53 +2,6 @@
   "results": [
     {
       "content": {
-        "ads": [
-          {
-            "pos": 1,
-            "asin": "B01N14Z8KU",
-            "type": "organic_also_viewed",
-            "price": 269.99,
-            "title": "Yakima Upright Bike Rack Mount, Car and SUV Roof Bicycle Carrier with Low Profile Tray and Universal Mounting Hardware, HighR",
-            "images": [
-              "https:\/\/m.media-amazon.com\/images\/I\/71hwK02XT8L._AC_SS57_.jpg"
-            ],
-            "rating": 4.5,
-            "location": "carousel",
-            "price_upper": 269.99,
-            "reviews_count": 45,
-            "is_prime_eligible": false
-          },
-          {
-            "pos": 2,
-            "asin": "B003BAHTC8",
-            "type": "organic_also_viewed",
-            "price": 228.95,
-            "title": "Yakima Rooftop Bike Rack Mount, Heavy-Duty Car & SUV Roof Carrier, FrontLoader, Black - Bicycle Storage Equipment and Accesso",
-            "images": [
-              "https:\/\/m.media-amazon.com\/images\/I\/61E09mkUbxL._AC_SS57_.jpg"
-            ],
-            "rating": 4.3,
-            "location": "carousel",
-            "price_upper": 228.95,
-            "reviews_count": 43,
-            "is_prime_eligible": false
-          },
-          {
-            "pos": 3,
-            "asin": "B07M93XCFX",
-            "type": "organic_also_viewed",
-            "price": 349.95,
-            "title": "Thule ProRide XT Roof Bike Rack",
-            "images": [
-              "https:\/\/m.media-amazon.com\/images\/I\/81yWlh+3HML._AC_SS57_.jpg"
-            ],
-            "rating": 4.3,
-            "location": "carousel",
-            "price_upper": 349.95,
-            "reviews_count": 43,
-            "is_prime_eligible": false
-          }
-        ],
         "url": "https:\/\/www.amazon.com\/dp\/B0CYVN8CCQ?language=en_US",
         "asin": "B0CYVN8CCQ",
         "page": 1,
@@ -329,11 +282,11 @@
           }
         ]
       },
-      "created_at": "2025-06-23 17:56:37",
-      "updated_at": "2025-06-23 17:56:40",
+      "created_at": "2025-06-23 17:59:24",
+      "updated_at": "2025-06-23 17:59:27",
       "page": 1,
       "url": "https:\/\/www.amazon.com\/dp\/B0CYVN8CCQ?language=en_US",
-      "job_id": "7342973874281147393",
+      "job_id": "7342974573689724929",
       "is_render_forced": false,
       "status_code": 200,
       "parser_type": "",
@@ -373,10 +326,10 @@
         "value": null
       }
     ],
-    "created_at": "2025-06-23 17:56:37",
+    "created_at": "2025-06-23 17:59:24",
     "domain": "com",
     "geo_location": "90210",
-    "id": "7342973874281147393",
+    "id": "7342974573689724929",
     "limit": 10,
     "locale": null,
     "pages": 1,
@@ -397,7 +350,7 @@
     "storage_url": null,
     "subdomain": "www",
     "content_encoding": "utf-8",
-    "updated_at": "2025-06-23 17:56:40",
+    "updated_at": "2025-06-23 17:59:27",
     "user_agent_type": "desktop",
     "session_info": null,
     "statuses": [],
@@ -406,42 +359,42 @@
     "_links": [
       {
         "rel": "self",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929",
         "method": "GET"
       },
       {
         "rel": "results",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929\/results",
         "method": "GET"
       },
       {
         "rel": "results-content",
         "href_list": [
-          "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results\/1\/content"
+          "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929\/results\/1\/content"
         ],
         "method": "GET"
       },
       {
         "rel": "results-html",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results?type=raw",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929\/results?type=raw",
         "method": "GET"
       },
       {
         "rel": "results-content-html",
         "href_list": [
-          "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results\/1\/content?type=raw"
+          "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929\/results\/1\/content?type=raw"
         ],
         "method": "GET"
       },
       {
         "rel": "results-parsed",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results?type=parsed",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929\/results?type=parsed",
         "method": "GET"
       },
       {
         "rel": "results-content-parsed",
         "href_list": [
-          "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results\/1\/content?type=parsed"
+          "http:\/\/data.oxylabs.io\/v1\/queries\/7342974573689724929\/results\/1\/content?type=parsed"
         ],
         "method": "GET"
       }

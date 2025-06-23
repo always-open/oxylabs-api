@@ -26,7 +26,7 @@ class OxylabsApiFacadeTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7341123701204603905/results' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
         ]);
 
         $request = new AmazonProductRequest(
@@ -37,11 +37,11 @@ class OxylabsApiFacadeTest extends BaseTest
 
         $response = OxylabsApiFacade::amazonProduct($request);
 
-        $this->assertEquals('7341123701204603905', $response->id);
+        $this->assertEquals('7342973874281147393', $response->id);
 
         $result_response = OxylabsApiFacade::getAmazonProductResult($response->id);
 
-        $this->assertEquals('7341123701204603905', $result_response->job->id);
+        $this->assertEquals('7342973874281147393', $result_response->job->id);
         $this->assertCount(1, $result_response->results);
     }
 

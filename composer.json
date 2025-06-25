@@ -1,10 +1,12 @@
 {
     "name": "always-open/oxylabs-api",
-    "description": "This is my package oxylabs-api",
+    "description": "Package to integrate with Oxylabs APIs",
     "keywords": [
         "always-open",
         "laravel",
-        "oxylabs-api"
+        "oxylabs-api",
+        "oxylabs",
+        "proxies"
     ],
     "homepage": "https://github.com/always-open/oxylabs-api",
     "license": "MIT",
@@ -16,16 +18,16 @@
         }
     ],
     "require": {
-        "php": "^8.3.1",
-        "illuminate/contracts": "^10.0||^11.0",
-        "spatie/laravel-data": "^4.15",
+        "php": "~8.3.1|~8.4.1",
+        "illuminate/contracts": "~10.0||~11.0||~12.0",
+        "spatie/laravel-data": "~4.16",
         "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
         "larastan/larastan": "^2.9||^3.0",
-        "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
+        "orchestra/testbench": "~10.0||~9.0||~8.22",
         "pestphp/pest": "^3.0",
         "pestphp/pest-plugin-arch": "^3.0",
         "pestphp/pest-plugin-laravel": "^3.0",

@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
+use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
@@ -9,6 +10,7 @@ use Spatie\LaravelData\Data;
 
 class AmazonProductResultContent extends Data
 {
+    use ParseStatus;
     public function __construct(
         public readonly string $url,
         public readonly int $page,

@@ -2,7 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\Enums;
 
-enum APIStatus : int
+enum APIStatus: int
 {
     case OK = 200;
     case ACCEPTED = 202;

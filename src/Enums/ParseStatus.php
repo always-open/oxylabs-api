@@ -2,7 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\Enums;
 
-enum ParseStatus : int
+enum ParseStatus: int
 {
     case SUCCESS = 12000;
     case FAILURE_COULD_NOT_PARSE = 12002;
@@ -14,5 +14,4 @@ enum ParseStatus : int
     case FAILURE_CONTENT_MISSING = 12008;
     case FAILURE_PRODUCT_NOT_FOUND = 12009;
 
-    
 }

@@ -11,6 +11,7 @@ use Spatie\LaravelData\Data;
 class AmazonProductResultContent extends Data
 {
     use ParseStatus;
+
     public function __construct(
         public readonly string $url,
         public readonly int $page,

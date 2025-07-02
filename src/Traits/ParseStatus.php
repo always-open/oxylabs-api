@@ -2,7 +2,8 @@
 
 namespace AlwaysOpen\OxylabsApi\Traits;
 
-use \AlwaysOpen\OxylabsApi\Enums\ParseStatus as ParseStatusEnum;
+use AlwaysOpen\OxylabsApi\Enums\ParseStatus as ParseStatusEnum;
+
 trait ParseStatus
 {
     public function getParseStatusCode(): ParseStatusEnum

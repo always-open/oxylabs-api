@@ -83,8 +83,7 @@ class OxylabsApiClient
     public function getResult(
         string $job_id,
         ?string $type = null,
-    ): array
-    {
+    ): array {
         $response = $this->getBaseRequest()
             ->get($this->baseUrl."/queries/$job_id/results".($type ? "/?type=$type" : ''));
 
@@ -154,8 +153,7 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
-    ): AmazonPricingResponse
-    {
+    ): AmazonPricingResponse {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
 
         return AmazonPricingResponse::from($response);
@@ -169,8 +167,7 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
-    ): AmazonSellerResponse
-    {
+    ): AmazonSellerResponse {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
 
         return AmazonSellerResponse::from($response);

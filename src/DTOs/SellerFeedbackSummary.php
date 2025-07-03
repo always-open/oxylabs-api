@@ -11,9 +11,7 @@ class SellerFeedbackSummary extends Data
         public readonly int|string $_90_days,
         public readonly int|string $_all_time,
         public readonly int|string $_12_months,
-    )
-    {
-    }
+    ) {}
 
     public function toArray(): array
     {

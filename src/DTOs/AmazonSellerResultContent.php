@@ -9,6 +9,7 @@ use Spatie\LaravelData\Data;
 class AmazonSellerResultContent extends Data
 {
     use ParseStatus;
+
     public function __construct(
         public readonly string $url,
         public readonly string $query,

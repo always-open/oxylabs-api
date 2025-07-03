@@ -25,7 +25,7 @@ class OxylabsApiFacadeTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
         ]);
 
         $request = new AmazonProductRequest(

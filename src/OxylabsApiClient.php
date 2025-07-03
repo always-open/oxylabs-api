@@ -80,46 +80,19 @@ class OxylabsApiClient
     /**
      * @throws ConnectionException
      */
-    public function getResult(string $job_id): array
+    public function getResult(
+        string $job_id,
+        ?string $type = null,
+    ): array
     {
         $response = $this->getBaseRequest()
-            ->get($this->baseUrl."/queries/$job_id/results");
+            ->get($this->baseUrl."/queries/$job_id/results".($type ? "/?type=$type" : ''));
 
         if (! $response->successful()) {
             throw new \RuntimeException('API request failed: '.$response->body());
         }
 
         return $response->json();
-    }
-
-    /**
-     * @throws ConnectionException
-     */
-    public function getAmazonProductResult(string $job_id): AmazonProductResponse
-    {
-        $response = $this->getResult($job_id);
-
-        return AmazonProductResponse::from($response);
-    }
-
-    /**
-     * @throws ConnectionException
-     */
-    public function getAmazonPricingResult(string $job_id): AmazonPricingResponse
-    {
-        $response = $this->getResult($job_id);
-
-        return AmazonPricingResponse::from($response);
-    }
-
-    /**
-     * @throws ConnectionException
-     */
-    public function getAmazonSellerResult(string $job_id): AmazonSellerResponse
-    {
-        $response = $this->getResult($job_id);
-
-        return AmazonSellerResponse::from($response);
     }
 
     public function getPushPullJob(string $job_id): PushPullJob
@@ -134,12 +107,15 @@ class OxylabsApiClient
         return PushPullJob::from($response->json());
     }
 
+    /**
+     * @throws ConnectionException
+     */
     public function getPushPullResults(
         string $job_id,
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
-        ?string $type = null
+        ?string $type = null,
     ): array {
         if ($check_status) {
             $count = 0;
@@ -153,17 +129,13 @@ class OxylabsApiClient
             } while ($job->isPending() && $count < $status_check_limit);
         }
 
-        $response = $this->getBaseRequest()
-            ->get($this->baseUrl."/queries/$job_id/results".($type ? "/?type=$type" : ''));
-
-        if (! $response->successful()) {
-            throw new \RuntimeException('API request failed: '.$response->body());
-        }
-
-        return $response->json();
+        return $this->getResult($job_id, $type);
     }
 
-    public function getAmazonProductResults(
+    /**
+     * @throws ConnectionException
+     */
+    public function getAmazonProductResult(
         string $job_id,
         bool $check_status = false,
         int $status_check_limit = 5,
@@ -172,6 +144,36 @@ class OxylabsApiClient
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
 
         return AmazonProductResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getAmazonPricingResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+    ): AmazonPricingResponse
+    {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+
+        return AmazonPricingResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getAmazonSellerResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+    ): AmazonSellerResponse
+    {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+
+        return AmazonSellerResponse::from($response);
     }
 
     /**

@@ -46,6 +46,7 @@ class PushPullJob extends Data
         public readonly ?array $statuses = null,
         public readonly ?string $proxy_plan = null,
         public readonly ?string $client_notes = null,
+        /* @var ResultLink[] $_links */
         #[DataCollectionOf(ResultLink::class)]
         public readonly ?array $_links = null,
     ) {}

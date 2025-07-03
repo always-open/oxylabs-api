@@ -2,7 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\Enums;
 
-enum CloudStorageUploadStatus : int
+enum CloudStorageUploadStatus: int
 {
     case UNEXPECTED_EXCEPTION = 10001;
     case UPLOAD_SUCCESS = 13000;

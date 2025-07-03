@@ -17,6 +17,5 @@ class SellerFeedbackSummaryTable extends Data
         public readonly SellerFeedbackSummary $negative,
         #[WithCast(SellerFeedbackSummaryCaster::class)]
         public readonly SellerFeedbackSummary $positive,
-    ) {
-    }
+    ) {}
 }

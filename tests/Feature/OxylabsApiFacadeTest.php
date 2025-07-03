@@ -8,7 +8,6 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSellerResponse;
 use AlwaysOpen\OxylabsApi\OxylabsApiFacade;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Support\Facades\Http;

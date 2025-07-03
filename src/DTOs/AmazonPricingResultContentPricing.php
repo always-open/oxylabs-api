@@ -17,6 +17,7 @@ class AmazonPricingResultContentPricing extends Data
         public readonly string $seller_link,
         public readonly int $rating_count,
         public readonly float $price_shipping,
+        /* @var AmazonDeliveryOption[] $delivery_options */
         #[DataCollectionOf(AmazonDeliveryOption::class)]
         public readonly array $delivery_options,
     ) {}

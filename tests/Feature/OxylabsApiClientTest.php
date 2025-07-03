@@ -60,25 +60,27 @@ class OxylabsApiClientTest extends BaseTest
     //        $this->assertEquals(['test' => 'data'], $response->data);
     //    }
 
-    //    public function test_amazon_pricing()
-    //    {
-    //        Http::fake([
-    //            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
-    //        ]);
-    //
-    //        $client = new OxylabsApiClient(username: 'user', password: 'pass');
-    //
-    //        $request = new AmazonPricingRequest(
-    //            source: 'amazon',
-    //            domain: 'com',
-    //            asin: 'B0000000'
-    //        );
-    //
-    //        $response = $client->amazonPricing($request);
-    //
-    //        $this->assertInstanceOf(AmazonPricingResponse::class, $response);
-    //        $this->assertEquals(['test' => 'data'], $response->data);
-    //    }
+        public function test_amazon_pricing()
+        {
+            Http::fake([
+                'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
+                'data.oxylabs.io/v1/queries/7342973874281147393/results' => Http::response($this->getFixtureJsonContent('amazon_pricing_results.json'), 200),
+            ]);
+
+            $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+            $request = new AmazonPricingRequest(
+                source: 'amazon',
+                domain: 'com',
+                asin: 'B0000000'
+            );
+
+            $response = $client->amazonPricing($request);
+            $result = $client->getAmazonPricingResult($response->id);
+
+            $this->assertInstanceOf(AmazonPricingResponse::class, $result);
+            $this->assertEquals(328.95, $result->results[0]->content->pricing[0]->price);
+        }
 
     public function test_amazon_sellers()
     {

@@ -8,7 +8,7 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersResponse;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonSellerResponse;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Support\Facades\Http;
@@ -80,23 +80,24 @@ class OxylabsApiClientTest extends BaseTest
     //        $this->assertEquals(['test' => 'data'], $response->data);
     //    }
 
-    //    public function test_amazon_sellers()
-    //    {
-    //        Http::fake([
-    //            'data.oxylabs.io/v1/queries' => Http::response(['test' => 'data'], 200),
-    //        ]);
-    //
-    //        $client = new OxylabsApiClient(username: 'user', password: 'pass');
-    //
-    //        $request = new AmazonSellersRequest(
-    //            source: 'amazon',
-    //            domain: 'com',
-    //            query: 'test'
-    //        );
-    //
-    //        $response = $client->amazonSellers($request);
-    //
-    //        $this->assertInstanceOf(AmazonSellersResponse::class, $response);
-    //        $this->assertEquals(['test' => 'data'], $response->data);
-    //    }
+    public function test_amazon_sellers()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results' => Http::response($this->getFixtureJsonContent('amazon_seller_results.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $request = new AmazonSellersRequest(
+            source: 'amazon_seller',
+            query: 'test'
+        );
+
+        $response = $client->amazonSellers($request);
+
+        $result = $client->getAmazonSellerResult($response->id);
+
+        $this->assertEquals(44, $result->results[0]->content->feedback_summary_table->counts->_30_days);
+    }
 }

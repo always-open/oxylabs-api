@@ -3,10 +3,12 @@
 namespace AlwaysOpen\OxylabsApi;
 
 use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
+use AlwaysOpen\OxylabsApi\DTOs\AmazonSellerResponse;
 use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
@@ -98,6 +100,26 @@ class OxylabsApiClient
         $response = $this->getResult($job_id);
 
         return AmazonProductResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getAmazonPricingResult(string $job_id): AmazonPricingResponse
+    {
+        $response = $this->getResult($job_id);
+
+        return AmazonPricingResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getAmazonSellerResult(string $job_id): AmazonSellerResponse
+    {
+        $response = $this->getResult($job_id);
+
+        return AmazonSellerResponse::from($response);
     }
 
     public function getPushPullJob(string $job_id): PushPullJob

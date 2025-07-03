@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "content": {
+        "url": "https://www.amazon.com/sp?seller=A151FB8X73UXPJ",
+        "query": "A151FB8X73UXPJ",
+        "rating": 4.5,
+        "page_type": "Seller",
+        "description": "Service with a smile! Gamer Girlz LLC loves making our customers happy by providing the quickest service & highest quality products. Every order is packaged with care & includes a special THANK YOU for choosing Gamer Girlz to provide you with the first class shopping experience you deserve!",
+        "business_name": "Gamer Girlz",
+        "recent_feedback": [
+          {
+            "feedback": "The product never came, and was very very expensive. Wasn't eligible for refund for some reason.",
+            "rated_by": "By Juli on May 8, 2022.",
+            "rating_stars": 1
+          },
+          {
+            "feedback": "Favorite game",
+            "rated_by": "By DF on May 8, 2022.",
+            "rating_stars": 5
+          },
+          {
+            "feedback": "It works perfectly and I love the games on it.",
+            "rated_by": "By John on May 8, 2022.",
+            "rating_stars": 5
+          },
+          {
+            "feedback": "All the games I got came super fast and it amazing condition! Would definitely buy from them again and recommend seller to others!",
+            "rated_by": "By Brianna c. on May 6, 2022.",
+            "rating_stars": 5
+          },
+          {
+            "feedback": "They were fast with shipping and provided quality merchandise. A label of authenticity was included with the game I bought to ensure me that I bought a genuine version.",
+            "rated_by": "By anonymous  on May 6, 2022.",
+            "rating_stars": 5
+          }
+        ],
+        "business_address": "1020 Michigan St. Sandpoint ID 83864 US",
+        "parse_status_code": 12000,
+        "feedback_summary_table": {
+          "counts": {
+            "30_days": 44,
+            "90_days": 146,
+            "all_time": 7857,
+            "12_months": 611
+          },
+          "neutral": {
+            "30_days": "5%",
+            "90_days": "2%",
+            "all_time": "2%",
+            "12_months": "1%"
+          },
+          "negative": {
+            "30_days": "7%",
+            "90_days": "7%",
+            "all_time": "3%",
+            "12_months": "8%"
+          },
+          "positive": {
+            "30_days": "89%",
+            "90_days": "91%",
+            "all_time": "95%",
+            "12_months": "91%"
+          }
+        }
+      },
+      "created_at": "2022-05-09 06:57:47",
+      "updated_at": "2022-05-09 06:57:50",
+      "page": 1,
+      "url": "https://www.amazon.com/sp?seller=A151FB8X73UXPJ",
+      "job_id": "6929323518437886977",
+      "status_code": 200,
+      "parser_type": ""
+    }
+  ]
+}

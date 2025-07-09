@@ -3,7 +3,6 @@
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
 use AlwaysOpen\OxylabsApi\DTOs\Casters\SellerFeedbackSummaryDataCaster;
-use AlwaysOpen\OxylabsApi\DTOs\Casters\SellerFeedbackSummaryTableEntryCaster;
 use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;

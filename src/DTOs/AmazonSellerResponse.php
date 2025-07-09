@@ -11,5 +11,6 @@ class AmazonSellerResponse extends Data
         /* @var AmazonSellerResult[] $results */
         #[DataCollectionOf(AmazonSellerResult::class)]
         public readonly array $results,
+        public readonly PushPullJob $job,
     ) {}
 }

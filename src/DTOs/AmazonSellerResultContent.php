@@ -2,8 +2,11 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
+use AlwaysOpen\OxylabsApi\DTOs\Casters\SellerFeedbackSummaryDataCaster;
+use AlwaysOpen\OxylabsApi\DTOs\Casters\SellerFeedbackSummaryTableEntryCaster;
 use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
+use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Data;
 
 class AmazonSellerResultContent extends Data
@@ -22,6 +25,8 @@ class AmazonSellerResultContent extends Data
         public readonly array $recent_feedback,
         public readonly string $business_address,
         public readonly int $parse_status_code,
-        public readonly SellerFeedbackSummaryTable $feedback_summary_table,
+        public readonly ?SellerFeedbackSummaryTable $feedback_summary_table = null,
+        #[WithCast(SellerFeedbackSummaryDataCaster::class)]
+        public readonly ?SellerFeedbackSummaryData $feedback_summary_data = null,
     ) {}
 }

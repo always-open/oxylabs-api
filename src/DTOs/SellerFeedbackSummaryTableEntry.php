@@ -4,7 +4,7 @@ namespace AlwaysOpen\OxylabsApi\DTOs;
 
 use Spatie\LaravelData\Data;
 
-class SellerFeedbackSummary extends Data
+class SellerFeedbackSummaryTableEntry extends Data
 {
     public function __construct(
         public readonly int|string $_30_days,

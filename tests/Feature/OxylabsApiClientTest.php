@@ -10,6 +10,7 @@ use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
 use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiClientTest extends BaseTest
@@ -81,6 +82,9 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertEquals(328.95, $result->results[0]->content->pricing[0]->price);
     }
 
+    /**
+     * @throws ConnectionException
+     */
     public function test_amazon_sellers()
     {
         Http::fake([
@@ -100,5 +104,6 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getAmazonSellerResult($response->id);
 
         $this->assertEquals(44, $result->results[0]->content->feedback_summary_table->counts->_30_days);
+        $this->assertEquals('100%', $result->results[0]->content->feedback_summary_data->_1_month->_1_star);
     }
 }

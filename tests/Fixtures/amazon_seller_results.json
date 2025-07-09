@@ -2,41 +2,76 @@
   "results": [
     {
       "content": {
-        "url": "https://www.amazon.com/sp?seller=A151FB8X73UXPJ",
-        "query": "A151FB8X73UXPJ",
-        "rating": 4.5,
+        "url": "https://www.amazon.com/sp?seller=AOMBLB0OTQ8M&language=en_US",
+        "query": "AOMBLB0OTQ8M",
+        "rating": 4,
         "page_type": "Seller",
-        "description": "Service with a smile! Gamer Girlz LLC loves making our customers happy by providing the quickest service & highest quality products. Every order is packaged with care & includes a special THANK YOU for choosing Gamer Girlz to provide you with the first class shopping experience you deserve!",
-        "business_name": "Gamer Girlz",
+        "description": "'Your happiness is our joy...'",
+        "seller_name": "PRIVATESELLERSNETWORK",
+        "business_name": "FESALE LLC",
         "recent_feedback": [
           {
-            "feedback": "The product never came, and was very very expensive. Wasn't eligible for refund for some reason.",
-            "rated_by": "By Juli on May 8, 2022.",
+            "feedback": "Keeping it rather then paying them 50.00 Plus postage",
+            "rated_by": "By evelyne burt on June 27, 2025.",
             "rating_stars": 1
           },
           {
-            "feedback": "Favorite game",
-            "rated_by": "By DF on May 8, 2022.",
-            "rating_stars": 5
+            "feedback": "The seller specified that they sent out the missing item and gave me a tracking number for the original item and not for the one that was missing that they claim that they sent to me I feel like I’m being scammed",
+            "rated_by": "By KimberlyBentley on June 13, 2025.",
+            "rating_stars": 1
           },
           {
-            "feedback": "It works perfectly and I love the games on it.",
-            "rated_by": "By John on May 8, 2022.",
-            "rating_stars": 5
+            "feedback": "Item never arrived.",
+            "rated_by": "By Rebecca W. on June 6, 2025.",
+            "rating_stars": 1
           },
           {
-            "feedback": "All the games I got came super fast and it amazing condition! Would definitely buy from them again and recommend seller to others!",
-            "rated_by": "By Brianna c. on May 6, 2022.",
-            "rating_stars": 5
+            "feedback": "My son is older and I needed a bigger size since I bought many of the same style/material in the past. You sent me the white one is 2-3 inches smaller than the red which is not expected. The white one is made of different name brand, material is not as soft as the red and others I bought dozens in the past.",
+            "rated_by": "By Ann Win on June 3, 2025.",
+            "rating_stars": 3
           },
           {
-            "feedback": "They were fast with shipping and provided quality merchandise. A label of authenticity was included with the game I bought to ensure me that I bought a genuine version.",
-            "rated_by": "By anonymous  on May 6, 2022.",
-            "rating_stars": 5
+            "feedback": "Only received 1",
+            "rated_by": "By Patty Ferguson on June 2, 2025.",
+            "rating_stars": 1
           }
         ],
-        "business_address": "1020 Michigan St. Sandpoint ID 83864 US",
+        "business_address": "7629 Chesapeake Blvd NORFOLK VA 23513 US",
         "parse_status_code": 12000,
+        "feedback_summary_data": {
+          "1_month": {
+            "count": 2,
+            "1_star": "100%",
+            "2_star": "0%",
+            "3_star": "0%",
+            "4_star": "0%",
+            "5_star": "0%"
+          },
+          "3_month": {
+            "count": 8,
+            "1_star": "38%",
+            "2_star": "0%",
+            "3_star": "13%",
+            "4_star": "13%",
+            "5_star": "38%"
+          },
+          "12_month": {
+            "count": 28,
+            "1_star": "18%",
+            "2_star": "0%",
+            "3_star": "4%",
+            "4_star": "11%",
+            "5_star": "68%"
+          },
+          "all_time": {
+            "count": 426,
+            "1_star": "9%",
+            "2_star": "1%",
+            "3_star": "3%",
+            "4_star": "7%",
+            "5_star": "80%"
+          }
+        },
         "feedback_summary_table": {
           "counts": {
             "30_days": 44,
@@ -64,13 +99,117 @@
           }
         }
       },
-      "created_at": "2022-05-09 06:57:47",
-      "updated_at": "2022-05-09 06:57:50",
+      "created_at": "2025-07-09 13:45:44",
+      "updated_at": "2025-07-09 13:45:45",
       "page": 1,
-      "url": "https://www.amazon.com/sp?seller=A151FB8X73UXPJ",
-      "job_id": "6929323518437886977",
+      "url": "https://www.amazon.com/sp?seller=AOMBLB0OTQ8M&language=en_US",
+      "job_id": "7348708944438639617",
+      "is_render_forced": false,
       "status_code": 200,
-      "parser_type": ""
+      "parser_type": "",
+      "parser_preset": null
     }
-  ]
+  ],
+  "job": {
+    "callback_url": null,
+    "client_id": 79375,
+    "context": [
+      {
+        "key": "force_headers",
+        "value": false
+      },
+      {
+        "key": "force_cookies",
+        "value": false
+      },
+      {
+        "key": "hc_policy",
+        "value": true
+      },
+      {
+        "key": "check_empty_geo",
+        "value": null
+      },
+      {
+        "key": "safe_search",
+        "value": true
+      },
+      {
+        "key": "currency",
+        "value": null
+      }
+    ],
+    "created_at": "2025-07-09 13:45:44",
+    "domain": "com",
+    "geo_location": null,
+    "id": "7348708944438639617",
+    "limit": 10,
+    "locale": null,
+    "pages": 1,
+    "parse": true,
+    "parser_type": null,
+    "parser_preset": null,
+    "parsing_instructions": null,
+    "browser_instructions": null,
+    "render": null,
+    "xhr": false,
+    "markdown": false,
+    "url": null,
+    "query": "AOMBLB0OTQ8M",
+    "source": "amazon_sellers",
+    "start_page": 1,
+    "status": "done",
+    "storage_type": null,
+    "storage_url": null,
+    "subdomain": "www",
+    "content_encoding": "utf-8",
+    "updated_at": "2025-07-09 13:45:45",
+    "user_agent_type": "desktop",
+    "session_info": null,
+    "statuses": [],
+    "client_notes": null,
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http://data.oxylabs.io/v1/queries/7348708944438639617",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http://data.oxylabs.io/v1/queries/7348708944438639617/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7348708944438639617/results/1/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http://data.oxylabs.io/v1/queries/7348708944438639617/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7348708944438639617/results/1/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7348708944438639617/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7348708944438639617/results/1/content?type=parsed"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
 }

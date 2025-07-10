@@ -15,6 +15,7 @@ class AmazonSellerResultContent extends Data
     public function __construct(
         public readonly string $url,
         public readonly string $query,
+        public readonly string $seller_name,
         public readonly float $rating,
         public readonly string $page_type,
         public readonly string $description,

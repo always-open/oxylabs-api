@@ -11,6 +11,8 @@ class AmazonPricingRequest extends Data
         public readonly string $domain,
         public readonly string $asin,
         public readonly ?array $parse = null,
+        public readonly ?int $pages = null,
+        public readonly ?int $start_page = null,
         public readonly ?array $context = null
     ) {}
 
@@ -22,6 +24,8 @@ class AmazonPricingRequest extends Data
             'asin' => $this->asin,
             'parse' => $this->parse,
             'context' => $this->context,
+            'pages' => $this->pages,
+            'start_page' => $this->start_page,
         ]);
     }
 }

@@ -2,14 +2,14 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
+use AlwaysOpen\OxylabsApi\DTOs\ContextItem;
+use AlwaysOpen\OxylabsApi\DTOs\Link;
 use Illuminate\Support\Carbon;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
-use AlwaysOpen\OxylabsApi\DTOs\ContextItem;
-use AlwaysOpen\OxylabsApi\DTOs\Link;
 use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
 
 class GoogleShoppingPricingJob extends Data
 {

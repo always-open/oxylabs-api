@@ -2,8 +2,8 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
-use Spatie\LaravelData\Attributes\DataCollectionOf;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 

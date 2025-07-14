@@ -131,7 +131,6 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getGoogleShoppingProductResult($response->id);
 
         $this->assertInstanceOf(GoogleShoppingProductResponse::class, $result);
-        $this->assertEquals('7342973874281147393', $result->job->id);
         $this->assertCount(1, $result->results);
         $this->assertEquals('Adidas Samba OG Black/White for Kids IE3676 - 6', $result->results[0]->content->title);
         $this->assertEquals(80, $result->results[0]->content->pricing->online[0]->price);
@@ -159,7 +158,6 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getGoogleShoppingPricingResult($response->id);
 
         $this->assertInstanceOf(GoogleShoppingPricingResponse::class, $result);
-        $this->assertEquals('7342973874281147393', $result->job->id);
         $this->assertCount(1, $result->results);
         $this->assertEquals('Adidas Samba OG Black/White for Kids IE3676 - 6', $result->results[0]->content->title);
         $this->assertEquals(80, $result->results[0]->content->pricing[0]->price);

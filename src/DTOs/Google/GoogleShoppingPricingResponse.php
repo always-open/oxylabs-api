@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
+use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
@@ -11,6 +12,6 @@ class GoogleShoppingPricingResponse extends Data
     public function __construct(
         #[DataCollectionOf(GoogleShoppingPricingResult::class)]
         public readonly DataCollection $results,
-        public readonly GoogleShoppingPricingJob $job,
+        public readonly PushPullJob $job,
     ) {}
 }

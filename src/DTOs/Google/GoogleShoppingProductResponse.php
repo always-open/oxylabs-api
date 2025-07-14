@@ -2,10 +2,10 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
 
 class GoogleShoppingProductResponse extends Data
 {

@@ -3,9 +3,9 @@
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
 use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
-use Spatie\LaravelData\Attributes\DataCollectionOf;
 
 class GoogleShoppingPricingResultContent extends Data
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace AlwaysOpen\OxylabsApi\DTOs;
+namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
 
-class AmazonPricingResult extends Data
+class GoogleShoppingProductResult extends Data
 {
     public function __construct(
-        public readonly AmazonPricingResultContent $content,
+        public readonly GoogleShoppingProductResultContent $content,
         public readonly int $page,
         public readonly string $url,
         public readonly string $job_id,

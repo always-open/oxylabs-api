@@ -1,8 +1,11 @@
 <?php
 
-namespace AlwaysOpen\OxylabsApi\DTOs;
+namespace AlwaysOpen\OxylabsApi\DTOs\Amazon;
 
 use AlwaysOpen\OxylabsApi\DTOs\Casters\SellerFeedbackSummaryDataCaster;
+use AlwaysOpen\OxylabsApi\DTOs\SellerFeedback;
+use AlwaysOpen\OxylabsApi\DTOs\SellerFeedbackSummaryData;
+use AlwaysOpen\OxylabsApi\DTOs\SellerFeedbackSummaryTable;
 use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;

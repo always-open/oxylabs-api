@@ -1,4 +1,4 @@
-w## Description
+## Description
 
 _Description of technical and/or implementation details_
 

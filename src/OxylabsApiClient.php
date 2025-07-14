@@ -10,6 +10,10 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellerResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductResponse;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
@@ -190,31 +194,75 @@ class OxylabsApiClient
 
     public function amazonProduct(AmazonProductRequest $request): PushPullJob
     {
-        return $this->makeRequest('amazon_product', $request->toArray());
+        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_PRODUCT, $request->toArray());
     }
 
     public function amazonSearch(AmazonSearchRequest $request): PushPullJob
     {
-        return $this->makeRequest('amazon_search', $request->toArray());
+        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_SEARCH, $request->toArray());
     }
 
     public function amazonPricing(AmazonPricingRequest $request): PushPullJob
     {
-        return $this->makeRequest('amazon_pricing', $request->toArray());
+        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_PRICING, $request->toArray());
     }
 
     public function amazonSellers(AmazonSellersRequest $request): PushPullJob
     {
-        return $this->makeRequest('amazon_sellers', $request->toArray());
+        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_SELLERS, $request->toArray());
     }
 
     public function googleSearch(GoogleSearchRequest $request): PushPullJob
     {
-        return $this->makeRequest('google_search', $request->toArray());
+        return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_SEARCH, $request->toArray());
     }
 
     public function universal(UniversalRequest $request): PushPullJob
     {
         return $this->makeRequest('universal', $request->toArray());
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function googleShoppingProduct(GoogleShoppingProductRequest $request): PushPullJob
+    {
+        return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRODUCT, $request->toArray());
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getGoogleShoppingProductResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+    ): GoogleShoppingProductResponse {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+
+        return GoogleShoppingProductResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function googleShoppingPricing(GoogleShoppingPricingRequest $request): PushPullJob
+    {
+        return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRICING, $request->toArray());
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getGoogleShoppingPricingResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+    ): GoogleShoppingPricingResponse {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+
+        return GoogleShoppingPricingResponse::from($response);
     }
 }

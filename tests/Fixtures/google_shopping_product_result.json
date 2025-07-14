@@ -1,0 +1,555 @@
+{
+  "results": [
+    {
+      "content": {
+        "url": "https://www.google.com/shopping/product/9643822540334825608?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en",
+        "title": "Adidas Samba OG Black/White for Kids IE3676 - 6",
+        "images": {
+          "full_size": [
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQhnWxFMXGZGgcEseJc9YxIttJCJQLrPKpfCbFO69EP2nEJ1e2-rgjGey38wkTgrqHAdOg7gNrAvKvn2dplN9Ar6vAmtQgd&usqp=CAY",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR2K35DMiOrTTGEFUT1dd-zh8_BtJYiPFapCSyMxJiaf8avwjDNnWzgtkONtidP1-qR1PuYX8ja7ENbrIBY23gPJsFQG7InwQ&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQEdCFSYX5yq27wys5E5kBGbTEtU1c3P5Ymos7PnTwa-uc85dKCnW_HnqXxwkHGk_C25wOFCLrBH6xOxVHVAmC51EVFt_xT-A&usqp=CAY",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSiEWpUszbBG2nPCVpT5an6P-UlIlVpcwHDglflWJ65ea8WjhmRG8OTPy_777sVLV-MVdu2BQ97Q40IGRWNkgm45qcg4ToH&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQYvT4amuQ5LMj81ayOspE8uAou7KjU_5JpPi1H-96XD6-qG-vEFI5ikb7xGmNVWjYuGB5mKmW0_m_ljmWFFL-gql8iz61jkA&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQxwmLNaepkgEQmsLgzwMhLZVyXMHrAMN0VUeB1FMz6dyN4ToFeUJfyqpt4OLRqezdfp_tb7lIoexPTB1igfoDtgdaK1WMG&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgPJWjxDY-o39AnUTV50cUqa4ayjTw4S8yVs2iNtWRbdlcU00iqdQIYWLRYxgMTF3vnmC3K-1EeMNAIrwYuYi5MZMneAYg&usqp=CAY",
+            "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTOOJXMU-Ui8JL9RAG_opqLUz_uEhphacDRTuPwsI8d_iSj90CSeeYAhHkvFhl4YokfjYs1_tvZiPUsazBnzh_Vbu40ulXTXA&usqp=CAY",
+            "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQepDiRvGoJ7kiJVsrnGKhb06Rv3Fq0llq4agzAL_iASKNz5p8X4g0c9yQ0JPtpeqLnpT_DdqxGF6swa5abUBlcsRx9BKdc&usqp=CAY",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSK2h0Lq36ofye6w11IRwMiP6ntPExfPHBFJ3sjqekRmsIkLvVOLYC0jmAl_cNlFn6t_oyA4aQpIGS4Z7jPeGJzV4gDzRZp&usqp=CAY",
+            "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQQzeElkgsKqjphH14UEJwNPP-WHjhyAqY26nLwYgli93wbE5ayqIbrprArWM3qZkke7-9ElRDYwjaDCYssNPkQ7g-SARCUWA&usqp=CAY",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT_iUYcRSTH7yl_v2fhSWugboV-oo0Py8LLFy7kx7vSaYB94zOIltsmQHJUp0IMcvuRKLlYl1dDhrf1WOBOeOkrtwPzmsys&usqp=CAY"
+          ],
+          "thumbnails": []
+        },
+        "pricing": {
+          "online": [
+            {
+              "price": 80,
+              "seller": "adidas",
+              "details": "$4.99 delivery by Sun, Jul 20Free 30-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 8.71,
+              "price_total": 93.7,
+              "seller_link": "https://www.adidas.com/us/samba-og-shoes-kids/IE3676.html",
+              "price_shipping": 4.99
+            },
+            {
+              "price": 80,
+              "seller": "Finish Line",
+              "details": "$8.99 delivery by Thu, Jul 17Free 45-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 9.12,
+              "price_total": 98.11,
+              "seller_link": "https://www.finishline.com/pdp/big-kids-adidas-originals-samba-og-casual-shoes/prod1700341/IE3676/001?srsltid=AfmBOors6RdGFn5rvLSTX-ubOjjckV-e_LdeMx3sufY2s0cp7pmj-d2h3jM",
+              "price_shipping": 8.99
+            },
+            {
+              "price": 79.99,
+              "seller": "DICK'S Sporting Goods",
+              "details": "Free deliveryFree 90-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 8.2,
+              "price_total": 88.19,
+              "seller_link": "https://www.dickssportinggoods.com/p/adidas-kids-grade-school-samba-og-shoes-23adiysmbwhtblckbgrl/23adiysmbwhtblckbgrl?sku=25219290&srsltid=AfmBOoq7jr3Td7BpPUW2JYaVBHSJVdqlgc1HJ8izQfSO_1oGPEYznBASSuo",
+              "price_shipping": 0
+            },
+            {
+              "price": 80,
+              "seller": "Foot Locker",
+              "details": "$8.99 delivery45-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 22.25,
+              "price_total": 111.24,
+              "seller_link": "https://www.footlocker.com/product/~/IE3676.html",
+              "price_shipping": 8.99
+            },
+            {
+              "price": 80,
+              "seller": "JD Sports",
+              "details": "$8.99 delivery by Thu, Jul 17",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 9.12,
+              "price_total": 98.11,
+              "seller_link": "https://www.jdsports.com/pdp/big-kids-adidas-originals-samba-og-casual-shoes/prod1700341/IE3676/001?srsltid=AfmBOopRNWQMkY_8evbf1qrZmdEj3wNGPevwT7GlX5nqFr2JA6FaBCpi5oo",
+              "price_shipping": 8.99
+            },
+            {
+              "price": 80,
+              "seller": "Nordstrom",
+              "details": "Free delivery by Mon, Jul 21Free lifetime returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 8.2,
+              "price_total": 88.2,
+              "seller_link": "https://www.nordstrom.com/s/adidas-kids-samba-sneaker-baby-walker-toddler-little-kid-big-kid/7430299?color=CBLACK%2FFTW&size=Big+Kid-6+m&country=US&currency=USD&utm_source=google&utm_medium=organic&utm_campaign=seo_shopping&utm_channel=low_nd_seo_shopping&srsltid=AfmBOor0WgIOv34-ooG6F7JqLGVqOyQGA4zM7Btx7FNQDZNR5dYJq9-M8QY",
+              "price_shipping": 0
+            },
+            {
+              "price": 80,
+              "seller": "Kids Foot Locker",
+              "details": "$8.99 delivery45-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 9.12,
+              "price_total": 98.11,
+              "seller_link": "https://www.kidsfootlocker.com/product/~/IE3676.html?source=shoppingads&locale=en-US&SID=5601&inceptor=1&cm_mmc=paid%20search-_-google-_-g-_-PLA-_-DPA-_--_-P-_-Prospecting-_--_-na-_--_-na-_-PLA-_-na-_--_--_-",
+              "price_shipping": 8.99
+            },
+            {
+              "price": 80,
+              "seller": "Hibbett Sports",
+              "details": "Free delivery by Thu, Jul 17Free 60-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 8.2,
+              "price_total": 88.2,
+              "seller_link": "https://www.hibbett.com/adidas-originals-samba-og-core-black-ftwr-white-gum-grade-school-kids-shoe/50153337.html?utm_source=google&utm_medium=organic&utm_campaign=surfaces",
+              "price_shipping": 0
+            },
+            {
+              "price": 80,
+              "seller": "Shoe Palace",
+              "details": "$10.95 delivery by Mon, Jul 2130-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 8.2,
+              "price_total": 99.15,
+              "seller_link": "https://www.shoepalace.com/products/adidas-ie3676-samba-og-grade-school-lifestyle-shoes-black?currency=USD&variant=42190844592334&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=50a31c65b298",
+              "price_shipping": 10.95
+            },
+            {
+              "price": 80,
+              "seller": "DTLR",
+              "details": "$17.50 delivery by Thu, Jul 1730-day returns",
+              "currency": "USD",
+              "condition": "New",
+              "price_tax": 9.6,
+              "price_total": 107.1,
+              "seller_link": "https://www.dtlr.com/products/adidas-samba-og-gs-ie3676-black?variant=44176568156394&utm_source=google&utm_medium=cpc&utm_campaign=PLA&scid=scplp44176568156394&srsltid=AfmBOorai9TnVSdQ4GtYKIDxilKYeomlKa9UMUzZAtpMhgbkdqP_v0cTZts",
+              "price_shipping": 17.5
+            }
+          ]
+        },
+        "reviews": {
+          "rating": 4.8,
+          "top_review": {
+            "text": "I first found out about this shoe a while back when it started trending online. I held off on buying a pair because I wanted to make sure it wasn't a \"come and go\" trend that I would get tired of after a few months. However, after holding off, I still found myself wanting to grab a pair. I first purchased it in the adult size off of the Adidas Website in a Women's 7, but it was way too big. Lengthwise, I'm a 6.5, but sometimes I have to size up because my feet are wide. So, when the original pair from the Adidas website came in and I realized how big they were on me, I figured I could size down and get a kids size that looks exactly the same for a cheaper price. That's exactly what I did. So, I ended up ordering a size 5 in kids and it fits perfectly! Lengthwise, I could probably also get a 4.5 in kids, but it probably wouldn't fit so well in width. The 5 gives enough room where it's roomy but not too big. Initially, the shoe is pretty narrow, but even with my wide feet and bunions, it fits really well after a few wears. I was able to pretty much break them in after 2-3 wears. Now, they fit great and they go with everything. It's such a classic, low-profile shoe that can be dressed up or down. I could definitely wear these shoes with jean shorts on the weekend but also pair them with a midi-skirt for work during the week (which is exactly what I did). I honestly can't wait to start pairing these with so many looks! Less",
+            "title": "Classic Shoe",
+            "author": "Faith",
+            "rating": 5,
+            "source": "finishline.com"
+          },
+          "rating_stars": 5,
+          "reviews_count": 2323,
+          "reviews_by_stars": {
+            "1": {
+              "url": "/shopping/product/9643822540334825608/reviews?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=pid:10536581948450497165,rate:1,rnum:10,rsk:PC_5786372928199314088&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQn08IcSgE",
+              "reviews_count": 42
+            },
+            "2": {
+              "url": "/shopping/product/9643822540334825608/reviews?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=pid:10536581948450497165,rate:2,rnum:10,rsk:PC_5786372928199314088&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQn08IcCgD",
+              "reviews_count": 10
+            },
+            "3": {
+              "url": "/shopping/product/9643822540334825608/reviews?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=pid:10536581948450497165,rate:3,rnum:10,rsk:PC_5786372928199314088&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQn08IbygC",
+              "reviews_count": 38
+            },
+            "4": {
+              "url": "/shopping/product/9643822540334825608/reviews?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=pid:10536581948450497165,rate:4,rnum:10,rsk:PC_5786372928199314088&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQn08IbigB",
+              "reviews_count": 174
+            },
+            "5": {
+              "url": "/shopping/product/9643822540334825608/reviews?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=pid:10536581948450497165,rate:5,rnum:10,rsk:PC_5786372928199314088&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQn08IbSgA",
+              "reviews_count": 2
+            }
+          },
+          "search_suggestions": []
+        },
+        "variants": [
+          {
+            "type": "color",
+            "items": [
+              {
+                "value": "Cloud White / Collegiate Green / Gum",
+                "available": true,
+                "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSH7OS6S0yww0nS7pzFg-iCmW5q0FGm6D-rooElQlsv3VpX0EuhUrqfPqLQ9dloWjCrYMwKXBRzXUwlVGKifJSD2WdFFJ9d3peVOf9_fNypDvlWL3EeNb8&usqp=CAY",
+                "product_id": "11206813984427845804"
+              },
+              {
+                "value": "Cloud White / Core Black / Gum",
+                "available": true,
+                "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQaQbpIeeynpVbOwiXx3SBSaK9TeyQ7QA4dfiUlTUmLX39ZJ2P3D1I1n_FceYOBwJ8e8S6qsDlHcIPPKEfafzPxnGbGW-KwMOWUChdKhqSPvA0NwWA3Os0&usqp=CAY",
+                "product_id": "14832696926656826262"
+              },
+              {
+                "value": "Cloud White / Purple Burst / Gum",
+                "available": true,
+                "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqzH4WaD02CB-ZrPf32TEpsw6kpUgzSFu3H5V_cyYu9Bohk9lCtP2Dz1HxMKFAnsuVb6Sc5OjfS860KwhrrLrG1iqvnLG8S6ipN0n3d27z2RDbe3Z8HA&usqp=CAY",
+                "product_id": "11513090475555169932"
+              },
+              {
+                "value": "White",
+                "available": true,
+                "image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSfGUy8CiP1KYBxLlsOiTtTG_YZDe9JAEEoGd7KpdNM4N39FHl-lF8uDP6mcZZsFcuHTAObNuv6FvtAtQtFplnP6Hgg-fmF8evVQxVe3rN997aiHmZ_9g&usqp=CAY",
+                "product_id": "1444389538365721667"
+              },
+              {
+                "value": "Wonder White / Shadow Red / Gum",
+                "available": true,
+                "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRiPpvygNGtAVTquVlYVV588BG7uX6I-spZsh2MI-6DTuJ2lx7lNJgre-7oTcRCyNjLo2aPtP1eee_7UoGC3Lv-2f2J_HTDuxSZN-AVwHCg6g-rr7JbwQ&usqp=CAY",
+                "product_id": "16234988715830601186"
+              },
+              {
+                "value": "Core Black / Cloud White / Gum",
+                "selected": true,
+                "available": true,
+                "image_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR5FGpqh18J9p446QDYRQHZ2ZkrnLkDXHp1Y-1qhSJ1ESNNjzTsLeBGvn-g9MmD-lmO6t_tamcsB-5p-A3B_f5ZLD89eDGqgh7Z96rm24biwT3HOWCgsy0&usqp=CAY",
+                "product_id": "9643822540334825608"
+              }
+            ]
+          },
+          {
+            "type": "Size",
+            "items": [
+              {
+                "value": "1½",
+                "available": true,
+                "product_id": "17766676960263757057"
+              },
+              {
+                "value": "2",
+                "available": true,
+                "product_id": "15881446095345749329"
+              },
+              {
+                "value": "2½",
+                "available": true,
+                "product_id": "2305264027916492091"
+              },
+              {
+                "value": "3",
+                "available": true,
+                "product_id": "4195138309802715103"
+              },
+              {
+                "value": "3½",
+                "available": true,
+                "product_id": "13536547796929171546"
+              },
+              {
+                "value": "4",
+                "available": true,
+                "product_id": "15229577557043822503"
+              },
+              {
+                "value": "4½",
+                "available": true,
+                "product_id": "14410229189978263579"
+              },
+              {
+                "value": "5",
+                "available": true,
+                "product_id": "6731144252934033124"
+              },
+              {
+                "value": "5½",
+                "available": true,
+                "product_id": "13011695371250342932"
+              },
+              {
+                "value": "6",
+                "selected": true,
+                "available": true,
+                "product_id": "9643822540334825608"
+              },
+              {
+                "value": "6½",
+                "available": true,
+                "product_id": "3093333975313539458"
+              },
+              {
+                "value": "7",
+                "available": true,
+                "product_id": "5157585824260934013"
+              },
+              {
+                "value": "8",
+                "available": true,
+                "product_id": "4972046242972308132"
+              },
+              {
+                "value": "11",
+                "available": true,
+                "product_id": "6325395488634146414"
+              },
+              {
+                "value": "11½",
+                "available": true,
+                "product_id": "720792956111216263"
+              },
+              {
+                "value": "12",
+                "available": true,
+                "product_id": "2104228912792032999"
+              },
+              {
+                "value": "12½",
+                "available": true,
+                "product_id": "12378517605738731002"
+              },
+              {
+                "value": "13",
+                "available": true,
+                "product_id": "17841650665175074559"
+              },
+              {
+                "value": "13½",
+                "available": true,
+                "product_id": "8937629958502192642"
+              }
+            ]
+          }
+        ],
+        "highlights": [
+          "Premium leather upper",
+          "Classic 3-Stripes and Trefoil branding",
+          "Lace closure for a locked in fit",
+          "Comfort OrthoLite sockliner and synthetic lining",
+          "Gum rubber outsole provides sticky grip"
+        ],
+        "description": "Bring the iconic style from the 1960s soccer pitches to your boys' steps with the adidas Originals Samba. A fusion of heritage and contemporary flair, these shoes are constructed with a soft OrthoLite sockliner to help your kids go forth and be fabulous in comfort. The 3-Stripes design ensures your style icons score a goal in authentic style, while the synthetic lining adds extra snugness. Add a legacy of sporty style to your boys' rotation with the adidas Originals Samba. adidas Originals Samba features: Regular fit offers a relaxed feel. Leather upper adds comfort and durability. Lace closure ensures a snug fit. Gum rubber sole provides soft cushioning.",
+        "related_items": [
+          {
+            "items": [
+              {
+                "url": "/shopping/product/9589080236054173281?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:15769461543479145782,oid:15769461543479145782,pid:16137559464050256311,prmr:1,rsk:PC_9819233187570109910&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCO8B",
+                "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTaePqxGL6_DQn2R8-72LrpKzh5iBKjFbZjxxu2h8oLztEXVvkWBIQ1N53RLPh7mtp0ROIotBPe5kf_HA26Uzo_Sy3n4k0xtl0UcI1fmGKcnbh5vJkFi9OwZQ&usqp=CAY",
+                "price": 69.99,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/17092545196734552926?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:8924770351125949928,oid:8924770351125949928,pid:16975984811493064323,prmr:1,rsk:PC_177362531942034628&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCPIB",
+                "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSFg2wkxnNj3DG73G0njpa4ei3qeIIhwLLE0FBvTZMCvJzLoH1sPnp23Xcnfn99ieIpFFNISAjzP7W8ov4Xap-XY0eAtFN5rGzBnAAKQymbbAzeK9RZRqrQkrs&usqp=CAY",
+                "price": 99.99,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/13937238522226791608?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:13418634172261720461,oid:13418634172261720461,pid:1953048366581829639,prmr:1,rsk:PC_1244512470865733679&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCPUB",
+                "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQjzyLsglRgnLbM2qj3KTWAYCDZU4mqpJ0JkVqD2Y5shmZocxMvKnRdIQgVkGwAI3vSDVT6NKtAFfWS_ulbimHF3_bgdHHJ8OmaL6lOWOlqJj4fU4YvNrVMKw&usqp=CAY",
+                "price": 119.95,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/16068056150546576518?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:7765325277370769357,oid:7765325277370769357,pid:15732318973637035098,prmr:1,rsk:PC_3448475984311792621&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCPgB",
+                "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQyjMI0WzK370OdX4nyO97_1uLsNHQjsjLOaUbPUOIMVnxyzhujOcZm0cfTVHSJJ1JSgjdU5vcbR4kXq1AlAnCjbBjD0gAdkNRBksVQCk2-QB71C275flQNIw&usqp=CAY",
+                "price": 75,
+                "store": "Nike",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/2400760380265503518?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:7801889099410071006,oid:7801889099410071006,pid:7262231410885119779,prmr:1,rsk:PC_13586064772268043586&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCPsB",
+                "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQJEvra2ee3ESMx_aLBle94VgCG0-pwuqhzzQ5VKAugvqErWL1zjtujOjXp4lcfmQJwz5Wt3dHsImh4sXgS7NucNpY0WJSGDFy7Il1SUMUMa13ZeCs5jucL&usqp=CAY",
+                "price": 114.74,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/13080472994198959415?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:5411508876223201429,oid:5411508876223201429,pid:17856416738475292469,prmr:1,rsk:PC_5786372928199314088&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCP4B",
+                "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQosFrUFdBF2iAP605VZGFipM8w-d49Zk_nqWPfHuIyJ-cC5UjUJPorgM86no-qtwOgs-u4wm21EZio5CdbzLHql4Mrzudz3N1POPt7VPRk-gzaEgQeKaR0z6M&usqp=CAY",
+                "price": 80,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/2628678973627657331?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:13720691266653534829,oid:13720691266653534829,pid:6822664657873316959,prmr:1,rsk:PC_2728119827247999128&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCIEC",
+                "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSYR8XSMdYQY4akDpN5eVWWzSQ_mZY1mt2IJO4DMNmuFQHUTwsnhAlWoPKW3n07-8Vx3VMJm0685ESy3MZWIlOE58XlQd41gta8bj05OnfV&usqp=CAY",
+                "price": 100,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/1354186744370982859?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:9386602396404375478,oid:9386602396404375478,pid:18252693950409871302,prmr:1,rsk:PC_10672206264360060101&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCIQC",
+                "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSqsRqzPEIjQ6IUmbSNAeCHcs6Ct15n6Ncb1rDSUtHrMz0XWq8OcVzWMZPoIXNF-ypSP1n9-PiyjbriVy4zw_Rdz8AR0LsziBGc5qt47_n0y-SP1g9Lxm1yWkk&usqp=CAY",
+                "price": 123.97,
+                "store": "Nike",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/16786896036608211799?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:13923686631969016714,oid:13923686631969016714,pid:15341152600441479697,prmr:1,rsk:PC_12739720831250805161&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCIcC",
+                "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSN5gfWBP7WGwOgPG0qSIePGBhs5N2DGL-nw6dbm-k8nHCW5DbE6rNisLeYaRaYlzIkSBdwhJyL_DdlxXO8TIctkrFLlcGJiYUUdG5CTVafjmMlUdoEvf31&usqp=CAY",
+                "price": 41,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              },
+              {
+                "url": "/shopping/product/18426635240118104254?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&prds=epd:17843504646451899608,oid:17843504646451899608,pid:14424458741861505500,prmr:1,rsk:PC_8570800059383513563&sa=X&ved=0ahUKEwin8eTqpruOAxU7rokEHdIJC-UQ2sgCCIoC",
+                "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT9lxzJ0iubXrM99tvghfsmbYCDWxNlkaxemssXQDDahGm5x8qSuzzKYnDwLPtvUrQUJjsz3fCpwwXyxTRRNK0MDldHV5A2dVIm5Geq6kx_FsY-Y16OxePO&usqp=CAY",
+                "price": 45.19,
+                "store": "adidas",
+                "currency": "USD",
+                "reviews_count": 0
+              }
+            ],
+            "title": "You might also like"
+          }
+        ],
+        "specifications": [
+          {
+            "items": [
+              {
+                "title": "Closure",
+                "value": "Lace Up"
+              },
+              {
+                "title": "Occasion",
+                "value": "\"Casual,Daily,Informal,Everyday,Comfortable\""
+              },
+              {
+                "title": "Color",
+                "value": "\"Black,Noir\""
+              },
+              {
+                "title": "Toe Style",
+                "value": "\"Closed Toe,Covered Toe,Enclosed Toe\""
+              },
+              {
+                "title": "Style Silhouette",
+                "value": "Casual"
+              }
+            ],
+            "section_title": "lily_attributes"
+          }
+        ],
+        "parse_status_code": 12000,
+        "product_details_keywords": [
+          "Kids'",
+          "Boys'",
+          "6",
+          "Genuine Leather",
+          "Genuine Suede",
+          "Rubber",
+          "Core Black / Cloud White / Gum",
+          "Fashion Sneaker",
+          "Lace-up",
+          "Casual"
+        ]
+      },
+      "created_at": "2025-07-14 02:29:19",
+      "updated_at": "2025-07-14 02:29:20",
+      "page": 1,
+      "url": "https://www.google.com/shopping/product/9643822540334825608?uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en",
+      "job_id": "7350350656604996609",
+      "is_render_forced": false,
+      "status_code": 200,
+      "parser_type": "",
+      "parser_preset": null
+    }
+  ],
+  "job": {
+    "callback_url": null,
+    "client_id": 79375,
+    "context": [
+      {
+        "key": "force_headers",
+        "value": false
+      },
+      {
+        "key": "force_cookies",
+        "value": false
+      },
+      {
+        "key": "hc_policy",
+        "value": true
+      }
+    ],
+    "created_at": "2025-07-14 02:29:19",
+    "domain": "com",
+    "geo_location": null,
+    "id": "7350350656604996609",
+    "limit": 10,
+    "locale": null,
+    "pages": 1,
+    "parse": true,
+    "parser_type": null,
+    "parser_preset": null,
+    "parsing_instructions": null,
+    "browser_instructions": null,
+    "render": null,
+    "xhr": false,
+    "markdown": false,
+    "url": null,
+    "query": "9643822540334825608",
+    "source": "google_shopping_product",
+    "start_page": 1,
+    "status": "done",
+    "storage_type": null,
+    "storage_url": null,
+    "subdomain": "www",
+    "content_encoding": "utf-8",
+    "updated_at": "2025-07-14 02:29:20",
+    "user_agent_type": "desktop",
+    "session_info": null,
+    "statuses": [],
+    "client_notes": null,
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http://data.oxylabs.io/v1/queries/7350350656604996609",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http://data.oxylabs.io/v1/queries/7350350656604996609/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7350350656604996609/results/1/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http://data.oxylabs.io/v1/queries/7350350656604996609/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7350350656604996609/results/1/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7350350656604996609/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7350350656604996609/results/1/content?type=parsed"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
+}

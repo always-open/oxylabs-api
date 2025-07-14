@@ -2,12 +2,10 @@
 
 namespace AlwaysOpen\OxylabsApi\Tests\Feature;
 
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Http\Client\ConnectionException;

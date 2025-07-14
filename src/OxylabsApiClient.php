@@ -2,13 +2,13 @@
 
 namespace AlwaysOpen\OxylabsApi;
 
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonPricingResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonProductRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonProductResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSearchRequest;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSellerResponse;
-use AlwaysOpen\OxylabsApi\DTOs\AmazonSellersRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSearchRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellerResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;

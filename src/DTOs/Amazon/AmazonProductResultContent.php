@@ -1,7 +1,12 @@
 <?php
 
-namespace AlwaysOpen\OxylabsApi\DTOs;
+namespace AlwaysOpen\OxylabsApi\DTOs\Amazon;
 
+use AlwaysOpen\OxylabsApi\DTOs\Delivery;
+use AlwaysOpen\OxylabsApi\DTOs\FeaturedMerchant;
+use AlwaysOpen\OxylabsApi\DTOs\LightningDeal;
+use AlwaysOpen\OxylabsApi\DTOs\ProductDetails;
+use AlwaysOpen\OxylabsApi\DTOs\WarrantyAndSupport;
 use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;

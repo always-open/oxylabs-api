@@ -1,6 +1,6 @@
 <?php
 
-namespace AlwaysOpen\OxylabsApi\DTOs;
+namespace AlwaysOpen\OxylabsApi\DTOs\Amazon;
 
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;

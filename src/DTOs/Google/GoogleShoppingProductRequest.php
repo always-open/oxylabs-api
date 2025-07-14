@@ -1,15 +1,15 @@
 <?php
 
-namespace AlwaysOpen\OxylabsApi\DTOs;
+namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
 use Spatie\LaravelData\Data;
 
-class AmazonSellersRequest extends Data
+class GoogleShoppingProductRequest extends Data
 {
     public function __construct(
         public readonly string $source,
+        public readonly string $domain,
         public readonly string $query,
-        public readonly ?string $domain = null,
         public readonly ?array $parse = null,
         public readonly ?array $context = null
     ) {}
@@ -18,8 +18,8 @@ class AmazonSellersRequest extends Data
     {
         return array_filter([
             'source' => $this->source,
-            'query' => $this->query,
             'domain' => $this->domain,
+            'query' => $this->query,
             'parse' => $this->parse,
             'context' => $this->context,
         ]);

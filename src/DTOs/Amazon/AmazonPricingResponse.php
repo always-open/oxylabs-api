@@ -1,7 +1,8 @@
 <?php
 
-namespace AlwaysOpen\OxylabsApi\DTOs;
+namespace AlwaysOpen\OxylabsApi\DTOs\Amazon;
 
+use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
 

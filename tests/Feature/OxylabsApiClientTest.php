@@ -174,7 +174,7 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getAmazonPricingResult('7350883412053343233', type: 'png');
 
         $this->assertTrue($result->results[0]->isRaw());
-        $saved = $result->results[0]->saveImageTo(__DIR__ . '/7350883412053343233.png');
+        $saved = $result->results[0]->saveImageTo(__DIR__.'/7350883412053343233.png');
         $this->assertTrue($saved);
     }
 }

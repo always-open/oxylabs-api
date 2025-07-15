@@ -24,7 +24,7 @@ class AmazonPricingResult extends Data
         public readonly ?string $parser_preset = null,
     ) {}
 
-    public function isRaw() : bool
+    public function isRaw(): bool
     {
         return is_string($this->content);
     }

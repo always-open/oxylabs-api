@@ -162,4 +162,19 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertEquals('Adidas Samba OG Black/White for Kids IE3676 - 6', $result->results[0]->content->title);
         $this->assertEquals(80, $result->results[0]->content->pricing[0]->price);
     }
+
+    public function test_amazon_screenshot()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=png' => Http::response($this->getFixtureJsonContent('amazon_pricing_png_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $result = $client->getAmazonPricingResult('7350883412053343233', type: 'png');
+
+        $this->assertTrue($result->results[0]->isRaw());
+        $saved = $result->results[0]->saveImageTo(__DIR__ . '/7350883412053343233.png');
+        $this->assertTrue($saved);
+    }
 }

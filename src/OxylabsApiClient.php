@@ -143,8 +143,9 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
     ): AmazonProductResponse {
-        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonProductResponse::from($response);
     }
@@ -157,8 +158,9 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
     ): AmazonPricingResponse {
-        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonPricingResponse::from($response);
     }
@@ -171,8 +173,9 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
     ): AmazonSellerResponse {
-        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonSellerResponse::from($response);
     }
@@ -238,8 +241,9 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
     ): GoogleShoppingProductResponse {
-        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return GoogleShoppingProductResponse::from($response);
     }
@@ -260,8 +264,9 @@ class OxylabsApiClient
         bool $check_status = false,
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
     ): GoogleShoppingPricingResponse {
-        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, 'parsed');
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return GoogleShoppingPricingResponse::from($response);
     }

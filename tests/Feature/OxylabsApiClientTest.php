@@ -166,7 +166,7 @@ class OxylabsApiClientTest extends BaseTest
     public function test_amazon_screenshot()
     {
         Http::fake([
-            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=png' => Http::response($this->getFixtureJsonContent('amazon_pricing_png_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=png' => Http::response($this->getFixtureJsonContent('amazon_pricing_png_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');

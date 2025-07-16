@@ -11,6 +11,7 @@ use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductResponse;
+use AlwaysOpen\OxylabsApi\Enums\RenderOption;
 use AlwaysOpen\OxylabsApi\OxylabsApi;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
@@ -165,10 +166,20 @@ class OxylabsApiClientTest extends BaseTest
     public function test_amazon_screenshot()
     {
         Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
             'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=png' => Http::response($this->getFixtureJsonContent('amazon_pricing_png_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $request = new AmazonPricingRequest(
+            source: OxylabsApi::SOURCE_AMAZON_PRICING,
+            domain: 'com',
+            asin: 'testing',
+            render: RenderOption::PNG,
+        );
+
+        $client->amazonPricing($request);
 
         $result = $client->getAmazonPricingResult('7350883412053343233', type: 'png');
 

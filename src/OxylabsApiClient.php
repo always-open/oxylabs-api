@@ -6,6 +6,8 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellerResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
@@ -153,6 +155,21 @@ class OxylabsApiClient
     /**
      * @throws ConnectionException
      */
+    public function getAmazonResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
+    ): AmazonResponse {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
+
+        return AmazonResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
     public function getAmazonPricingResult(
         string $job_id,
         bool $check_status = false,
@@ -193,6 +210,11 @@ class OxylabsApiClient
         }
 
         return PushPullBatchJobResponse::from($response->json());
+    }
+
+    public function amazon(AmazonRequest $request): PushPullJob
+    {
+        return $this->makeRequest(OxylabsApi::TARGET_AMAZON, $request->toArray());
     }
 
     public function amazonProduct(AmazonProductRequest $request): PushPullJob

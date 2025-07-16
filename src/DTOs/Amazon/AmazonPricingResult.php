@@ -26,4 +26,21 @@ class AmazonPricingResult extends Data
         public readonly ?Carbon $updated_at = null,
         public readonly ?string $parser_preset = null,
     ) {}
+
+    public function isRaw(): bool
+    {
+        return is_string($this->content);
+    }
+
+    public function saveImageTo(string $imagePath): bool
+    {
+        $data = str_replace(' ', '+', $this->content);
+        $img = base64_decode($data);
+        $success = false;
+        if ($img) {
+            $success = file_put_contents($imagePath, $img);
+        }
+
+        return $success;
+    }
 }

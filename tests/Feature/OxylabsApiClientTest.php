@@ -8,7 +8,6 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
-use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductResponse;
 use AlwaysOpen\OxylabsApi\Enums\RenderOption;
 use AlwaysOpen\OxylabsApi\OxylabsApi;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;

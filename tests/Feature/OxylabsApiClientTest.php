@@ -3,12 +3,10 @@
 namespace AlwaysOpen\OxylabsApi\Tests\Feature;
 
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
-use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductResponse;
 use AlwaysOpen\OxylabsApi\Enums\RenderOption;

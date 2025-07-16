@@ -40,7 +40,7 @@ class AmazonRequest extends Data
         ?string $sellerId = null,
         ?string $marketplaceId = null,
         ?string $domain = 'com',
-    ) : string {
+    ): string {
         $domain ??= 'com';
         $url = "https://www.amazon.{$domain}/dp/{$asin}/ref=sr_1_4?";
         if ($sellerId) {
@@ -49,6 +49,7 @@ class AmazonRequest extends Data
         if ($marketplaceId) {
             $url .= "marketplaceID={$marketplaceId}&";
         }
+
         return "{$url}s=merchant-items&sr=1-4&th=1&psc=1";
     }
 }

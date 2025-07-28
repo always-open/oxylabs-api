@@ -10,6 +10,7 @@ use Spatie\LaravelData\DataCollection;
 class GoogleShoppingProductResponse extends Data
 {
     public function __construct(
+        /* @var GoogleShoppingProductResult[] $results */
         #[DataCollectionOf(GoogleShoppingProductResult::class)]
         public readonly DataCollection $results,
         public readonly PushPullJob $job,

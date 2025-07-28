@@ -2,6 +2,8 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
+use AlwaysOpen\OxylabsApi\DTOs\Casters\GoogleShoppingReviewsByStarCaster;
+use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Data;
 
 class GoogleShoppingProductReviews extends Data
@@ -11,7 +13,8 @@ class GoogleShoppingProductReviews extends Data
         public readonly GoogleShoppingProductTopReview $top_review,
         public readonly int $rating_stars,
         public readonly int $reviews_count,
-        public readonly array $reviews_by_stars,
+        #[WithCast(GoogleShoppingReviewsByStarCaster::class)]
+        public readonly GoogleShoppingProductReviewsByStar $reviews_by_stars,
         public readonly array $search_suggestions,
     ) {}
 }

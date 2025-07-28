@@ -9,6 +9,7 @@ class AmazonSalesRank extends Data
 {
     public function __construct(
         public readonly int $rank,
+        /* @var null|AmazonCategory[] $ladder */
         #[DataCollectionOf(AmazonCategory::class)]
         public readonly ?array $ladder = null,
     ) {}

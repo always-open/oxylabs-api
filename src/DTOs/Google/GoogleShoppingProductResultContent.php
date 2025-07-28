@@ -12,7 +12,6 @@ class GoogleShoppingProductResultContent extends Data
     public function __construct(
         public readonly string $url,
         public readonly string $title,
-        public readonly GoogleShoppingProductImages $images,
         public readonly GoogleShoppingProductPricing $pricing,
         public readonly GoogleShoppingProductReviews $reviews,
         public readonly array $variants,
@@ -21,6 +20,7 @@ class GoogleShoppingProductResultContent extends Data
         public readonly array $related_items,
         public readonly array $specifications,
         public readonly int $parse_status_code,
+        public readonly ?GoogleShoppingProductImages $images = null,
         public readonly ?array $product_details_keywords = null,
     ) {}
 }

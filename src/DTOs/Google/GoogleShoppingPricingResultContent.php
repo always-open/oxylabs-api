@@ -5,7 +5,6 @@ namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 use AlwaysOpen\OxylabsApi\Traits\ParseStatus;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
 
 class GoogleShoppingPricingResultContent extends Data
 {
@@ -14,11 +13,14 @@ class GoogleShoppingPricingResultContent extends Data
     public function __construct(
         public readonly string $url,
         public readonly string $title,
+        public readonly int $rating,
+        /* @var GoogleShoppingPricingOffer[] $pricing */
         #[DataCollectionOf(GoogleShoppingPricingOffer::class)]
-        public readonly DataCollection $pricing,
+        public readonly array $pricing,
         public readonly int $review_count,
-        #[DataCollectionOf(GoogleShoppingPricingHiddenOffer::class)]
-        public readonly DataCollection $hidden_offers,
         public readonly int $parse_status_code,
+        /* @var GoogleShoppingPricingHiddenOffer[] $hidden_offers */
+        #[DataCollectionOf(GoogleShoppingPricingHiddenOffer::class)]
+        public readonly ?array $hidden_offers = null,
     ) {}
 }

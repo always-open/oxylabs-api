@@ -29,7 +29,6 @@ class GoogleShoppingPricingResult extends Data
         public readonly ?string $parser_preset = null,
     ) {}
 
-
     public function hasMaxResults(): bool
     {
         return count($this->content->pricing) >= self::MAX_PRICES_PER_PAGE;

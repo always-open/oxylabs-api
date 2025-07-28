@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google;
 
+use AlwaysOpen\OxylabsApi\Traits\Renderable;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;
 use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
@@ -9,8 +10,12 @@ use Spatie\LaravelData\Data;
 
 class GoogleShoppingPricingResult extends Data
 {
+    use Renderable;
+
+    public const int MAX_PRICES_PER_PAGE = 20;
+
     public function __construct(
-        public readonly GoogleShoppingPricingResultContent $content,
+        public readonly GoogleShoppingPricingResultContent|string $content,
         public readonly int $page,
         public readonly string $url,
         public readonly string $job_id,
@@ -23,4 +28,15 @@ class GoogleShoppingPricingResult extends Data
         public readonly ?Carbon $updated_at = null,
         public readonly ?string $parser_preset = null,
     ) {}
+
+
+    public function hasMaxResults(): bool
+    {
+        return count($this->content->pricing) >= self::MAX_PRICES_PER_PAGE;
+    }
+
+    public function nextPage(): int
+    {
+        return $this->page + 1;
+    }
 }

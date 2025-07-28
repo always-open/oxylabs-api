@@ -7,8 +7,6 @@ use Spatie\LaravelData\Data;
 
 class AmazonPricingResultContent extends Data
 {
-    public const int MAX_PRICES_PER_PAGE = 10;
-
     public function __construct(
         public readonly string $url,
         public readonly string $asin,
@@ -22,14 +20,4 @@ class AmazonPricingResultContent extends Data
         public readonly int $parse_status_code,
         public readonly ?array $_warnings = null,
     ) {}
-
-    public function hasMaxResults(): bool
-    {
-        return count($this->pricing) >= self::MAX_PRICES_PER_PAGE;
-    }
-
-    public function nextPage(): int
-    {
-        return $this->page + 1;
-    }
 }

@@ -8,8 +8,6 @@ use Spatie\LaravelData\Data;
 
 class GoogleShoppingPricingResponse extends Data
 {
-    public const int MAX_PRICES_PER_PAGE = 20;
-
     public function __construct(
         /* @var GoogleShoppingPricingResult[] $results */
         #[DataCollectionOf(GoogleShoppingPricingResult::class)]

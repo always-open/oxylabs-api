@@ -12,6 +12,8 @@ class AmazonPricingResult extends Data
 {
     use Renderable;
 
+    public const int MAX_PRICES_PER_PAGE = 10;
+
     public function __construct(
         public readonly AmazonPricingResultContent|string $content,
         public readonly int $page,
@@ -27,20 +29,13 @@ class AmazonPricingResult extends Data
         public readonly ?string $parser_preset = null,
     ) {}
 
-    public function isRaw(): bool
+    public function hasMaxResults(): bool
     {
-        return is_string($this->content);
+        return count($this->content->pricing) >= self::MAX_PRICES_PER_PAGE;
     }
 
-    public function saveImageTo(string $imagePath): bool
+    public function nextPage(): int
     {
-        $data = str_replace(' ', '+', $this->content);
-        $img = base64_decode($data);
-        $success = false;
-        if ($img) {
-            $success = file_put_contents($imagePath, $img);
-        }
-
-        return $success;
+        return $this->page + 1;
     }
 }

@@ -105,7 +105,7 @@ class AmazonProductResultContent extends Data
         public readonly ?bool $is_prime_pantry = null,
     ) {}
 
-    public function getBuyBoxForListingPrice() : AmazonProductBuyBox|null
+    public function getBuyBoxForListingPrice(): ?AmazonProductBuyBox
     {
         foreach ($this->buybox as $buybox) {
             if ($buybox->price === $this->price) {

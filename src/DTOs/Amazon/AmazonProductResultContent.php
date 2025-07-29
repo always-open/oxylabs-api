@@ -83,6 +83,8 @@ class AmazonProductResultContent extends Data
         /* @var AmazonBoughtTogether[] $frequently_bought_together */
         #[DataCollectionOf(AmazonBoughtTogether::class)]
         public readonly ?array $frequently_bought_together = null,
+        /* @var AmazonProductBuyBox[] $buybox */
+        #[DataCollectionOf(AmazonProductBuyBox::class)]
         public readonly ?array $buybox = null,
         public readonly ?LightningDeal $lightning_deal = null,
         public readonly ?ProductDetails $product_details = null,
@@ -102,4 +104,15 @@ class AmazonProductResultContent extends Data
         public readonly ?Carbon $updated_at = null,
         public readonly ?bool $is_prime_pantry = null,
     ) {}
+
+    public function getBuyBoxForListingPrice() : AmazonProductBuyBox|null
+    {
+        foreach ($this->buybox as $buybox) {
+            if ($buybox->price === $this->price) {
+                return $buybox;
+            }
+        }
+
+        return null;
+    }
 }

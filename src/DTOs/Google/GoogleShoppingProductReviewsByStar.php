@@ -13,15 +13,4 @@ class GoogleShoppingProductReviewsByStar extends Data
         public readonly GoogleShoppingProductReviewByStar $_4,
         public readonly GoogleShoppingProductReviewByStar $_5,
     ) {}
-
-    public function toArray(): array
-    {
-        return [
-            '1' => $this->_1,
-            '2' => $this->_2,
-            '3' => $this->_3,
-            '4' => $this->_4,
-            '5' => $this->_5,
-        ];
-    }
 }

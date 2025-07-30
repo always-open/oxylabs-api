@@ -7,6 +7,6 @@ use Spatie\LaravelData\Data;
 class AmazonDeliveryDetailDate extends Data
 {
     public function __construct(
-        string $by,
+        public readonly string $by,
     ) {}
 }

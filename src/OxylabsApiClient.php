@@ -20,6 +20,7 @@ use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
+use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\PendingRequest;
@@ -165,6 +166,21 @@ class OxylabsApiClient
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonResponse::from($response);
+    }
+
+    /**
+     * @throws ConnectionException
+     */
+    public function getUniversalResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+        ?string $type = 'raw',
+    ): UniversalResponse {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
+
+        return UniversalResponse::from($response);
     }
 
     /**

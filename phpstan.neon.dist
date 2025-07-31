@@ -11,3 +11,4 @@ parameters:
     checkModelProperties: true
     ignoreErrors:
         - '#Trait AlwaysOpen\\OxylabsApi\\Traits\\APIStatus is used zero times and is not analysed.#'
+        - '#Call to function is_string\(\) with string will always evaluate to true.#'

@@ -2,7 +2,6 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Casters;
 
-use Spatie\LaravelData\Casts\Cast;
 use Spatie\LaravelData\Support\Creation\CreationContext;
 use Spatie\LaravelData\Support\DataProperty;
 

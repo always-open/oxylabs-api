@@ -10,7 +10,7 @@ class DashToUnderscoreCaster implements Cast
 {
     public function __construct(
         public readonly bool $toLower = false,
-    ){}
+    ) {}
 
     public function cast(DataProperty $property, mixed $value, array $properties, CreationContext $context): mixed
     {
@@ -29,6 +29,7 @@ class DashToUnderscoreCaster implements Cast
         if ($this->toLower) {
             $newKey = strtolower($newKey);
         }
+
         return $newKey;
     }
 }

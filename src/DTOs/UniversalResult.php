@@ -2,7 +2,6 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductResultContent;
 use AlwaysOpen\OxylabsApi\Traits\Renderable;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;
@@ -24,8 +23,8 @@ class UniversalResult extends Data
         public readonly ?Carbon $created_at = null,
         #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly ?Carbon $updated_at = null,
-        public readonly UniversalSession|null $session_info = null,
-        public readonly UniversalResultRequest|null $_request = null,
-        public readonly UniversalResultResponse|null $_response = null,
+        public readonly ?UniversalSession $session_info = null,
+        public readonly ?UniversalResultRequest $_request = null,
+        public readonly ?UniversalResultResponse $_response = null,
     ) {}
 }

@@ -232,4 +232,18 @@ class OxylabsApiClientTest extends BaseTest
         $saved = $result->results[0]->saveImageTo(__DIR__.'/7350883412053343233.png');
         $this->assertTrue($saved);
     }
+
+    public function test_universal_request()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=raw' => Http::response($this->getFixtureJsonContent('universal_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $result = $client->getUniversalResult('7350883412053343233', type: 'raw');
+
+        $this->assertEmpty($result->results[0]->_response->cookies[0]->max_age);
+        $this->assertEquals('gzip, deflate, br', $result->results[0]->_request->headers->accept_encoding);
+    }
 }

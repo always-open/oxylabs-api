@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
+use AlwaysOpen\OxylabsApi\Enums\RenderOption;
 use Spatie\LaravelData\Data;
 
 class BatchRequest extends Data
@@ -20,6 +21,7 @@ class BatchRequest extends Data
         public readonly ?string $callback_url = null,
         public readonly ?string $geo_location = null,
         public readonly ?array $context = null,
+        public readonly ?RenderOption $render = null,
     ) {
         if (
             ($this->query === null && $this->url === null)
@@ -43,6 +45,7 @@ class BatchRequest extends Data
             'callback_url' => $this->callback_url,
             'geo_location' => $this->geo_location,
             'context' => $this->context,
+            'render' => $this->render,
         ]);
     }
 }

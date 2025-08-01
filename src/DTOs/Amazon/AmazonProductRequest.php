@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Amazon;
 
+use AlwaysOpen\OxylabsApi\Enums\RenderOption;
 use Spatie\LaravelData\Data;
 
 class AmazonProductRequest extends Data
@@ -10,8 +11,9 @@ class AmazonProductRequest extends Data
         public readonly string $source,
         public readonly string $domain,
         public readonly string $asin,
-        public readonly ?array $parse = null,
-        public readonly ?array $context = null
+        public readonly ?bool $parse = null,
+        public readonly ?array $context = null,
+        public readonly ?RenderOption $render = null,
     ) {}
 
     public function toArray(): array

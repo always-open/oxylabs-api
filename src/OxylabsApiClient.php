@@ -69,7 +69,7 @@ class OxylabsApiClient
     /**
      * @throws ConnectionException
      */
-    protected function makeRequest(string $source, array $payload): PushPullJob
+    public function makeRequest(string $source, array $payload): PushPullJob
     {
         $response = $this->getBaseRequest()
             ->post($this->baseUrl.'/queries', [

@@ -14,6 +14,7 @@ class GoogleShoppingProductRequest extends Data
         public readonly ?bool $parse = null,
         public readonly ?array $context = null,
         public readonly ?RenderOption $render = null,
+        public readonly ?string $geo_location = null,
     ) {}
 
     public function toArray(): array
@@ -25,6 +26,7 @@ class GoogleShoppingProductRequest extends Data
             'parse' => $this->parse,
             'context' => $this->context,
             'render' => $this->render,
+            'geo_location' => $this->geo_location,
         ]);
     }
 }

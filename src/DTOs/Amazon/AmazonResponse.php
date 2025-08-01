@@ -14,7 +14,7 @@ class AmazonResponse extends Data
     public function __construct(
         /* @var AmazonResult[] $results */
         #[DataCollectionOf(AmazonResult::class)]
-        public readonly array|null $results,
-        public readonly PushPullJob|null $job,
+        public readonly ?array $results,
+        public readonly ?PushPullJob $job,
     ) {}
 }

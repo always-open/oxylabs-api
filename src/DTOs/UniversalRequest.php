@@ -14,9 +14,9 @@ class UniversalRequest extends Data
         public readonly ?bool $parse = null,
         public readonly ?RenderOption $render = null,
         public readonly ?array $context = null,
-//        public readonly ?string $callback_url = null,
-//        public readonly ?string $storage_type = null,
-//        public readonly ?string $storage_url = null,
+        //        public readonly ?string $callback_url = null,
+        //        public readonly ?string $storage_type = null,
+        //        public readonly ?string $storage_url = null,
     ) {}
 
     public function toArray(): array

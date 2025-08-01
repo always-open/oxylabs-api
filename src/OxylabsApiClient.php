@@ -90,9 +90,9 @@ class OxylabsApiClient
     public function getResult(
         string $job_id,
         ?string $type = null,
-    ): array {
+    ): null|array {
         $response = $this->getBaseRequest()
-            ->get($this->baseUrl."/queries/$job_id/results".($type ? "/?type=$type" : ''));
+            ->get($this->baseUrl."/queries/$job_id/results".($type ? "?type=$type" : ''));
 
         if (! $response->successful()) {
             throw new \RuntimeException('API request failed: '.$response->body());
@@ -122,7 +122,7 @@ class OxylabsApiClient
         int $status_check_limit = 5,
         int $status_wait_seconds = 3,
         ?string $type = null,
-    ): array {
+    ): array|null {
         if ($check_status) {
             $count = 0;
             do {

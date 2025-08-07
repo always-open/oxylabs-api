@@ -15,7 +15,7 @@ class PushPullJobResponse extends Data
         #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly string $created_at,
         public readonly string $domain,
-        public readonly string $geo_location,
+        public readonly ?string $geo_location,
         public readonly string $id,
         public readonly int $limit,
         public readonly int $pages,

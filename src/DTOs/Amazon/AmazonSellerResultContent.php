@@ -18,14 +18,14 @@ class AmazonSellerResultContent extends Data
     public function __construct(
         public readonly string $url,
         public readonly string $query,
-        public readonly string $seller_name,
         public readonly string $page_type,
         public readonly string $description,
-        public readonly string $business_name,
         /* @var SellerFeedback[] $recent_feedback */
         #[DataCollectionOf(SellerFeedback::class)]
-        public readonly string $business_address,
         public readonly int $parse_status_code,
+        public readonly ?string $seller_name = null,
+        public readonly ?string $business_name = null,
+        public readonly ?string $business_address = null,
         public readonly ?float $rating = null,
         public readonly array $recent_feedback = [],
         public readonly ?SellerFeedbackSummaryTable $feedback_summary_table = null,

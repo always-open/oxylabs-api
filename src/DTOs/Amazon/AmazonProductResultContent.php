@@ -27,7 +27,7 @@ class AmazonProductResultContent extends Data
         public readonly string $title,
         public readonly string $manufacturer,
         public readonly string $product_name,
-        public readonly string $description,
+        public readonly string|array $description,
         public readonly int $rating,
         public readonly float $price,
         public readonly float $price_sns,

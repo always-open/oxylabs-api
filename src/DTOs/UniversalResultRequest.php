@@ -2,7 +2,6 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
-use AlwaysOpen\OxylabsApi\DTOs\Casters\DashToUnderscoreCaster;
 use AlwaysOpen\OxylabsApi\DTOs\Casters\DashToUnderscoreCasterIterable;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;

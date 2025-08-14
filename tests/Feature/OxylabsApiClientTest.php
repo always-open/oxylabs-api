@@ -8,6 +8,7 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
+use AlwaysOpen\OxylabsApi\Enums\ParseStatus;
 use AlwaysOpen\OxylabsApi\Enums\RenderOption;
 use AlwaysOpen\OxylabsApi\OxylabsApi;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
@@ -146,6 +147,20 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertCount(1, $result->results);
         $this->assertEquals('Adidas Samba OG Black/White for Kids IE3676 - 6', $result->results[0]->content->title);
         $this->assertEquals(80, $result->results[0]->content->pricing->online[0]->price);
+    }
+
+    public function test_google_shopping_product_not_found()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_not_found.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $result = $client->getGoogleShoppingProductResult('7342973874281147393');
+
+        $this->assertCount(1, $result->results);
+        $this->assertEquals(ParseStatus::FAILURE_PRODUCT_NOT_FOUND->value, $result->results[0]->content->parse_status_code);
     }
 
     public function test_google_shopping_pricing()

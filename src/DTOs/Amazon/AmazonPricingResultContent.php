@@ -9,7 +9,7 @@ class AmazonPricingResultContent extends Data
 {
     public function __construct(
         public readonly string $url,
-        public readonly string $asin,
+        public readonly ?string $asin,
         public readonly int $page,
         public readonly string $title,
         /* @var AmazonPricingResultContentPricing[] $pricing */

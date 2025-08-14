@@ -21,7 +21,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -66,7 +66,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_pricing_results.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_pricing_results.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -83,6 +83,20 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertEquals(328.95, $result->results[0]->content->pricing[0]->price);
     }
 
+    public function test_amazon_pricing_no_available_listings()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_pricing_cannot_parse.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $result = $client->getAmazonPricingResult('7342973874281147393');
+
+        $this->assertNotEmpty($result->results[0]->content->_warnings);
+    }
+
     /**
      * @throws ConnectionException
      */
@@ -90,7 +104,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_seller_results.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_seller_results.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -112,7 +126,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_product_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_product_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -138,7 +152,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_pricing_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_pricing_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -164,7 +178,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=png' => Http::response($this->getFixtureJsonContent('amazon_pricing_png_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=png' => Http::response($this->getFixtureJsonContent('amazon_pricing_png_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -188,7 +202,7 @@ class OxylabsApiClientTest extends BaseTest
     public function test_amazon_request_parsed()
     {
         Http::fake([
-            'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_response_parse.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_response_parse.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -204,7 +218,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=html' => Http::response($this->getFixtureJsonContent('amazon_response_no_parse.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=html' => Http::response($this->getFixtureJsonContent('amazon_response_no_parse.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -236,7 +250,7 @@ class OxylabsApiClientTest extends BaseTest
     public function test_universal_request()
     {
         Http::fake([
-            'data.oxylabs.io/v1/queries/7350883412053343233/results/?type=raw' => Http::response($this->getFixtureJsonContent('universal_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=raw' => Http::response($this->getFixtureJsonContent('universal_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');

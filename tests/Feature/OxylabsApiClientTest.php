@@ -149,7 +149,7 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertEquals(80, $result->results[0]->content->pricing->online[0]->price);
     }
 
-    public function test_google_shopping_product_not_found()
+    public function test_google_shopping_pricing_not_found()
     {
         Http::fake([
             'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_not_found.json'), 200),
@@ -157,7 +157,7 @@ class OxylabsApiClientTest extends BaseTest
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
 
-        $result = $client->getGoogleShoppingProductResult('7342973874281147393');
+        $result = $client->getGoogleShoppingPricingResult('7342973874281147393');
 
         $this->assertCount(1, $result->results);
         $this->assertEquals(ParseStatus::FAILURE_PRODUCT_NOT_FOUND->value, $result->results[0]->content->parse_status_code);

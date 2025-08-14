@@ -11,14 +11,14 @@ class GoogleShoppingPricingResultContent extends Data
     use ParseStatus;
 
     public function __construct(
-        public readonly string $url,
-        public readonly string $title,
-        public readonly int $rating,
+        public readonly int $parse_status_code,
+        public readonly ?string $url = null,
+        public readonly ?string $title = null,
+        public readonly ?int $rating = null,
         /* @var GoogleShoppingPricingOffer[] $pricing */
         #[DataCollectionOf(GoogleShoppingPricingOffer::class)]
-        public readonly array $pricing,
-        public readonly int $review_count,
-        public readonly int $parse_status_code,
+        public readonly ?array $pricing = null,
+        public readonly ?int $review_count = null,
         /* @var GoogleShoppingPricingHiddenOffer[] $hidden_offers */
         #[DataCollectionOf(GoogleShoppingPricingHiddenOffer::class)]
         public readonly ?array $hidden_offers = null,

@@ -20,6 +20,7 @@ class UniversalResultResponseHeader extends Data
         public readonly ?string $expires = null,
         public readonly ?string $x_shopid = null,
         public readonly ?string $report_to = null,
+        public readonly ?string $sec_ch_ua = null,
         public readonly ?string $x_shardid = null,
         public readonly ?string $powered_by = null,
         public readonly ?string $content_type = null,

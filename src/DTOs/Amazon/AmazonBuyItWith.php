@@ -7,8 +7,8 @@ use Spatie\LaravelData\Data;
 class AmazonBuyItWith extends Data
 {
     public function __construct(
-        public readonly string $asin,
-        public readonly float $price,
-        public readonly string $title,
+        public readonly ?string $asin = null,
+        public readonly ?float $price = null,
+        public readonly ?string $title = null,
     ) {}
 }

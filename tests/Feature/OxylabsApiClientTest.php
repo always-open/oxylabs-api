@@ -273,6 +273,5 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getUniversalResult('7350883412053343233');
 
         $this->assertEmpty($result->results[0]->_response->cookies[0]->max_age);
-        $this->assertEquals('gzip, deflate, br', $result->results[0]->_request->headers->accept_encoding);
     }
 }

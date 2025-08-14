@@ -15,7 +15,6 @@ class UniversalResultRequest extends Data
         #[DataCollectionOf(Cookie::class)]
         #[WithCast(DashToUnderscoreCasterIterable::class, toLower: true)]
         public readonly ?array $cookies = null,
-        #[WithCast(DashToUnderscoreCaster::class, toLower: true)]
-        public readonly ?UniversalResultRequestHeader $headers = null,
+        public readonly ?array $headers = null,
     ) {}
 }

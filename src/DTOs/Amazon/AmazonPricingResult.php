@@ -21,6 +21,7 @@ class AmazonPricingResult extends Data
         public readonly string $job_id,
         public readonly bool $is_render_forced,
         public readonly int $status_code,
+        public readonly ?string $type = null,
         public readonly ?string $parser_type = null,
         #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly ?Carbon $created_at = null,

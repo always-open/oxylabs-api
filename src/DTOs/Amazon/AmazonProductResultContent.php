@@ -116,7 +116,7 @@ class AmazonProductResultContent extends Data
         return null;
     }
 
-    public function success() : bool
+    public function success(): bool
     {
         return $this->getParseStatusCode() === \AlwaysOpen\OxylabsApi\Enums\ParseStatus::SUCCESS;
     }

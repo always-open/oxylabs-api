@@ -23,4 +23,9 @@ class GoogleShoppingProductResultContent extends Data
         public readonly ?GoogleShoppingProductImages $images = null,
         public readonly ?array $product_details_keywords = null,
     ) {}
+
+    public function success() : bool
+    {
+        return $this->getParseStatusCode() === \AlwaysOpen\OxylabsApi\Enums\ParseStatus::SUCCESS;
+    }
 }

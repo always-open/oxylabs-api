@@ -32,4 +32,9 @@ class AmazonSellerResultContent extends Data
         #[WithCast(SellerFeedbackSummaryDataCaster::class)]
         public readonly ?SellerFeedbackSummaryData $feedback_summary_data = null,
     ) {}
+
+    public function success() : bool
+    {
+        return $this->getParseStatusCode() === \AlwaysOpen\OxylabsApi\Enums\ParseStatus::SUCCESS;
+    }
 }

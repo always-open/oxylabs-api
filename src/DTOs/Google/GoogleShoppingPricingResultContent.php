@@ -23,4 +23,9 @@ class GoogleShoppingPricingResultContent extends Data
         #[DataCollectionOf(GoogleShoppingPricingHiddenOffer::class)]
         public readonly ?array $hidden_offers = null,
     ) {}
+
+    public function success() : bool
+    {
+        return $this->getParseStatusCode() === \AlwaysOpen\OxylabsApi\Enums\ParseStatus::SUCCESS;
+    }
 }

@@ -43,6 +43,20 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertCount(1, $result_response->results);
     }
 
+    public function test_amazon_product_faulted()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_listing_faulted.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+        $result_response = $client->getAmazonProductResult('7342973874281147393');
+
+        $this->assertCount(1, $result_response->results);
+        $this->assertNotEquals(ParseStatus::SUCCESS->value, $result_response->results[0]->content->parse_status_code);
+        $this->assertEquals('faulted', $result_response->job->status);
+    }
+
     //    public function test_amazon_search()
     //    {
     //        Http::fake([

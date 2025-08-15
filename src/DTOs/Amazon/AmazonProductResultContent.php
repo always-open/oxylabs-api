@@ -19,27 +19,27 @@ class AmazonProductResultContent extends Data
     use ParseStatus;
 
     public function __construct(
-        public readonly string $url,
-        public readonly int $page,
-        public readonly string $page_type,
-        public readonly string $asin,
-        public readonly string $asin_in_url,
-        public readonly string $title,
-        public readonly string $manufacturer,
-        public readonly string $product_name,
-        public readonly string|array $description,
-        public readonly int $rating,
-        public readonly float $price,
-        public readonly float $price_sns,
-        public readonly float $price_initial,
-        public readonly float $price_buybox,
-        public readonly bool $is_prime_eligible,
-        public readonly string $currency,
-        public readonly string $stock,
-        public readonly int $reviews_count,
-        public readonly array $images,
-        public readonly bool $has_videos,
         public readonly int $parse_status_code,
+        public readonly ?string $url = null,
+        public readonly ?int $page = null,
+        public readonly ?string $page_type = null,
+        public readonly ?string $asin = null,
+        public readonly ?string $asin_in_url = null,
+        public readonly ?string $title = null,
+        public readonly ?string $manufacturer = null,
+        public readonly ?string $product_name = null,
+        public readonly null|string|array $description = null,
+        public readonly ?int $rating = null,
+        public readonly ?float $price = null,
+        public readonly ?float $price_sns = null,
+        public readonly ?float $price_initial = null,
+        public readonly ?float $price_buybox = null,
+        public readonly ?bool $is_prime_eligible = null,
+        public readonly ?string $currency = null,
+        public readonly ?string $stock = null,
+        public readonly ?int $reviews_count = null,
+        public readonly ?array $images = null,
+        public readonly ?bool $has_videos = null,
         /* @var AmazonBuyItWith[] $buy_it_with */
         #[DataCollectionOf(AmazonBuyItWith::class)]
         public readonly ?array $buy_it_with = null,
@@ -114,5 +114,10 @@ class AmazonProductResultContent extends Data
         }
 
         return null;
+    }
+
+    public function success() : bool
+    {
+        return $this->getParseStatusCode() === \AlwaysOpen\OxylabsApi\Enums\ParseStatus::SUCCESS;
     }
 }

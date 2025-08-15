@@ -25,6 +25,7 @@ use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
+use RuntimeException;
 
 class OxylabsApiClient
 {
@@ -78,7 +79,7 @@ class OxylabsApiClient
             ]);
 
         if (! $response->successful()) {
-            throw new \RuntimeException('API request failed: '.$response->body());
+            throw new RuntimeException('API request failed: '.$response->body());
         }
 
         return PushPullJob::from($response->json());
@@ -86,6 +87,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getResult(
         string $job_id,
@@ -95,7 +97,7 @@ class OxylabsApiClient
             ->get($this->baseUrl."/queries/$job_id/results".($type ? "?type=$type" : ''));
 
         if (! $response->successful()) {
-            throw new \RuntimeException('API request failed: '.$response->body());
+            throw new RuntimeException('API request failed: '.$response->body(), $response->getStatusCode());
         }
 
         return $response->json();
@@ -107,7 +109,7 @@ class OxylabsApiClient
             ->get($this->baseUrl."/queries/$job_id");
 
         if (! $response->successful()) {
-            throw new \RuntimeException('API request failed: '.$response->body());
+            throw new RuntimeException('API request failed: '.$response->body());
         }
 
         return PushPullJob::from($response->json());
@@ -115,6 +117,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getPushPullResults(
         string $job_id,
@@ -140,6 +143,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getAmazonProductResult(
         string $job_id,
@@ -155,6 +159,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getAmazonResult(
         string $job_id,
@@ -170,6 +175,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getUniversalResult(
         string $job_id,
@@ -185,6 +191,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getAmazonPricingResult(
         string $job_id,
@@ -200,6 +207,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getAmazonSellerResult(
         string $job_id,
@@ -215,6 +223,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function makeBatchRequest(BatchRequest $payload): PushPullBatchJobResponse
     {
@@ -222,42 +231,70 @@ class OxylabsApiClient
             ->post($this->baseUrl.'/queries/batch', $payload->toArray());
 
         if (! $response->successful()) {
-            throw new \RuntimeException('API request failed: '.$response->body());
+            throw new RuntimeException('API request failed: '.$response->body());
         }
 
         return PushPullBatchJobResponse::from($response->json());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function amazon(AmazonRequest $request): PushPullJob
     {
         return $this->makeRequest(OxylabsApi::TARGET_AMAZON, $request->toArray());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function amazonProduct(AmazonProductRequest $request): PushPullJob
     {
         return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_PRODUCT, $request->toArray());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function amazonSearch(AmazonSearchRequest $request): PushPullJob
     {
         return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_SEARCH, $request->toArray());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function amazonPricing(AmazonPricingRequest $request): PushPullJob
     {
         return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_PRICING, $request->toArray());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function amazonSellers(AmazonSellersRequest $request): PushPullJob
     {
         return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_SELLERS, $request->toArray());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function googleSearch(GoogleSearchRequest $request): PushPullJob
     {
         return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_SEARCH, $request->toArray());
     }
 
+    /**
+     * @throws ConnectionException
+     * @throws RuntimeException
+     */
     public function universal(UniversalRequest $request): PushPullJob
     {
         return $this->makeRequest('universal', $request->toArray());
@@ -265,6 +302,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function googleShoppingProduct(GoogleShoppingProductRequest $request): PushPullJob
     {
@@ -273,6 +311,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getGoogleShoppingProductResult(
         string $job_id,
@@ -288,6 +327,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function googleShoppingPricing(GoogleShoppingPricingRequest $request): PushPullJob
     {
@@ -296,6 +336,7 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
+     * @throws RuntimeException
      */
     public function getGoogleShoppingPricingResult(
         string $job_id,

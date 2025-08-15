@@ -14,7 +14,7 @@ class AmazonPricingResultContent extends Data
         public readonly string $title,
         /* @var AmazonPricingResultContentPricing[] $pricing */
         #[DataCollectionOf(AmazonPricingResultContentPricing::class)]
-        public readonly ?array $pricing = null,
+        public readonly ?array $pricing,
         public readonly string $asin_in_url,
         public readonly int $review_count,
         public readonly int $parse_status_code,

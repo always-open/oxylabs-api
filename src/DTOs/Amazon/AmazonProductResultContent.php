@@ -107,7 +107,7 @@ class AmazonProductResultContent extends Data
 
     public function getBuyBoxForListingPrice(): ?AmazonProductBuyBox
     {
-        foreach ($this->buybox as $buybox) {
+        foreach ($this->buybox ?? [] as $buybox) {
             if ($buybox->price === $this->price) {
                 return $buybox;
             }

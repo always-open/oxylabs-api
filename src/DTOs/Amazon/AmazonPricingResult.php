@@ -32,7 +32,7 @@ class AmazonPricingResult extends Data
 
     public function hasMaxResults(): bool
     {
-        return count($this->content->pricing) >= self::MAX_PRICES_PER_PAGE;
+        return count($this->content->pricing ?? []) >= self::MAX_PRICES_PER_PAGE;
     }
 
     public function nextPage(): int

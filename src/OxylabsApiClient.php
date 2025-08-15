@@ -104,9 +104,18 @@ class OxylabsApiClient
     public function getResult(
         string $job_id,
         ?string $type = null,
+        int $retryCount = 0,
     ): ?array {
-        $response = $this->getBaseRequest()
-            ->get($this->baseUrl."/queries/$job_id/results".($type ? "?type=$type" : ''));
+        try {
+            $response = $this->getBaseRequest()
+                ->get($this->baseUrl . "/queries/$job_id/results" . ($type ? "?type=$type" : ''));
+        } catch (ConnectionException $e) {
+            if ($retryCount < 3 && str_contains($e->getMessage(), 'Operation timed out')) {
+                return $this->getresult($job_id, $type, ++$retryCount);
+            }
+
+            throw $e;
+        }
 
         if (! $response->successful()) {
             throw new RuntimeException('API request failed: '.$response->body(), $response->getStatusCode());

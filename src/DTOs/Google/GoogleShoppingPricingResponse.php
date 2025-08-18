@@ -14,7 +14,7 @@ class GoogleShoppingPricingResponse extends Data
     public function __construct(
         /* @var GoogleShoppingPricingResult[] $results */
         #[DataCollectionOf(GoogleShoppingPricingResult::class)]
-        public readonly array $results,
-        public readonly PushPullJob $job,
+        public readonly ?array $results = null,
+        public readonly ?PushPullJob $job = null,
     ) {}
 }

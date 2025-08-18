@@ -108,7 +108,7 @@ class OxylabsApiClient
     ): ?array {
         try {
             $response = $this->getBaseRequest()
-                ->get($this->baseUrl . "/queries/$job_id/results" . ($type ? "?type=$type" : ''));
+                ->get($this->baseUrl."/queries/$job_id/results".($type ? "?type=$type" : ''));
         } catch (ConnectionException $e) {
             if ($retryCount < 3 && str_contains($e->getMessage(), 'Operation timed out')) {
                 return $this->getresult($job_id, $type, ++$retryCount);

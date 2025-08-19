@@ -21,6 +21,7 @@ use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
+use GuzzleHttp\Exception\ConnectException;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\PendingRequest;
@@ -109,8 +110,9 @@ class OxylabsApiClient
         try {
             $response = $this->getBaseRequest()
                 ->get($this->baseUrl."/queries/$job_id/results".($type ? "?type=$type" : ''));
-        } catch (ConnectionException $e) {
-            if ($retryCount < 3 && str_contains($e->getMessage(), 'Operation timed out')) {
+        } catch (ConnectionException|ConnectException $e) {
+            if ($retryCount < 3) {
+                sleep(1);
                 return $this->getresult($job_id, $type, ++$retryCount);
             }
 

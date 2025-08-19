@@ -132,10 +132,29 @@ class OxylabsApiClient
         return $response->json();
     }
 
-    public function getPushPullJob(string $job_id): PushPullJob
+    /**
+     * @throws ConnectionException
+     */
+    public function getPushPullJob(string $job_id, int $retryCount = 0): PushPullJob
     {
-        $response = $this->getBaseRequest()
-            ->get($this->baseUrl."/queries/$job_id");
+        try {
+            $response = $this->getBaseRequest()
+                ->get($this->baseUrl."/queries/$job_id");
+        } catch (\Exception $e) {
+            if (
+                $retryCount < 3
+                && (
+                    str_contains($e->getMessage(), 'Too many request')
+                    || str_contains($e->getMessage(), 'SSL')
+                )
+            ) {
+                sleep(1);
+
+                return $this->getPushPullJob($job_id, ++$retryCount);
+            }
+
+            throw $e;
+        }
 
         if (! $response->successful()) {
             throw new RuntimeException('API request failed: '.$response->body());

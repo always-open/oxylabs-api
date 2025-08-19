@@ -114,6 +114,7 @@ class OxylabsApiClient
         } catch (ConnectionException|ConnectException|RequestException $e) {
             if ($retryCount < 3) {
                 sleep(1);
+
                 return $this->getresult($job_id, $type, ++$retryCount);
             }
 

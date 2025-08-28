@@ -55,7 +55,6 @@ class OxylabsApi
 
     public const string SOURCE_WALMART_SEARCH = 'walmart_search';
 
-
     public const string TARGET_KROGER = 'kroger';
 
     public const string TARGET_BING = 'bing';

@@ -51,6 +51,11 @@ class OxylabsApi
 
     public const string SOURCE_KROGER_SEARCH = 'kroger_search';
 
+    public const string SOURCE_WALMART_PRODUCT = 'walmart_product';
+
+    public const string SOURCE_WALMART_SEARCH = 'walmart_search';
+
+
     public const string TARGET_KROGER = 'kroger';
 
     public const string TARGET_BING = 'bing';
@@ -58,6 +63,8 @@ class OxylabsApi
     public const string TARGET_AMAZON = 'amazon';
 
     public const string TARGET_GOOGLE = 'google';
+
+    public const string TARGET_WALMART = 'walmart';
 
     public const array SOURCES = [
         self::TARGET_AMAZON => [
@@ -88,6 +95,10 @@ class OxylabsApi
         ],
         self::TARGET_BING => [
             self::SOURCE_BING_SEARCH,
+        ],
+        self::TARGET_WALMART => [
+            self::SOURCE_WALMART_PRODUCT,
+            self::SOURCE_WALMART_SEARCH,
         ],
     ];
 

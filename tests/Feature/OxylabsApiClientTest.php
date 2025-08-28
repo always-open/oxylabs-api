@@ -8,6 +8,7 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductRequest;
 use AlwaysOpen\OxylabsApi\Enums\ParseStatus;
 use AlwaysOpen\OxylabsApi\Enums\RenderOption;
 use AlwaysOpen\OxylabsApi\OxylabsApi;
@@ -201,6 +202,53 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertCount(1, $result->results);
         $this->assertEquals('Adidas Samba OG Black/White for Kids IE3676 - 6', $result->results[0]->content->title);
         $this->assertEquals(80, $result->results[0]->content->pricing[0]->price);
+    }
+
+    public function test_walmart_product()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('walmart_product_results.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $request = new WalmartProductRequest(
+            source: 'walmart_product',
+            domain: 'com',
+            product_id: '123456'
+        );
+
+        $response = $client->walmartProduct($request);
+
+        $result = $client->getWalmartProductResult($response->id);
+
+        $this->assertCount(1, $result->results);
+    }
+
+    public function test_walmart_screenshot()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=png' => Http::response($this->getFixtureJsonContent('walmart_product_screenshot.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $request = new WalmartProductRequest(
+            source: 'walmart_product',
+            domain: 'com',
+            product_id: '123456',
+            render: RenderOption::PNG,
+        );
+
+        $client->walmartProduct($request);
+
+        $result = $client->getWalmartProductResult('7350883412053343233', type: 'png');
+
+        $this->assertTrue($result->results[0]->isRaw());
+        $saved = $result->results[0]->saveImageTo(__DIR__.'/7350883412053343233_walmart.png');
+        $this->assertTrue($saved);
     }
 
     public function test_amazon_screenshot()

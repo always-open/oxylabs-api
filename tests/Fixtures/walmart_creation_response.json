@@ -1,0 +1,67 @@
+{
+  "source": "walmart_product",
+  "parse": "true",
+  "product_id": "22073997",
+  "domain": "com",
+  "geo_location": "United States",
+  "render": "png",
+  "id": "7366904560008327169",
+  "status": "pending",
+  "created_at": "2025-08-28 18:48:37",
+  "updated_at": "2025-08-28 18:48:37",
+  "_links": [
+    {
+      "rel": "self",
+      "href": "http://data.oxylabs.io/v1/queries/7366904560008327169",
+      "method": "GET"
+    },
+    {
+      "rel": "results",
+      "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results",
+      "method": "GET"
+    },
+    {
+      "rel": "results-content",
+      "href_list": [
+        "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content"
+      ],
+      "method": "GET"
+    },
+    {
+      "rel": "results-html",
+      "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=raw",
+      "method": "GET"
+    },
+    {
+      "rel": "results-content-html",
+      "href_list": [
+        "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=raw"
+      ],
+      "method": "GET"
+    },
+    {
+      "rel": "results-parsed",
+      "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=parsed",
+      "method": "GET"
+    },
+    {
+      "rel": "results-content-parsed",
+      "href_list": [
+        "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=parsed"
+      ],
+      "method": "GET"
+    },
+    {
+      "rel": "results-png",
+      "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=png",
+      "method": "GET"
+    },
+    {
+      "rel": "results-content-png",
+      "href_list": [
+        "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=png"
+      ],
+      "method": "GET"
+    }
+  ]
+}

@@ -11,21 +11,21 @@ use Spatie\LaravelData\Data;
 class PushPullJob extends Data
 {
     public function __construct(
-        public readonly int $client_id,
         #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly Carbon $created_at,
         public readonly string $domain,
         public readonly string $id,
-        public readonly int $limit,
-        public readonly int $pages,
         public readonly bool $parse,
-        public readonly bool $xhr,
-        public readonly bool $markdown,
         public readonly string $source,
-        public readonly int $start_page,
         public readonly string $status,
         #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
         public readonly Carbon $updated_at,
+        public readonly bool|null $xhr = null,
+        public readonly int|null $client_id = null,
+        public readonly int|null $limit = null,
+        public readonly int|null $pages = null,
+        public readonly bool|null $markdown = null,
+        public readonly int|null $start_page  = null,
         public readonly ?string $callback_url = null,
         public readonly ?array $context = null,
         public readonly ?string $geo_location = null,
@@ -45,6 +45,7 @@ class PushPullJob extends Data
         public readonly array|string|null $session_info = null,
         public readonly ?array $statuses = null,
         public readonly ?string $proxy_plan = null,
+        public readonly ?string $product_id = null,
         public readonly ?string $client_notes = null,
         /* @var ResultLink[] $_links */
         #[DataCollectionOf(ResultLink::class)]

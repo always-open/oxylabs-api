@@ -1,0 +1,220 @@
+{
+  "results": [
+    {
+      "content": {
+        "price": {
+          "price": 72.42,
+          "currency": "USD",
+          "price_strikethrough": null
+        },
+        "rating": {
+          "count": 11,
+          "rating": 3.9
+        },
+        "seller": {
+          "id": "C1FF9D6CD0284B529BC2B9BE5E777EA6",
+          "url": "/global/seller/1061?itemId=22073997",
+          "name": "Buildcom",
+          "catalog_id": "1061",
+          "official_name": "Build.com"
+        },
+        "general": {
+          "url": "https://www.walmart.com/ip/Moen-T2132-Chrome-Posi-Temp-R-shower-only/22073997",
+          "meta": {
+            "sku": "22073997",
+            "gtin": "026508153253"
+          },
+          "badge": [],
+          "brand": "Moen",
+          "title": "Moen T2132 Chrome Posi-Temp(R) shower only",
+          "images": [
+            "https://i5.walmartimages.com/seo/Moen-T2132-Chrome-Posi-Temp-R-shower-only_c943023a-3273-4d7b-a3f2-74bb78ac0ad1.46f8096e025115721e0b54f584d863a4.png?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/006fc18f-8d87-4ddc-8eff-5453d0402cb9.53f0ca09422b9a62860156a6d28604ac.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+          ],
+          "main_image": "https://i5.walmartimages.com/seo/Moen-T2132-Chrome-Posi-Temp-R-shower-only_c943023a-3273-4d7b-a3f2-74bb78ac0ad1.46f8096e025115721e0b54f584d863a4.png?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
+          "description": "About this item Product details \"With flowing curves, the Eva collection's Transitional design is pure and organic. Petal-like handles and swan-like spout bring a relaxed feeling to the bath.\" Desription With flowing curves, the Eva collection's Transitional design is pure and organic. Petal-like handles and swan-like spout bring a relaxed feeling to the bath. Features: chrome finish is highly reflective for a mirror-like look that works with any decorating style lever handle makes it easy to adjust the water install with Posi-Temp(r) pressure balancing control valve to maintain water temperature control in the shower 3-1/2\" diameter Specifications: Manufacturer Warranty: https://www.moen.com/customer Finish:Chrome info: We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it. See our disclaimer"
+        },
+        "location": {
+          "city": "Cincinnati",
+          "state": "OH",
+          "store_id": "2447",
+          "zip_code": "45238"
+        },
+        "variations": [
+          {
+            "price": {
+              "price": 72.42,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "31N97C7VNDVO",
+            "selected_options": [
+              {
+                "key": "Actual Color",
+                "value": "Chrome"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 134.99,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "180S47IV748W",
+            "selected_options": [
+              {
+                "key": "Actual Color",
+                "value": "Oil Rubbed Bronze"
+              }
+            ]
+          }
+        ],
+        "breadcrumbs": [
+          {
+            "url": "/cp/home-improvement/1072864",
+            "category_name": "Home Improvement"
+          },
+          {
+            "url": "/cp/plumbing/1406684",
+            "category_name": "Plumbing"
+          },
+          {
+            "url": "/cp/shop-plumbing-by-fixture/3247335",
+            "category_name": "Shop Plumbing by Fixture"
+          },
+          {
+            "url": "/cp/shower-bathtub-plumbing/4830378",
+            "category_name": "Shower and Bathtub Plumbing"
+          },
+          {
+            "url": "/cp/shower-heads/9581595",
+            "category_name": "Shower Heads"
+          },
+          {
+            "url": "/cp/shower-heads-by-type/4999037",
+            "category_name": "Shower Heads by Type"
+          },
+          {
+            "url": "/cp/fixed-shower-heads/3986282",
+            "category_name": "Fixed Shower Heads"
+          }
+        ],
+        "specifications": [
+          {
+            "key": "Brand",
+            "value": "Moen"
+          },
+          {
+            "key": "Manufacturer Part Number",
+            "value": "T2132"
+          },
+          {
+            "key": "Manufacturer",
+            "value": "Stock Market"
+          },
+          {
+            "key": "Finish",
+            "value": "Chrome"
+          },
+          {
+            "key": "Assembled Product Weight",
+            "value": "6 lb"
+          },
+          {
+            "key": "Model",
+            "value": "T2132"
+          },
+          {
+            "key": "Color",
+            "value": "Chrome"
+          },
+          {
+            "key": "Assembled Product Dimensions (L x W x H)",
+            "value": "10.00 x 1.00 x 1.00 in"
+          }
+        ],
+        "parse_status_code": 12000,
+        "cheapest_seller_name": null,
+        "sold_by_walmart_price": null
+      },
+      "created_at": "2025-08-28 18:48:37",
+      "updated_at": "2025-08-28 18:50:03",
+      "page": 1,
+      "url": "https://www.walmart.com/ip/BOtucovYGYDVwZSJ/22073997",
+      "job_id": "7366904560008327169",
+      "is_render_forced": false,
+      "status_code": 200,
+      "type": "parsed",
+      "parser_type": "walmart_product_new",
+      "parser_preset": null
+    }
+  ],
+  "job": {
+    "parse": "true",
+    "domain": "com",
+    "render": "png",
+    "source": "walmart_product",
+    "product_id": "22073997",
+    "geo_location": "United States",
+    "id": "7366904560008327169",
+    "status": "done",
+    "created_at": "2025-08-28 18:48:37",
+    "updated_at": "2025-08-28 18:50:03",
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=parsed"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-png",
+        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=png",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-png",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=png"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
+}

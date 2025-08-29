@@ -43,6 +43,7 @@ class WalmartProductResultContent extends Data
         #[DataCollectionOf(WalmartProductResultContentSpecification::class)]
         public readonly array|null $specifications = null,
         public readonly string|null $cheapest_seller_name = null,
+        public readonly WalmartProductResultContentFulfillment|null $fulfillment = null,
         public readonly string|float|null $sold_by_walmart_price = null,
     ) {}
 

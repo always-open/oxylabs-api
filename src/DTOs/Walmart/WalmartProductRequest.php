@@ -36,5 +36,4 @@ class WalmartProductRequest extends Data
             'user_agent_type' => $this->user_agent_type,
         ]);
     }
-
 }

@@ -3,36 +3,40 @@
     {
       "content": {
         "price": {
-          "price": 167.97,
+          "price": 315.11,
           "currency": "USD",
-          "price_strikethrough": 197.96
+          "price_strikethrough": null
         },
         "rating": {
-          "count": 31,
-          "rating": 4.8
+          "count": 1666,
+          "rating": 4.4
         },
         "seller": {
-          "id": "F55CDC31AB754BB68FE0B39041159D63",
-          "name": "Walmart.com",
-          "official_name": "Walmart.com"
+          "id": "89E29380945442589BB5A698104A078F",
+          "url": "https://www.walmart.com/global/seller/101652915",
+          "name": "United Tires",
+          "catalog_id": "101652915",
+          "official_name": "LIMPIC INC"
         },
         "general": {
-          "url": "https://www.walmart.com/ip/Laufenn-X-FIT-AT-LC01-All-Terrain-265-70R18-116T-Passenger-Tire/135330522",
+          "url": "https://www.walmart.com/ip/Hankook-Ventus-S1-Noble2-H452-All-Season-255-50R20-105H-Passenger-Tire/102109577",
           "meta": {
-            "sku": "135330522",
-            "gtin": "715459448517"
+            "sku": "102109577",
+            "gtin": "715459375028"
           },
           "badge": [],
-          "brand": "Laufenn",
-          "title": "265/70R18 116T LAUF X FIT AT LC01 BW",
+          "brand": "Hankook",
+          "title": "Hankook Ventus S1 Noble2 (H452) UHP All Season 255/50R20 105H Passenger Tire",
           "images": [
-            "https://i5.walmartimages.com/seo/Laufenn-X-FIT-AT-LC01-All-Terrain-265-70R18-116T-Passenger-Tire_07cf66e0-b0fb-480c-8630-a52f74ea87cb.522b244108dd5c5130171abc7f5ad88e.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/75e76d79-16f2-402f-ab95-c3e340ace1bd.c285790d826b152fbe4206df082722ef.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/968d3fa4-9189-4a9b-9169-ac6ccafea917.695301da7788be7bba7be82c44bb8900.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/fd1a97f1-1de5-4772-baec-1e3aec89cded.cff163d78d7eff8f36607021f099e731.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+            "https://i5.walmartimages.com/seo/Hankook-Ventus-S1-Noble2-H452-All-Season-255-50R20-105H-Passenger-Tire_5f2927a3-3934-4c5e-85b0-5a7572ec8b75.c682094780901a7274b1cf195c893874.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/2ae3426e-0a61-4d7a-bdf2-0fc3dc5fbb8d.47606faecc5875f4bf92c816acd775ef.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/ca382555-4d9e-4de6-803b-2c7a0a9a8cd4.f867806513c5acc9cbd1dc4318bf7a62.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/dfdbdc69-88ef-4272-b850-d3c03724c464.dcb6206a0692128e96231fee53989702.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/66fec186-6a58-4b67-be46-fa45af613135.1e119f36ef8f134019efd5c8e1e48591.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/ebf03529-c44f-4438-8dd9-d6b35ce7964d.ef312a9cb05704088def1f13c7832893.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
           ],
-          "main_image": "https://i5.walmartimages.com/seo/Laufenn-X-FIT-AT-LC01-All-Terrain-265-70R18-116T-Passenger-Tire_07cf66e0-b0fb-480c-8630-a52f74ea87cb.522b244108dd5c5130171abc7f5ad88e.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
-          "description": "The all-terrain all-season X Fit AT LC01 from Laufenn is designed for comfort and provides drivers of light trucks and SUVs impressive performance in on- and off-road conditions.<ul>  <li>   <ul>    <li>Asymmetric tread design provides additional resistance to external damage</li>    <li>Backed by a 45,000 mile limited manufacturer tread life warranty for Metric sizes only</li>    <li>Rim protector prevents sidewall damage and offers extra traction</li>    <li>Long mileage tread compound leads to a longer tread life and improves traction and braking performance</li>    <li>Rim/Wheel is not included with purchase</li>   </ul></li>  <li>Asymmetric tread design provides additional resistance to external damage</li>  <li>Backed by a 45,000 mile limited manufacturer tread life warranty for Metric sizes only</li>  <li>Rim protector prevents sidewall damage and offers extra traction</li>  <li>Long mileage tread compound leads to a longer tread life and improves traction and braking performance</li>  <li>Rim/Wheel is not included with purchase</li>  <li>Asymmetric tread design provides additional resistance to external damage</li> </ul>"
+          "main_image": "https://i5.walmartimages.com/seo/Hankook-Ventus-S1-Noble2-H452-All-Season-255-50R20-105H-Passenger-Tire_5f2927a3-3934-4c5e-85b0-5a7572ec8b75.c682094780901a7274b1cf195c893874.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
+          "description": "<h2>Hankook Ventus S1 Noble2 (H452) 255/50R20 105H</h2><p><strong>OVERVIEW</strong></p><p>The Hankook Ventus S1 Noble 2 H452 tires blend ultra-high performance with all-season reliability for passenger and sports cars. Driving on these tires is comfortable thanks to their optimal pitch arrangement which minimizes noise. On wet surfaces, grooves expel water to prevent hydroplaning while 3D kerfs provide additional biting edges. The rib blocks on the outside of these tires enhance cornering grip while wide steel belts ensure tread stiffness for better handling.</p><ul>  <li>   <ul>    <li>Aqua hydro block efficiently drains water from the tread for better braking performance on wet roads</li>    <li>Straight rib block on the outside of the tire increases cornering performance and reduces road noises</li>    <li>3D kerf allows for better handling performance by staying stable during acceleration, braking, and cornering</li>    <li>Optimized pitch arrangement reduces road noises and vibrations for a quiet, comfortable ride</li>    <li>Silica-based rubber compound boosts wet grip and lowers rolling resistance to improve fuel efficiency</li>   </ul></li>  <li>Size: 255/50R20</li>  <li>Load Range: SL</li>  <li>Product May Vary From Picture</li>  <li>Wheel/Rim Not Included</li> </ul>"
         },
         "location": {
           "city": "Sacramento",
@@ -63,23 +67,27 @@
           }
         ],
         "fulfillment": {
-          "pickup": true,
+          "pickup": false,
           "delivery": false,
           "shipping": true,
           "out_of_stock": false,
           "free_shipping": false,
-          "pickup_information": ", Pickup, Check nearby",
+          "pickup_information": ", Pickup, Not available",
           "delivery_information": ", Delivery, Not available",
-          "shipping_information": ", Shipping, Arrives Sep 4, Order within 9 hr 7 min, Free"
+          "shipping_information": ", Shipping, Arrives Sep 11, Free"
+        },
+        "cheapest_price": {
+          "price": 321.99,
+          "currency": "USD"
         },
         "specifications": [
           {
             "key": "Tire Diameter",
-            "value": "18 in"
+            "value": "20 in"
           },
           {
             "key": "Tire Terrain",
-            "value": "All-Terrain"
+            "value": "Highway Terrain"
           },
           {
             "key": "Construction Type",
@@ -87,15 +95,15 @@
           },
           {
             "key": "Features",
-            "value": "Fits Multiple Makes And models, Low Maintenance, All-Weather, Compatible With Multiple Cars"
+            "value": "Fits Multiple Makes And models"
           },
           {
             "key": "Tire Size",
-            "value": "265/70R18"
+            "value": "255/50R20"
           },
           {
             "key": "Brand",
-            "value": "Laufenn"
+            "value": "Hankook"
           },
           {
             "key": "Vehicle Type",
@@ -103,27 +111,31 @@
           },
           {
             "key": "Tire Width",
-            "value": "10.6 in"
+            "value": "255"
           },
           {
             "key": "Tire Aspect Ratio",
-            "value": "70"
+            "value": "50"
           },
           {
             "key": "Wheel Diameter",
-            "value": "18 in"
+            "value": "20 in"
           },
           {
             "key": "Warranty Distance",
-            "value": "45000 miles"
+            "value": "50000 miles"
           },
           {
             "key": "Tire Season",
-            "value": "Summer"
+            "value": "All-Season"
           },
           {
             "key": "Tire Speed Rating",
-            "value": "T"
+            "value": "H"
+          },
+          {
+            "key": "Has Warranty",
+            "value": "Y"
           },
           {
             "key": "Tire Type",
@@ -131,46 +143,53 @@
           },
           {
             "key": "Tire Load Index",
-            "value": "116"
+            "value": "105"
           },
           {
             "key": "Uniform Tire Quality Grade (UTQG)",
-            "value": "0"
+            "value": "500 A A"
+          },
+          {
+            "key": "Tire Traction Rating",
+            "value": "A"
           },
           {
             "key": "Tire Treadwear Rating",
-            "value": "520"
+            "value": "500"
           },
           {
             "key": "Tread Depth",
-            "value": "12.5/32"
+            "value": "10/32"
           },
           {
             "key": "Assembled Product Weight",
-            "value": "41.45 lb"
+            "value": "34 lb"
           },
           {
             "key": "Model",
-            "value": "Laufenn-X FIT AT LC01"
+            "value": "Ventus S1 Noble2 (H452) 1017315"
           },
           {
             "key": "Manufacturer Part Number",
-            "value": "1023997"
+            "value": "1017315"
           },
           {
             "key": "Manufacturer",
-            "value": "Laufenn"
+            "value": "Hankook"
           }
         ],
         "parse_status_code": 12000,
-        "cheapest_seller_name": null,
-        "sold_by_walmart_price": null
+        "cheapest_seller_name": "Walmart.com",
+        "sold_by_walmart_price": {
+          "price": 321.99,
+          "currency": "USD"
+        }
       },
-      "created_at": "2025-09-02 16:52:27",
-      "updated_at": "2025-09-02 16:52:30",
+      "created_at": "2025-09-02 18:07:23",
+      "updated_at": "2025-09-02 18:07:26",
       "page": 1,
-      "url": "https://www.walmart.com/ip/EBTEEOHVpcPijZFH/135330522",
-      "job_id": "7368687265268132865",
+      "url": "https://www.walmart.com/ip/ZwnncOAxqcQhYKYl/102109577",
+      "job_id": "7368706123169281025",
       "is_render_forced": false,
       "status_code": 200,
       "type": "parsed",
@@ -182,50 +201,50 @@
     "parse": true,
     "domain": "com",
     "source": "walmart_product",
-    "product_id": "135330522",
-    "id": "7368687265268132865",
+    "product_id": "102109577",
+    "id": "7368706123169281025",
     "status": "done",
-    "created_at": "2025-09-02 16:52:27",
-    "updated_at": "2025-09-02 16:52:30",
+    "created_at": "2025-09-02 18:07:23",
+    "updated_at": "2025-09-02 18:07:26",
     "_links": [
       {
         "rel": "self",
-        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865",
+        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025",
         "method": "GET"
       },
       {
         "rel": "results",
-        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865/results",
+        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025/results",
         "method": "GET"
       },
       {
         "rel": "results-content",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7368687265268132865/results/1/content"
+          "http://data.oxylabs.io/v1/queries/7368706123169281025/results/1/content"
         ],
         "method": "GET"
       },
       {
         "rel": "results-html",
-        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865/results?type=raw",
+        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025/results?type=raw",
         "method": "GET"
       },
       {
         "rel": "results-content-html",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7368687265268132865/results/1/content?type=raw"
+          "http://data.oxylabs.io/v1/queries/7368706123169281025/results/1/content?type=raw"
         ],
         "method": "GET"
       },
       {
         "rel": "results-parsed",
-        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865/results?type=parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025/results?type=parsed",
         "method": "GET"
       },
       {
         "rel": "results-content-parsed",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7368687265268132865/results/1/content?type=parsed"
+          "http://data.oxylabs.io/v1/queries/7368706123169281025/results/1/content?type=parsed"
         ],
         "method": "GET"
       }

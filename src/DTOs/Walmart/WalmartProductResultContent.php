@@ -28,7 +28,8 @@ class WalmartProductResultContent extends Data
         public readonly ?array $specifications = null,
         public readonly ?string $cheapest_seller_name = null,
         public readonly ?WalmartProductResultContentFulfillment $fulfillment = null,
-        public readonly string|float|null $sold_by_walmart_price = null,
+        public readonly string|float|null|WalmartProductPrice $sold_by_walmart_price = null,
+        public readonly string|float|null|WalmartProductPrice $cheapest_price = null,
     ) {}
 
     public function success(): bool

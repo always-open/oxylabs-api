@@ -8,6 +8,6 @@ class WalmartProductPrice extends Data
 {
     public function __construct(
         public readonly float $price,
-        public readonly string|null $currency = null,
+        public readonly ?string $currency = null,
     ) {}
 }

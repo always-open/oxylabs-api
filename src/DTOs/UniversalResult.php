@@ -13,7 +13,7 @@ class UniversalResult extends Data
     use Renderable;
 
     public function __construct(
-        public readonly string $content,
+        public readonly string|UniversalResultContent $content,
         public readonly int $page,
         public readonly string $url,
         public readonly string $job_id,

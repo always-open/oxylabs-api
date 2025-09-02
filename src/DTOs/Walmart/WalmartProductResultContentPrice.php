@@ -9,6 +9,6 @@ class WalmartProductResultContentPrice extends Data
     public function __construct(
         public readonly float $price,
         public readonly string $currency,
-        public readonly ?string $price_strikethrough = null,
+        public readonly null|string|float $price_strikethrough = null,
     ) {}
 }

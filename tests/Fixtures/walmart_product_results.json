@@ -3,146 +3,174 @@
     {
       "content": {
         "price": {
-          "price": 72.42,
+          "price": 167.97,
           "currency": "USD",
-          "price_strikethrough": null
+          "price_strikethrough": 197.96
         },
         "rating": {
-          "count": 11,
-          "rating": 3.9
+          "count": 31,
+          "rating": 4.8
         },
         "seller": {
-          "id": "C1FF9D6CD0284B529BC2B9BE5E777EA6",
-          "url": "/global/seller/1061?itemId=22073997",
-          "name": "Buildcom",
-          "catalog_id": "1061",
-          "official_name": "Build.com"
+          "id": "F55CDC31AB754BB68FE0B39041159D63",
+          "name": "Walmart.com",
+          "official_name": "Walmart.com"
         },
         "general": {
-          "url": "https://www.walmart.com/ip/Moen-T2132-Chrome-Posi-Temp-R-shower-only/22073997",
+          "url": "https://www.walmart.com/ip/Laufenn-X-FIT-AT-LC01-All-Terrain-265-70R18-116T-Passenger-Tire/135330522",
           "meta": {
-            "sku": "22073997",
-            "gtin": "026508153253"
+            "sku": "135330522",
+            "gtin": "715459448517"
           },
           "badge": [],
-          "brand": "Moen",
-          "title": "Moen T2132 Chrome Posi-Temp(R) shower only",
+          "brand": "Laufenn",
+          "title": "265/70R18 116T LAUF X FIT AT LC01 BW",
           "images": [
-            "https://i5.walmartimages.com/seo/Moen-T2132-Chrome-Posi-Temp-R-shower-only_c943023a-3273-4d7b-a3f2-74bb78ac0ad1.46f8096e025115721e0b54f584d863a4.png?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/006fc18f-8d87-4ddc-8eff-5453d0402cb9.53f0ca09422b9a62860156a6d28604ac.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+            "https://i5.walmartimages.com/seo/Laufenn-X-FIT-AT-LC01-All-Terrain-265-70R18-116T-Passenger-Tire_07cf66e0-b0fb-480c-8630-a52f74ea87cb.522b244108dd5c5130171abc7f5ad88e.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/75e76d79-16f2-402f-ab95-c3e340ace1bd.c285790d826b152fbe4206df082722ef.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/968d3fa4-9189-4a9b-9169-ac6ccafea917.695301da7788be7bba7be82c44bb8900.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/fd1a97f1-1de5-4772-baec-1e3aec89cded.cff163d78d7eff8f36607021f099e731.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
           ],
-          "main_image": "https://i5.walmartimages.com/seo/Moen-T2132-Chrome-Posi-Temp-R-shower-only_c943023a-3273-4d7b-a3f2-74bb78ac0ad1.46f8096e025115721e0b54f584d863a4.png?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
-          "description": "About this item Product details \"With flowing curves, the Eva collection's Transitional design is pure and organic. Petal-like handles and swan-like spout bring a relaxed feeling to the bath.\" Desription With flowing curves, the Eva collection's Transitional design is pure and organic. Petal-like handles and swan-like spout bring a relaxed feeling to the bath. Features: chrome finish is highly reflective for a mirror-like look that works with any decorating style lever handle makes it easy to adjust the water install with Posi-Temp(r) pressure balancing control valve to maintain water temperature control in the shower 3-1/2\" diameter Specifications: Manufacturer Warranty: https://www.moen.com/customer Finish:Chrome info: We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it. See our disclaimer"
+          "main_image": "https://i5.walmartimages.com/seo/Laufenn-X-FIT-AT-LC01-All-Terrain-265-70R18-116T-Passenger-Tire_07cf66e0-b0fb-480c-8630-a52f74ea87cb.522b244108dd5c5130171abc7f5ad88e.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
+          "description": "The all-terrain all-season X Fit AT LC01 from Laufenn is designed for comfort and provides drivers of light trucks and SUVs impressive performance in on- and off-road conditions.<ul>  <li>   <ul>    <li>Asymmetric tread design provides additional resistance to external damage</li>    <li>Backed by a 45,000 mile limited manufacturer tread life warranty for Metric sizes only</li>    <li>Rim protector prevents sidewall damage and offers extra traction</li>    <li>Long mileage tread compound leads to a longer tread life and improves traction and braking performance</li>    <li>Rim/Wheel is not included with purchase</li>   </ul></li>  <li>Asymmetric tread design provides additional resistance to external damage</li>  <li>Backed by a 45,000 mile limited manufacturer tread life warranty for Metric sizes only</li>  <li>Rim protector prevents sidewall damage and offers extra traction</li>  <li>Long mileage tread compound leads to a longer tread life and improves traction and braking performance</li>  <li>Rim/Wheel is not included with purchase</li>  <li>Asymmetric tread design provides additional resistance to external damage</li> </ul>"
         },
         "location": {
-          "city": "Cincinnati",
-          "state": "OH",
-          "store_id": "2447",
-          "zip_code": "45238"
+          "city": "Sacramento",
+          "state": "CA",
+          "store_id": "3081",
+          "zip_code": "95829"
         },
-        "variations": [
-          {
-            "price": {
-              "price": 72.42,
-              "currency": "USD"
-            },
-            "state": "IN_STOCK",
-            "product_id": "31N97C7VNDVO",
-            "selected_options": [
-              {
-                "key": "Actual Color",
-                "value": "Chrome"
-              }
-            ]
-          },
-          {
-            "price": {
-              "price": 134.99,
-              "currency": "USD"
-            },
-            "state": "IN_STOCK",
-            "product_id": "180S47IV748W",
-            "selected_options": [
-              {
-                "key": "Actual Color",
-                "value": "Oil Rubbed Bronze"
-              }
-            ]
-          }
-        ],
         "breadcrumbs": [
           {
-            "url": "/cp/home-improvement/1072864",
-            "category_name": "Home Improvement"
+            "url": "/cp/auto-tires/91083",
+            "category_name": "Auto & Tires"
           },
           {
-            "url": "/cp/plumbing/1406684",
-            "category_name": "Plumbing"
+            "url": "/cp/tires-accessories/1077064",
+            "category_name": "Tires & Accessories"
           },
           {
-            "url": "/cp/shop-plumbing-by-fixture/3247335",
-            "category_name": "Shop Plumbing by Fixture"
+            "url": "/cp/tires-by-vehicle/8752379",
+            "category_name": "Tires by Vehicle"
           },
           {
-            "url": "/cp/shower-bathtub-plumbing/4830378",
-            "category_name": "Shower and Bathtub Plumbing"
+            "url": "/cp/automotive-tires/4838964",
+            "category_name": "Automotive Tires"
           },
           {
-            "url": "/cp/shower-heads/9581595",
-            "category_name": "Shower Heads"
-          },
-          {
-            "url": "/cp/shower-heads-by-type/4999037",
-            "category_name": "Shower Heads by Type"
-          },
-          {
-            "url": "/cp/fixed-shower-heads/3986282",
-            "category_name": "Fixed Shower Heads"
+            "url": "/cp/car-tires/1063465",
+            "category_name": "Car Tires"
           }
         ],
+        "fulfillment": {
+          "pickup": true,
+          "delivery": false,
+          "shipping": true,
+          "out_of_stock": false,
+          "free_shipping": false,
+          "pickup_information": ", Pickup, Check nearby",
+          "delivery_information": ", Delivery, Not available",
+          "shipping_information": ", Shipping, Arrives Sep 4, Order within 9 hr 7 min, Free"
+        },
         "specifications": [
           {
+            "key": "Tire Diameter",
+            "value": "18 in"
+          },
+          {
+            "key": "Tire Terrain",
+            "value": "All-Terrain"
+          },
+          {
+            "key": "Construction Type",
+            "value": "Radial"
+          },
+          {
+            "key": "Features",
+            "value": "Fits Multiple Makes And models, Low Maintenance, All-Weather, Compatible With Multiple Cars"
+          },
+          {
+            "key": "Tire Size",
+            "value": "265/70R18"
+          },
+          {
             "key": "Brand",
-            "value": "Moen"
+            "value": "Laufenn"
           },
           {
-            "key": "Manufacturer Part Number",
-            "value": "T2132"
+            "key": "Vehicle Type",
+            "value": "Car"
           },
           {
-            "key": "Manufacturer",
-            "value": "Stock Market"
+            "key": "Tire Width",
+            "value": "10.6 in"
           },
           {
-            "key": "Finish",
-            "value": "Chrome"
+            "key": "Tire Aspect Ratio",
+            "value": "70"
+          },
+          {
+            "key": "Wheel Diameter",
+            "value": "18 in"
+          },
+          {
+            "key": "Warranty Distance",
+            "value": "45000 miles"
+          },
+          {
+            "key": "Tire Season",
+            "value": "Summer"
+          },
+          {
+            "key": "Tire Speed Rating",
+            "value": "T"
+          },
+          {
+            "key": "Tire Type",
+            "value": "Passenger Car Tires"
+          },
+          {
+            "key": "Tire Load Index",
+            "value": "116"
+          },
+          {
+            "key": "Uniform Tire Quality Grade (UTQG)",
+            "value": "0"
+          },
+          {
+            "key": "Tire Treadwear Rating",
+            "value": "520"
+          },
+          {
+            "key": "Tread Depth",
+            "value": "12.5/32"
           },
           {
             "key": "Assembled Product Weight",
-            "value": "6 lb"
+            "value": "41.45 lb"
           },
           {
             "key": "Model",
-            "value": "T2132"
+            "value": "Laufenn-X FIT AT LC01"
           },
           {
-            "key": "Color",
-            "value": "Chrome"
+            "key": "Manufacturer Part Number",
+            "value": "1023997"
           },
           {
-            "key": "Assembled Product Dimensions (L x W x H)",
-            "value": "10.00 x 1.00 x 1.00 in"
+            "key": "Manufacturer",
+            "value": "Laufenn"
           }
         ],
         "parse_status_code": 12000,
         "cheapest_seller_name": null,
         "sold_by_walmart_price": null
       },
-      "created_at": "2025-08-28 18:48:37",
-      "updated_at": "2025-08-28 18:50:03",
+      "created_at": "2025-09-02 16:52:27",
+      "updated_at": "2025-09-02 16:52:30",
       "page": 1,
-      "url": "https://www.walmart.com/ip/BOtucovYGYDVwZSJ/22073997",
-      "job_id": "7366904560008327169",
+      "url": "https://www.walmart.com/ip/EBTEEOHVpcPijZFH/135330522",
+      "job_id": "7368687265268132865",
       "is_render_forced": false,
       "status_code": 200,
       "type": "parsed",
@@ -151,67 +179,53 @@
     }
   ],
   "job": {
-    "parse": "true",
+    "parse": true,
     "domain": "com",
-    "render": "png",
     "source": "walmart_product",
-    "product_id": "22073997",
-    "geo_location": "United States",
-    "id": "7366904560008327169",
+    "product_id": "135330522",
+    "id": "7368687265268132865",
     "status": "done",
-    "created_at": "2025-08-28 18:48:37",
-    "updated_at": "2025-08-28 18:50:03",
+    "created_at": "2025-09-02 16:52:27",
+    "updated_at": "2025-09-02 16:52:30",
     "_links": [
       {
         "rel": "self",
-        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169",
+        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865",
         "method": "GET"
       },
       {
         "rel": "results",
-        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results",
+        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865/results",
         "method": "GET"
       },
       {
         "rel": "results-content",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content"
+          "http://data.oxylabs.io/v1/queries/7368687265268132865/results/1/content"
         ],
         "method": "GET"
       },
       {
         "rel": "results-html",
-        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=raw",
+        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865/results?type=raw",
         "method": "GET"
       },
       {
         "rel": "results-content-html",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=raw"
+          "http://data.oxylabs.io/v1/queries/7368687265268132865/results/1/content?type=raw"
         ],
         "method": "GET"
       },
       {
         "rel": "results-parsed",
-        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7368687265268132865/results?type=parsed",
         "method": "GET"
       },
       {
         "rel": "results-content-parsed",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=parsed"
-        ],
-        "method": "GET"
-      },
-      {
-        "rel": "results-png",
-        "href": "http://data.oxylabs.io/v1/queries/7366904560008327169/results?type=png",
-        "method": "GET"
-      },
-      {
-        "rel": "results-content-png",
-        "href_list": [
-          "http://data.oxylabs.io/v1/queries/7366904560008327169/results/1/content?type=png"
+          "http://data.oxylabs.io/v1/queries/7368687265268132865/results/1/content?type=parsed"
         ],
         "method": "GET"
       }

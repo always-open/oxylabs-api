@@ -58,6 +58,35 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertEquals('faulted', $result_response->job->status);
     }
 
+    public function test_amazon_pricing_faulted()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7342973874281147394/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_listing_faulted2.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $result_response = $client->getAmazonPricingResult('7342973874281147394');
+
+        $this->assertCount(1, $result_response->results);
+        $this->assertEmpty($result_response->results[0]->content);
+        $this->assertEquals('faulted', $result_response->job->status);
+    }
+
+    public function test_google_shopping_faulted()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('google_shopping_faulted_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+        $result_response = $client->getGoogleShoppingPricingResult('7342973874281147393');
+
+        $this->assertCount(1, $result_response->results);
+        $this->assertEmpty($result_response->results[0]->content);
+        $this->assertEquals('faulted', $result_response->job->status);
+    }
+
     //    public function test_amazon_search()
     //    {
     //        Http::fake([
@@ -328,6 +357,7 @@ class OxylabsApiClientTest extends BaseTest
     {
         Http::fake([
             'data.oxylabs.io/v1/queries/7350883412053343233/results?type=raw' => Http::response($this->getFixtureJsonContent('universal_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343234/results?type=raw' => Http::response($this->getFixtureJsonContent('universal_failed_result.json'), 200),
         ]);
 
         $client = new OxylabsApiClient(username: 'user', password: 'pass');
@@ -335,5 +365,9 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getUniversalResult('7350883412053343233');
 
         $this->assertEmpty($result->results[0]->_response->cookies[0]->max_age);
+
+        $result = $client->getUniversalResult('7350883412053343234');
+
+        $this->assertEquals(ParseStatus::FAILURE_COULD_NOT_PARSE->value, $result->results[0]->content->parse_status_code);
     }
 }

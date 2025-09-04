@@ -5,4 +5,5 @@ return [
     'username' => env('OXYLAB_API_USERNAME'),
     'password' => env('OXYLAB_API_PASSWORD'),
     'auth_method' => env('OXYLAB_API_AUTH_METHOD', 'basic'),
+    'request_logging_enabled' => env('OXYLABS_API_REQUEST_LOGGING_ENABLED', true),
 ];

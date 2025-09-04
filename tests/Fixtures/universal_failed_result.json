@@ -1,0 +1,743 @@
+{
+  "results": [
+    {
+      "content": {
+        "parse_status_code": 12002
+      },
+      "created_at": "2025-08-31 14:26:03",
+      "updated_at": "2025-08-31 14:29:28",
+      "page": 1,
+      "url": "https://www.homedepot.com/p/MOEN-Adler-Single-Handle-Pull-Down-Sprayer-Kitchen-Faucet-with-Reflex-and-Power-Clean-in-Matte-Black-87233BL/311933284?source=shoppingads&locale=en-US",
+      "job_id": "7367925645617159169",
+      "is_render_forced": false,
+      "status_code": 200,
+      "type": "parsed",
+      "parser_type": "ecommerce_product",
+      "parser_preset": null,
+      "_request": {
+        "cookies": [],
+        "headers": {
+          "Accept": "*/*",
+          "Referer": "https://www.homedepot.com/",
+          "Sec-Ch-Ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Brave\";v=\"122\"",
+          "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+          "Sec-Fetch-Dest": "empty",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Site": "cross-site",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.8",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Linux\""
+        }
+      },
+      "_response": {
+        "cookies": [
+          {
+            "key": "HD_DC",
+            "path": "/",
+            "value": "origin",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "AKA_A2",
+            "path": "/",
+            "value": "A",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756654132.804429,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "akavpau_prod",
+            "path": "/",
+            "value": "1756650832~id=136376d5f21c3dc44d76c7df590109ff",
+            "domain": "www.homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "akacd_usbeta",
+            "path": "/",
+            "value": "3934103331~rv=38~id=bed9d701f0cc5ed54bc1e38bf1696b84",
+            "domain": "www.homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "bm_ss",
+            "path": "/",
+            "value": "ab8e18ef4e",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756654132.804471,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_bman",
+            "path": "/",
+            "value": "48d89825d0d0137a9354be80f9f3832b",
+            "domain": ".www.homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "bm_so",
+            "path": "/",
+            "value": "0A581902335F26B8EDCC2699B9FE988796B7B9404DF5C82EA73374A0BC21876E~YAAQtP1IF1btlfGYAQAAm++HAAQJRl0I/cprJjXnHCyb0nGnbv3V4Nve41OQalP0LWwH9/XWWGrOhTu2QjQm28lns2L2maUGEfA8QZaN5w15KhROtQJgmOBsUTkp3EiDVZnhGYjZEu3oB7QKV53d7hW0naJ6cwor/tAn4gLUelgKuXpZWzW2dpXR4olKeTxgcsx4LahGLtac2PDL8dA/PkHAAnY2t4ajFJM2H1+SsHDnXmrjvC0i+3Qw5HTKGl+eL67G6t7Bzl/DaGtBNcEeeYzwvO+ux349VmXf6AiBdx05wCd24chDj1qkJPhUlTJqUohWRlehcuGiI+USPey3cmEleJMknKa3HAT53J8XeZoAlobP2/rpWQ1N36/9J8C9M1BmDmh1UMJT1m6SdwYVoDbUDh9wABnGp3NpOA/v7Fxn+SqdddisXE4uchimRQBIFiwsuTnRf+48WB7luaxv",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756736932.804505,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "bm_sz",
+            "path": "/",
+            "value": "14CAEEE198D0C08E6ADA08E3B7C29F2E~YAAQtP1IF1ftlfGYAQAAm++HAByKgOxcUm1xGZNg9z8BpyjSf3/vDup4oiEjxj6eh0uW7QNiDjtiXs3yXqeQx0EnQ7sMGJczmiz/eSWAi+lUAuXVlw9vDtQv15xLEUcvHRAPTNELJzXSfRvOAcCnwpkgQxgdqUuxgzoylAmtcpyMettFMEStWD1Pty4/GmtseB49I/NaYft5im6nhblJdCetwkiqVewSainYkiy7QEJm3BUSKmu9prDfhpSAVCMb5w468D7tVp+muehAaI7uFtfreKnuXW5rRFc+G7AoE66PbmSyK7suHdZKqfecdFFfD28drcTks8DpjMKMw8oUCXQvhwHtKRPFJVl1IPy+ZIJjf1XPnl/rjKTBOIkIuZGftOB60kacWhqO8U+L+Ws=~3748165~4403768",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756664932.804515,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "THD_NR",
+            "path": "/",
+            "value": "0",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756736932,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "kndctr_F6421253512D2C100A490D45_AdobeOrg_cluster",
+            "path": "/",
+            "value": "irl1",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756652335.019147,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "AMCV_F6421253512D2C100A490D45%40AdobeOrg",
+            "path": "/",
+            "value": "MCMID|69413148745427377631303856554730238980",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1757255334.089156,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "THD_PERSIST",
+            "path": "/",
+            "value": "",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255334.23317,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "THD_SESSION",
+            "path": "/",
+            "value": "",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756736934,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "THD_CACHE_NAV_SESSION",
+            "path": "/",
+            "value": "",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756736934,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "THD_CACHE_NAV_PERSIST",
+            "path": "/",
+            "value": "",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255334.233593,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "IN_STORE_API_SESSION",
+            "path": "/",
+            "value": "TRUE",
+            "domain": "www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756650834,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "ak_bmsc",
+            "path": "/",
+            "value": "2E64E9412B1089CDD77CA4946A28913B~000000000000000000000000000000~YAAQtP1IF2ftlfGYAQAAvveHAByPUeLRz+UlWNhEoE4biHcpaSSGNifopja9yFHeZhnXxVzKKJK3aHBGLsQNVt/J4st8DUBAqvkl8lxw66KGOPAb4CPfN66f+IeIXUGiwnhL9Z4POeJYyUgXlxV8eCgoeNdMKHl37/eOQsb6AInG5a2w86voJsG50Uo2uq7afAsFUpWl1DTBUgZWTV1tL+pqAhIXLdJadnzcjjQLyt6ZMRBKPtDkIoMHqgH1SjITMFORz8H/MdRsNmcsatvEBD12nPMMQORwRlMn74MevIXH9rOke8kNIWuh5d5QzBq9dEb9DkDzi1k1sAg7b4BGkXK0ZTmwos4RITwqGCne85OQIJL9lAm+U/nD+l58SnUnuec8uHbh22pufM/Jl00vZT4wUQT2OnwwEPqrb8rgT+Uzk+/R6W7l5wsBlw6xYJYEBAatorcao4jfrTVWqqc=",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756657733.911273,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "kndctr_F6421253512D2C100A490D45_AdobeOrg_identity",
+            "path": "/",
+            "value": "CiY2OTQxMzE0ODc0NTQyNzM3NzYzMTMwMzg1NjU1NDczMDIzODk4MFITCKnon4SQMxABGAEqBElSTDEwAPABmvCfhJAz",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1772202535.019199,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "x-tt-maa",
+            "path": "/",
+            "value": "flash25-0",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756736935,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "x-ttsearch",
+            "path": "/",
+            "value": "plp_speed",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756654135,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "THD_LOCALIZER",
+            "path": "/",
+            "value": "%7B%22WORKFLOW%22%3A%22LOCALIZED_BY_DEFAULT%22%2C%22THD_FORCE_LOC%22%3A%222%22%2C%22THD_LOCSTORE%22%3A%22121%2BCumberland%20-%20Atlanta%2C%20GA%2B%22%2C%22THD_STRFINDERZIP%22%3A%2230339%22%2C%22THD_STORE_HOURS%22%3A%221%3B8%3A00-19%3A00%3B2%3B6%3A00-21%3A00%3B3%3B6%3A00-21%3A00%3B4%3B6%3A00-21%3A00%3B5%3B6%3A00-21%3A00%3B6%3B6%3A00-21%3A00%3B7%3B6%3A00-21%3A00%22%2C%22THD_STORE_HOURS_EXPIRY%22%3A1756654135%7D",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "DELIVERY_ZIP",
+            "path": "/",
+            "value": "30339",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255335.040024,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "DELIVERY_ZIP_TYPE",
+            "path": "/",
+            "value": "DEFAULT",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255335.040042,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_abck",
+            "path": "/",
+            "value": "CC83132CEA9DCC246AD6F862827DDB08~-1~YAAQtP1IF2rtlfGYAQAAZviHAA6PVwtmWpokK7OprS5EssgapAlHFmjgP4kMtLfQz1jNwz/vIvCF9SzKy63mP88GXEZPBfhkZHS1EQ0A4jJbnESLRy5aylWhNJz0wa32Eb4euZnrtcdQKuym1ngbjLw5k0i8ZzGICf6Rlh7Gf6DOeqY4y5vW5HtQ7XPwOOEbBECSx86sJa+EtJr0/sQ/rncASGkWLQeAHevFYLCKK43nswWJbxlP8vF6/q4Oi+mnSMckCdVTOJ1d/p7mTCxsJjToKD6oHiwlFZwddG++y7k3rQMY6+c4nEhegF2nqzzX2Gr3yB03ogSVLGqNsl24HagXMqsM6Soi/G13/ukD5lroG2lqMG/cUX3+1SXbs9PeKj9NBpLMNF9/jyMl4d7yX66eBQiFyQiS8+rBATwQYLz+rcEvqVvQwx1FF1cPBz2KXckf718zAkYSUdaYtwNNLYkRRXFiDHVCTl8fEXZlYcGu4H36VY+h2E7x/D6diqRMlD0UYDhfEJOfLw18E96LGNlA7OkW5zxMqdu9h7zhyk8Exgsp3FuS3JBAiw6DphOUwPsgGK+kJjLQtuzu9htBvEoRRtUriij23Q==~-1~-1~-1~~",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1772202535.054271,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "pxcts",
+            "path": "/",
+            "value": "d2f3761e-8676-11f0-bd50-96c059590e9e",
+            "domain": "www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_pxvid",
+            "path": "/",
+            "value": "d2f36aaa-8676-11f0-bd4f-85b659faacbe",
+            "domain": "www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255335.35562,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "bm_lso",
+            "path": "/",
+            "value": "0A581902335F26B8EDCC2699B9FE988796B7B9404DF5C82EA73374A0BC21876E~YAAQtP1IF1btlfGYAQAAm++HAAQJRl0I/cprJjXnHCyb0nGnbv3V4Nve41OQalP0LWwH9/XWWGrOhTu2QjQm28lns2L2maUGEfA8QZaN5w15KhROtQJgmOBsUTkp3EiDVZnhGYjZEu3oB7QKV53d7hW0naJ6cwor/tAn4gLUelgKuXpZWzW2dpXR4olKeTxgcsx4LahGLtac2PDL8dA/PkHAAnY2t4ajFJM2H1+SsHDnXmrjvC0i+3Qw5HTKGl+eL67G6t7Bzl/DaGtBNcEeeYzwvO+ux349VmXf6AiBdx05wCd24chDj1qkJPhUlTJqUohWRlehcuGiI+USPey3cmEleJMknKa3HAT53J8XeZoAlobP2/rpWQ1N36/9J8C9M1BmDmh1UMJT1m6SdwYVoDbUDh9wABnGp3NpOA/v7Fxn+SqdddisXE4uchimRQBIFiwsuTnRf+48WB7luaxv^1756650535517",
+            "domain": ".www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255335.517132,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "thda.s",
+            "path": "/",
+            "value": "5fb535f1-d005-4453-619b-46733df5764e",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "thda.u",
+            "path": "/",
+            "value": "0ca8b503-bc91-6740-b152-32faf83979ad",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255336.310845,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_bman_api",
+            "path": "/",
+            "value": "bd5187e6b56676c71d7d5cbdd2b35def",
+            "domain": ".apionline.homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_px_f394gi7Fvmc43dfg_user_id",
+            "path": "/",
+            "value": "ZDQxNGEwZjEtODY3Ni0xMWYwLWIxMWEtNTU2NDljMjAyZGYy",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255337.087958,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "RT",
+            "path": "/",
+            "value": "\"z=1&dm=www.homedepot.com&si=fe224421-aad3-418c-b51b-1252a1d19c20&ss=mezsdd2d&sl=1&tt=46l&rl=1&ld=46m\"",
+            "domain": ".www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255337,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "QSI_HistorySession",
+            "path": "/",
+            "value": "https%3A%2F%2Fwww.homedepot.com%2Fp%2FMOEN-Adler-Single-Handle-Pull-Down-Sprayer-Kitchen-Faucet-with-Reflex-and-Power-Clean-in-Matte-Black-87233BL%2F311933284%3Fsource%3Dshoppingads%26locale%3Den-US~1756650538668",
+            "domain": "www.homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "forterToken",
+            "path": "/",
+            "value": "53899ea4a3a04e26b5a44a76fe38398e_1756650537090__UDF43b-m4_23ck_",
+            "domain": ".homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1757255339.906151,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "bm_s",
+            "path": "/",
+            "value": "YAAQtP1IF33tlfGYAQAA6QuIAAM9pMr63Hvew+wLXe9D5hmNTj/fgoE+Ul9K5BETWuHE6OU0A0emLJWJIEMK6Z6gKW57Eod8qJbEv55CyrFfi1JsWdjlx5VgQk+b518Eeqe+LPmSJ5RqBZBjOzpBtvUfy1fl3X/VXiOt+sSRin/TUUYK0uR82wOJJdhuKpnOjlj+ZBVOnAJHQMRJ4E5myauoKCK8M35HfEBPVim+fNwf5l3qKt6oGGowEeS+2jPDgtmX+3G9Vs2EdA87Eq+TfynOvT/e2fSebMcTFv0HM2a8SQABbloioj4TDLHHeIcADFnVRCAYFGzojE4Ln2RRME8QjLMpDdMrt4dzD+AMKAwMjvMTUhhHi9T49u4NEXABuaOeTz/HMw9NjKxJ+bAuNjR2BSk2wpiDE6/3DG3shpcnwL2ss/arpGPHqXjL+M84IFhN2PpH9D6B/vVZj0DQBWz0p3KhKqLne24vBUR18Ipzpoksb4wHsbuBtI/zEQIH104ddci/uhZrbzHER84u5efPVhvvaZxU4POUVINZ+ZZqK5Wp5PC+",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1759328940.058189,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "QuantumMetricSessionID",
+            "path": "/",
+            "value": "401a3d2fcd34ee4f1128eb4661b47a03",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1756652354,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "QuantumMetricUserID",
+            "path": "/",
+            "value": "15d5edf9507141cc2c8bc9379920449b",
+            "domain": ".homedepot.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1757255340.099928,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_px",
+            "path": "/",
+            "value": "WrI53+zAOIOptz8CFPwxjQuPJw6v4Ij4D2FwrTS+BREXBIXWR4T+Jp+vHCs6nXrYDABPkR7fLBY/GC6oqqa3MA==:1000:qtxcKUjUAsCph6flPpxeyLpgP+FURctsxDk/GGQCoSNO/bFaWl1Xo0PBK2lmUUlOzmJ1mBin4zKplUJubqpCY7W1nLaklVeSuf8GCZ/b3FHDMKb7TOu28wCOLPQy0kqVHVELvtqBeJJLQ5bt/KibyJwN9uIS4TfjY5pguOeefwuwjdvLATpNdTXcz9kRv9s+n+UG+WG+G3xUJyZsolJMf8Mh/oC1HhOFYOvKOaY0KoYkFkEztOq/tI129c3efr26NLUOfolSMjXFb3q7f3g2bA==",
+            "domain": "www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756823359,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "_pxde",
+            "path": "/",
+            "value": "2695944b12f6f0e06ec9cc754e5d999f8c4c000beeb8f74d4b5b58c00c92bbb1:eyJ0aW1lc3RhbXAiOjE3NTY2NTA1NTkxMDMsImluY19pZCI6WyJkZGE4ZTliYzMyNjI1MjhlMmVkZmIzYjAyNzg0MjZmMiIsIjVjZjdiMmFmZDQwYTBlNGFjMWRhMDMzMzZkYTc2YjRmIiwiYjhlZGY4Y2M4MmMxN2RmM2Q3YzFhZWFmYjAzZWNjYjQiXX0=",
+            "domain": "www.homedepot.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1756823359,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          }
+        ],
+        "headers": {
+          "date": "Sun, 31 Aug 2025 14:28:52 GMT",
+          "host": "www.homedepot.com",
+          "link": "<https://assets.thdstatic.com/fonts/helvetica/HelveticaNeueLTW01-45Light.woff2>;rel=\"preload\";as=\"font\";type=\"font/woff2\";crossorigin,<https://assets.thdstatic.com/fonts/helvetica/HelveticaNeueLTW01-55Roman.woff2>;rel=\"preload\";as=\"font\";type=\"font/woff2\";crossorigin,<https://assets.thdstatic.com/fonts/helvetica/HelveticaNeueLTW01-75Bold.woff2>;rel=\"preload\";as=\"font\";type=\"font/woff2\";crossorigin,<https://assets.thdstatic.com/fonts/helvetica/HelveticaNeueLTW01-77BoldCn.woff2>;rel=\"preload\";as=\"font\";type=\"font/woff2\";crossorigin, <https://assets.thdstatic.com>;rel=\"preconnect\"",
+          "vary": "Accept-Encoding",
+          "grace": "none",
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+          "pragma": "no-cache",
+          "server": "nginx",
+          "expires": "Sun, 31 Aug 2025 14:28:52 GMT",
+          "sec-gpc": "1",
+          "x-proto": "secure",
+          "priority": "u=0, i",
+          "expect-ct": "max-age=0",
+          "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Brave\";v=\"139\", \"Chromium\";v=\"139\"",
+          "x-varnish": "1020963198 1023945492",
+          "akamai-grn": "0.b4fd4817.1756650532.4061345",
+          "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+          "content-type": "text/html; charset=utf-8",
+          "x-experiment": "{\"decision_engine\":{},\"adobe\":{}}",
+          "accept-ranges": "bytes",
+          "cache-control": "no-cache",
+          "server-timing": "cdn-cache; desc=REVALIDATE, edge; dur=137, origin; dur=44, ak_p; desc=\"1756650532220_390659508_67507013_18105_50926_15_291_255\";dur=1",
+          "x-device-type": "desktop",
+          "x-varnish-esi": "true",
+          "sec-fetch-dest": "document",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "none",
+          "sec-fetch-user": "?1",
+          "accept-encoding": "gzip, deflate, br",
+          "accept-language": "en-US,en;q=0.8;q=0.9",
+          "x-varnish-cache": "HIT(1)@vdir",
+          "content-encoding": "br",
+          "sec-ch-ua-mobile": "?0",
+          "x-xss-protection": "0",
+          "sec-ch-ua-platform": "\"Linux\"",
+          "x-download-options": "noopen",
+          "x-akamai-transformed": "9 - 0 pmb=mTOE,2mRUM,2",
+          "x-application-context": "render-c2-workers:undefined:fusion-hdh-pip-desktop:kitchen-faucets",
+          "x-content-type-options": "nosniff",
+          "x-dns-prefetch-control": "on",
+          "strict-transport-security": "max-age=63072000; includeSubDomains",
+          "upgrade-insecure-requests": "1",
+          "x-permitted-cross-domain-policies": "none",
+          "remove-dup-edge-ctrl-headers-rollout-enabled": "1"
+        }
+      },
+      "session_info": {
+        "id": null,
+        "expires_at": null,
+        "remaining": null
+      }
+    }
+  ],
+  "job": {
+    "callback_url": null,
+    "client_id": 83306,
+    "context": [
+      {
+        "key": "force_headers",
+        "value": false
+      },
+      {
+        "key": "force_cookies",
+        "value": false
+      },
+      {
+        "key": "hc_policy",
+        "value": true
+      },
+      {
+        "key": "successful_status_codes",
+        "value": []
+      },
+      {
+        "key": "follow_redirects",
+        "value": null
+      },
+      {
+        "key": "cookies",
+        "value": []
+      },
+      {
+        "key": "headers",
+        "value": []
+      },
+      {
+        "key": "session_id",
+        "value": null
+      },
+      {
+        "key": "http_method",
+        "value": "get"
+      },
+      {
+        "key": "content",
+        "value": null
+      },
+      {
+        "key": "store_id",
+        "value": null
+      },
+      {
+        "key": "proxy_location",
+        "value": null
+      },
+      {
+        "key": "delivery_location",
+        "value": null
+      },
+      {
+        "key": "fulfillment_type",
+        "value": null
+      }
+    ],
+    "created_at": "2025-08-31 14:26:03",
+    "domain": "com",
+    "geo_location": "United States",
+    "id": "7367925645617159169",
+    "limit": 10,
+    "locale": null,
+    "pages": 1,
+    "parse": true,
+    "parser_type": "ecommerce_product",
+    "parser_preset": null,
+    "parsing_instructions": null,
+    "browser_instructions": null,
+    "render": "png",
+    "xhr": false,
+    "markdown": false,
+    "url": "https://www.homedepot.com/p/MOEN-Adler-Single-Handle-Pull-Down-Sprayer-Kitchen-Faucet-with-Reflex-and-Power-Clean-in-Matte-Black-87233BL/311933284?source=shoppingads&locale=en-US&srsltid=AfmBOorXn9kENeFYSiVY1MuebuKYlSS4NTCiFb0gxtHHhzJioIbQiSmgy88",
+    "query": "",
+    "source": "universal",
+    "start_page": 1,
+    "status": "done",
+    "storage_type": null,
+    "storage_url": null,
+    "subdomain": "www",
+    "content_encoding": "utf-8",
+    "updated_at": "2025-08-31 14:29:28",
+    "user_agent_type": "desktop",
+    "session_info": null,
+    "statuses": [],
+    "client_notes": null,
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http://data.oxylabs.io/v1/queries/7367925645617159169",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http://data.oxylabs.io/v1/queries/7367925645617159169/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7367925645617159169/results/1/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http://data.oxylabs.io/v1/queries/7367925645617159169/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7367925645617159169/results/1/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7367925645617159169/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7367925645617159169/results/1/content?type=parsed"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-png",
+        "href": "http://data.oxylabs.io/v1/queries/7367925645617159169/results?type=png",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-png",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7367925645617159169/results/1/content?type=png"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
+}

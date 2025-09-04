@@ -22,15 +22,15 @@ class BaseTest extends TestCase
         $this->refreshApplication();
     }
 
-    protected function getFixtureJsonContent(string $name): array
+    protected function getFixtureJsonContent(string $name): string
     {
         $content = $this->getFixtureContent($name);
 
         if ($content) {
-            return json_decode($content, true);
+            return $content;
         }
 
-        return [];
+        return '{}';
     }
 
     protected function getFixtureContent(string $name): false|string

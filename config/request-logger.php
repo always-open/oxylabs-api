@@ -15,11 +15,11 @@ return [
 
     'model_path' => app_path('Models'),
 
-    'model_stub' => __DIR__ . '/../stubs/model.stub',
+    'model_stub' => __DIR__.'/../stubs/model.stub',
 
     'migration_path' => database_path('migrations'),
 
-    'migration_stub' => __DIR__ . '/../stubs/migration.stub',
+    'migration_stub' => __DIR__.'/../stubs/migration.stub',
 
     /*
      * Enable the process stamps (sub) package to log which process/url/job invoked the call

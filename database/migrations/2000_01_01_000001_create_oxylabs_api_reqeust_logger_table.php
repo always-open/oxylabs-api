@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::table('oxylabs_api_request_logger', function (Blueprint $table) {
+        Schema::create('oxylabs_api_request_logger', function (Blueprint $table) {
             $table->id();
             // Will store the relative path of the request (e.g. /addresses/validate)
             $table->string('path', 191)

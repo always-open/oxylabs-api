@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\Models;
 
+use AlwaysOpen\ProcessStamps\ProcessStampable;
 use AlwaysOpen\RequestLogger\Models\RequestLogBaseModel;
 
 /**
@@ -20,5 +21,7 @@ use AlwaysOpen\RequestLogger\Models\RequestLogBaseModel;
  */
 class OxylabsApiRequestLogger extends RequestLogBaseModel
 {
+    use ProcessStampable;
+
     protected $table = 'oxylabs_api_request_logger';
 }

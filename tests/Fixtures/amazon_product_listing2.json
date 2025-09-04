@@ -1,0 +1,573 @@
+{
+  "results": [
+    {
+      "content": {
+        "ads": [
+          {
+            "pos": 1,
+            "asin": "B0CQRPQK5Q",
+            "type": "organic_also_viewed",
+            "price": 279.99,
+            "title": "Ironton Jobsite Box \u2014 36in. x 16in.",
+            "images": [
+              "https:\/\/m.media-amazon.com\/images\/I\/818am14BKqL._AC_SS57_.jpg"
+            ],
+            "rating": 4.2,
+            "location": "carousel",
+            "price_upper": 279.99,
+            "reviews_count": 42,
+            "is_prime_eligible": true
+          },
+          {
+            "pos": 2,
+            "asin": "B0D4QXHYRJ",
+            "type": "organic_also_viewed",
+            "price": 419.99,
+            "title": "Northern Tool Jobsite Storage Box, 5 Cu. Ft., 32in.W, Model# 2032-NTE",
+            "images": [
+              "https:\/\/m.media-amazon.com\/images\/I\/61ivHly3XqL._AC_SS57_.jpg"
+            ],
+            "rating": 5,
+            "location": "carousel",
+            "price_upper": 419.99,
+            "reviews_count": 50,
+            "is_prime_eligible": true
+          },
+          {
+            "pos": 3,
+            "asin": "B084XV6W7P",
+            "type": "organic_also_viewed",
+            "price": 579.99,
+            "title": "Crescent JOBOX 48\" Tradesman Steel Chest - CJB637990",
+            "images": [
+              "https:\/\/images-na.ssl-images-amazon.com\/images\/I\/61brwGWxQPL._AC_UL165_SR165,165_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 579.99,
+            "reviews_count": 45,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 4,
+            "asin": "B0D4QXHYRJ",
+            "type": "organic_also_viewed",
+            "price": 419.99,
+            "title": "Northern Tool Jobsite Storage Box, 5 Cu. Ft., 32in.W, Model# 2032-NTE",
+            "images": [
+              "https:\/\/images-na.ssl-images-amazon.com\/images\/I\/61ivHly3XqL._AC_UL165_SR165,165_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 419.99,
+            "reviews_count": 50,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 5,
+            "asin": "B0CQRPQK5Q",
+            "type": "organic_also_viewed",
+            "price": 279.99,
+            "title": "Ironton Jobsite Box \u2014 36in. x 16in.",
+            "images": [
+              "https:\/\/images-na.ssl-images-amazon.com\/images\/I\/818am14BKqL._AC_UL165_SR165,165_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 279.99,
+            "reviews_count": 42,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 6,
+            "asin": "B0BXL5KRRV",
+            "type": "organic_also_viewed",
+            "price": 41.98,
+            "title": "WELKINLAND Heavy-Duty Canvas Tool Pouch - 4PCS, 12\" Waxed Canvas Zipper Tool Pouch",
+            "images": [
+              "data:image\/svg+xml,%3Csvg xmlns='http:\/\/www.w3.org\/2000\/svg' height='100%' width='100%' preserveAspectRatio='none' \/%3E",
+              "https:\/\/m.media-amazon.com\/images\/I\/416cNDgvK4L._AC_SR100,100_QL65_.jpg"
+            ],
+            "rating": 4.6,
+            "location": "carousel",
+            "price_upper": 58.68,
+            "reviews_count": 46,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 7,
+            "asin": "B0DSBP7QFB",
+            "type": "organic_also_viewed",
+            "price": 726.89,
+            "title": "Black Aluminum Contractor Top Side Tool Boxes with Two Lower Drawers, 60''X13.3''X21'' (Black)",
+            "images": [
+              "data:image\/svg+xml,%3Csvg xmlns='http:\/\/www.w3.org\/2000\/svg' height='100%' width='100%' preserveAspectRatio='none' \/%3E",
+              "https:\/\/m.media-amazon.com\/images\/I\/41nchtL5Y7L._AC_SR100,100_QL65_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 726.89,
+            "reviews_count": 0,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 8,
+            "asin": "B0FL1TXVSB",
+            "type": "organic_also_viewed",
+            "price": 219.99,
+            "title": "OAKANDO 7-Drawer Metal Rolling Tool Chest with Wheels,Tool Storage Cabinet with Locking System\uff0cToolbox with Wheels for Garage,Workshop, Repair Shop(Black, 7-Drawer)",
+            "images": [
+              "data:image\/svg+xml,%3Csvg xmlns='http:\/\/www.w3.org\/2000\/svg' height='100%' width='100%' preserveAspectRatio='none' \/%3E",
+              "https:\/\/m.media-amazon.com\/images\/I\/41Qx0w4botL._AC_SR100,100_QL65_.jpg"
+            ],
+            "rating": 4.6,
+            "location": "carousel",
+            "price_upper": 219.99,
+            "reviews_count": 46,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 9,
+            "asin": "B09KGF9GD9",
+            "type": "organic_also_viewed",
+            "price": 24.68,
+            "title": "WORKPRO 16-inch Wide Mouth Tool Bag, Heavy Duty Cloth Tool Storage Bag with Water Proof Molded Base, Adjustable Shoulder Strap",
+            "images": [
+              "data:image\/svg+xml,%3Csvg xmlns='http:\/\/www.w3.org\/2000\/svg' height='100%' width='100%' preserveAspectRatio='none' \/%3E",
+              "https:\/\/m.media-amazon.com\/images\/I\/51fbVH+4YbL._AC_SR100,100_QL65_.jpg"
+            ],
+            "rating": 4.7,
+            "location": "carousel",
+            "price_upper": 25.98,
+            "reviews_count": 47,
+            "is_prime_eligible": false
+          },
+          {
+            "pos": 10,
+            "asin": "B0DZWZNZ83",
+            "type": "organic_also_viewed",
+            "price": 738.99,
+            "title": "BeoneYuu Black Heavy-duty Aluminum Contractor Top Side Tool Boxes with Two Lower Drawers, 60''X13.3''X21''",
+            "images": [
+              "data:image\/svg+xml,%3Csvg xmlns='http:\/\/www.w3.org\/2000\/svg' height='100%' width='100%' preserveAspectRatio='none' \/%3E",
+              "https:\/\/m.media-amazon.com\/images\/I\/31dGP4Bv46L._AC_SR100,100_QL65_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 738.99,
+            "reviews_count": 0,
+            "is_prime_eligible": false
+          }
+        ],
+        "url": "https:\/\/www.amazon.com\/dp\/B084Y7CHX5?th=1&psc=1&language=en_US",
+        "asin": "B084Y7CHX5",
+        "page": 1,
+        "brand": "JOBOX",
+        "price": 0,
+        "stock": "",
+        "title": "Crescent JOBOX 36\" Site-Vault Heavy-Duty Chest - 2-652990",
+        "coupon": "",
+        "images": [
+          "https:\/\/m.media-amazon.com\/images\/I\/61aBCsKc6CL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/71ZKcGpihHL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/71SpvaqqVtL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/710Wtj95vFL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/61TdSGzI6zL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/716IyNJGt2L._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/616Mn8OeRNL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/6181A4vJv4L._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/612mgUyrRyL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/61e59bzI3VL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/61Rd3nKho4L._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/61b9RSokuoL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/71J+pe2Z8AL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/71jlEWYRO1L._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/71LjLd6fMXL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/71LjLd6fMXL._AC_SL1500_.jpg",
+          "https:\/\/m.media-amazon.com\/images\/I\/6150cjjXv0L._AC_SL1500_.jpg"
+        ],
+        "rating": 4.3,
+        "reviews": [],
+        "category": [
+          {
+            "ladder": [
+              {
+                "url": "\/Tools-and-Home-Improvement\/b\/ref=dp_bc_1?ie=UTF8&node=228013",
+                "name": "Tools & Home Improvement"
+              },
+              {
+                "url": "\/power-tools-hand-tools\/b\/ref=dp_bc_2?ie=UTF8&node=328182011",
+                "name": "Power & Hand Tools"
+              },
+              {
+                "url": "\/tool-organizer\/b\/ref=dp_bc_3?ie=UTF8&node=13400691",
+                "name": "Tool Organizers"
+              },
+              {
+                "url": "\/Tool-Boxes\/b\/ref=dp_bc_4?ie=UTF8&node=13400721",
+                "name": "Tool Boxes"
+              }
+            ]
+          }
+        ],
+        "currency": "USD",
+        "delivery": [],
+        "page_type": "Product",
+        "price_sns": 0,
+        "store_url": "\/stores\/Crescent+JOBOX\/page\/AE867E11-B7A1-440D-BE13-E57B19A5E27D?is_byline_deeplink=true&deeplink=72F53DBD-57A5-483D-8216-538240B5F05C&redirect_store_id=AE867E11-B7A1-440D-BE13-E57B19A5E27D&lp_asin=B084Y7CHX5&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto",
+        "variation": [
+          {
+            "asin": "B084Y7X5RG",
+            "selected": false,
+            "dimensions": {
+              "Size": "48\"",
+              "Style": "Heavy-Duty High Capacity"
+            }
+          },
+          {
+            "asin": "B084Y3VWTC",
+            "selected": false,
+            "dimensions": {
+              "Size": "42\"",
+              "Style": "Heavy-Duty"
+            }
+          },
+          {
+            "asin": "B084Y7P6D7",
+            "selected": false,
+            "dimensions": {
+              "Size": "48\"",
+              "Style": "Heavy-Duty"
+            }
+          },
+          {
+            "asin": "B084Y7CHX5",
+            "selected": true,
+            "dimensions": {
+              "Size": "36\"",
+              "Style": "Heavy-Duty"
+            }
+          },
+          {
+            "asin": "B084Y6M494",
+            "selected": false,
+            "dimensions": {
+              "Size": "60\"",
+              "Style": "Heavy-Duty"
+            }
+          },
+          {
+            "asin": "B084Y3N14N",
+            "selected": false,
+            "dimensions": {
+              "Size": "30\"",
+              "Style": "Heavy-Duty"
+            }
+          }
+        ],
+        "has_videos": true,
+        "sales_rank": [
+          {
+            "rank": 517300,
+            "ladder": [
+              {
+                "url": "\/gp\/bestsellers\/hi\/ref=pd_zg_ts_hi",
+                "name": "Tools & Home Improvement "
+              }
+            ]
+          },
+          {
+            "rank": 1515,
+            "ladder": [
+              {
+                "url": "\/gp\/bestsellers\/hi\/13400721\/ref=pd_zg_hrsr_hi",
+                "name": "Tool Boxes"
+              }
+            ]
+          }
+        ],
+        "asin_in_url": "B084Y7CHX5",
+        "description": "Crescent JOBOX is the leader in on-site storage security, organization, and safety with its high-strength, chamfered lid, commercial gas springs* for lid control and its Site-Vault\u2122 security system. 4-way EZ-Loader skid bolsters and slip-resistant textured powder paint help provide safety and handling ease (* On 48 and longer chests)\"",
+        "parent_asin": "B08TNZFC6Q",
+        "price_upper": 0,
+        "pricing_str": "",
+        "pricing_url": "https:\/\/www.amazon.com\/gp\/offer-listing\/B084Y7CHX5?startIndex=0",
+        "manufacturer": "Crescent JOBOX",
+        "price_buybox": -1,
+        "product_name": "Crescent JOBOX 36\" Site-Vault Heavy-Duty Chest - 2-652990",
+        "bullet_points": "Site-Vault security system is a patented system with 3 locking points and a reflective orange lock indicator that shows when the box is locked or unlocked\nHeavy-duty beveled edge lid eliminates sharp front lid corners and enhances lid strength\nDual built-in lid storage with integrated cargo nets is perfect for rain gear, PPE or small tools\nEZ-Lock support arm secures and locks lid in open position for safe use\nUpgraded lock system now allows usage of padlock models Master #1, #5, #175 and American #50\nIntegrated sidewall cargo bin provides convenient storage for small tools and parts\nErgonomic, lifting handles are protected inside deep recesses to prevent pinched knuckles and damage\nHeavy-duty EZ-Loader 4-way skid bolsters allow fork lift loading from any side for quicker and easier transport\nSkid bolsters are compatible with casters for easy mobility (1-320993 not included)\nHeavy-duty hinge is staked and welded to prevent the pin from being forced out for break in",
+        "price_initial": 0,
+        "pricing_count": 1,
+        "reviews_count": 16,
+        "sns_discounts": [],
+        "developer_info": [],
+        "price_shipping": 0,
+        "product_details": {
+          "upc": "\u200e043419957480",
+          "asin": "B084Y7CHX5",
+          "size": "\u200e36\"",
+          "brand": "\u200eJOBOX",
+          "color": "\u200eOrange",
+          "shape": "\u200eRectangular",
+          "style": "\u200eHeavy-Duty",
+          "usage": "\u200eProfessional",
+          "pattern": "\u200eSolid",
+          "material": "\u200eAlloy Steel",
+          "item_weight": "\u200e98 pounds",
+          "part_number": "\u200e2-652990",
+          "manufacturer": "\u200eApex Tool Group",
+          "customer_reviews": "4.3 4.3 out of 5 stars 16 ratings 4.3 out of 5 stars",
+          "number_of_pieces": "\u200e1",
+          "best_sellers_rank": "#517,300 in Tools & Home Improvement (See Top 100 in Tools & Home Improvement) #1,515 in Tool Boxes",
+          "item_model_number": "\u200e2-652990",
+          "batteries_required": "\u200eNo",
+          "product_dimensions": "\u200e35.91\"L x 19.97\"W x 27.44\"H",
+          "included_components": "\u200e(1) 36\" Site-Vault\u2122 Heavy-Duty Chest",
+          "date_first_available": "February 18, 2020",
+          "warranty_description": "\u200e1 year limited warranty",
+          "item_package_quantity": "\u200e1",
+          "number_of_compartments": "\u200e1",
+          "water_resistance_level": "\u200eWater Resistant"
+        },
+        "featured_merchant": [],
+        "is_prime_eligible": true,
+        "parse_status_code": 12000,
+        "technical_details": [
+          {
+            "name": "Brand",
+            "value": "JOBOX"
+          },
+          {
+            "name": "Material",
+            "value": "Alloy Steel"
+          },
+          {
+            "name": "Color",
+            "value": "Orange"
+          },
+          {
+            "name": "Product Dimensions",
+            "value": "35.91\"L x 19.97\"W x 27.44\"H"
+          },
+          {
+            "name": "Water Resistance Level",
+            "value": "Water Resistant"
+          },
+          {
+            "name": "Number of Compartments",
+            "value": "1"
+          },
+          {
+            "name": "UPC",
+            "value": "043419957480"
+          },
+          {
+            "name": "Manufacturer",
+            "value": "Apex Tool Group"
+          },
+          {
+            "name": "Part Number",
+            "value": "2-652990"
+          },
+          {
+            "name": "Item Weight",
+            "value": "98 pounds"
+          },
+          {
+            "name": "Item model number",
+            "value": "2-652990"
+          },
+          {
+            "name": "Size",
+            "value": "36\""
+          },
+          {
+            "name": "Style",
+            "value": "Heavy-Duty"
+          },
+          {
+            "name": "Pattern",
+            "value": "Solid"
+          },
+          {
+            "name": "Shape",
+            "value": "Rectangular"
+          },
+          {
+            "name": "Item Package Quantity",
+            "value": "1"
+          },
+          {
+            "name": "Number Of Pieces",
+            "value": "1"
+          },
+          {
+            "name": "Usage",
+            "value": "Professional"
+          },
+          {
+            "name": "Included Components",
+            "value": "(1) 36\" Site-Vault\u2122 Heavy-Duty Chest"
+          },
+          {
+            "name": "Batteries Required?",
+            "value": "No"
+          },
+          {
+            "name": "Warranty Description",
+            "value": "1 year limited warranty"
+          }
+        ],
+        "product_dimensions": "\u200e35.91\"L x 19.97\"W x 27.44\"H",
+        "warranty_and_support": {
+          "links": [
+            {
+              "url": "\/gp\/help\/customer\/display.html\/ref=orc_hp_s_retpol?ie=UTF8&nodeId=201819200",
+              "title": "here"
+            }
+          ],
+          "description": "Amazon.com Return Policy: Amazon.com Voluntary 30-Day Return Guarantee: You can return many items you have purchased within 30 days following delivery of the item to you. Our Voluntary 30-Day Return Guarantee does not affect your legal right of withdrawal in any way. You can find out more about the exceptions and conditions here."
+        },
+        "answered_questions_count": 0,
+        "rating_stars_distribution": [
+          {
+            "rating": 5,
+            "percentage": 75
+          },
+          {
+            "rating": 4,
+            "percentage": 8
+          },
+          {
+            "rating": 3,
+            "percentage": 0
+          },
+          {
+            "rating": 2,
+            "percentage": 8
+          },
+          {
+            "rating": 1,
+            "percentage": 9
+          }
+        ]
+      },
+      "created_at": "2025-08-15 15:44:04",
+      "updated_at": "2025-08-15 15:44:07",
+      "page": 1,
+      "url": "https:\/\/www.amazon.com\/dp\/B084Y7CHX5?th=1&psc=1&language=en_US",
+      "job_id": "7362147074835487745",
+      "is_render_forced": false,
+      "status_code": 200,
+      "type": "parsed",
+      "parser_type": "",
+      "parser_preset": null
+    }
+  ],
+  "job": {
+    "callback_url": null,
+    "client_id": 83306,
+    "context": [
+      {
+        "key": "force_headers",
+        "value": false
+      },
+      {
+        "key": "force_cookies",
+        "value": false
+      },
+      {
+        "key": "hc_policy",
+        "value": true
+      },
+      {
+        "key": "autoselect_variant",
+        "value": true
+      },
+      {
+        "key": "check_empty_geo",
+        "value": null
+      },
+      {
+        "key": "safe_search",
+        "value": true
+      },
+      {
+        "key": "currency",
+        "value": "USD"
+      }
+    ],
+    "created_at": "2025-08-15 15:44:04",
+    "domain": "com",
+    "geo_location": null,
+    "id": "7362147074835487745",
+    "limit": 10,
+    "locale": null,
+    "pages": 1,
+    "parse": true,
+    "parser_type": null,
+    "parser_preset": null,
+    "parsing_instructions": null,
+    "browser_instructions": null,
+    "render": null,
+    "xhr": false,
+    "markdown": false,
+    "url": null,
+    "query": "B084Y7CHX5",
+    "source": "amazon_product",
+    "start_page": 1,
+    "status": "done",
+    "storage_type": null,
+    "storage_url": null,
+    "subdomain": "www",
+    "content_encoding": "utf-8",
+    "updated_at": "2025-08-15 15:44:07",
+    "user_agent_type": "desktop",
+    "session_info": null,
+    "statuses": [],
+    "client_notes": null,
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745\/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745\/results\/1\/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745\/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745\/results\/1\/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745\/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http:\/\/data.oxylabs.io\/v1\/queries\/7362147074835487745\/results\/1\/content?type=parsed"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
+}

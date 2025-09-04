@@ -13,7 +13,7 @@ class UniversalResponse extends Data
     public function __construct(
         /* @var UniversalResult[] $results */
         #[DataCollectionOf(UniversalResult::class)]
-        public readonly array $results,
-        public readonly PushPullJob $job,
+        public readonly ?array $results,
+        public readonly ?PushPullJob $job,
     ) {}
 }

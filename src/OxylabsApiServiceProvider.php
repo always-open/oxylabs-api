@@ -24,5 +24,11 @@ class OxylabsApiServiceProvider extends ServiceProvider
             __DIR__.'/../config/oxylabs-api.php' => config_path('oxylabs-api.php'),
             __DIR__.'/../config/data.php' => config_path('data.php'),
         ], 'config');
+
+        if (config('oxylabs-api.request_logging_enabled', true)) {
+            $this->publishesMigrations([
+                __DIR__ . '/../migrations/*' => database_path('migrations/')
+            ]);
+        }
     }
 }

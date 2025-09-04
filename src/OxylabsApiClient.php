@@ -23,11 +23,20 @@ use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductResponse;
+use AlwaysOpen\OxylabsApi\Models\OxylabsApiRequestLogger;
+use Exception;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\PendingRequest;
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use InvalidArgumentException;
+use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
+use Throwable;
 
 class OxylabsApiClient
 {
@@ -49,8 +58,9 @@ class OxylabsApiClient
         ?string $username = null,
         ?string $password = null,
         ?string $authMethod = null,
-        ?int $defaultAllowedDispatchRetries = null,
-    ) {
+        ?int    $defaultAllowedDispatchRetries = null,
+    )
+    {
         $this->baseUrl = rtrim($baseUrl ?? config('oxylabs-api.base_url', 'https://data.oxylabs.io/v1/'), '/');
         $this->username = $username ?? config('oxylabs-api.username') ?? '';
         $this->password = $password ?? config('oxylabs-api.password') ?? '';
@@ -62,12 +72,12 @@ class OxylabsApiClient
     {
         return match ($this->authMethod) {
             'basic' => [
-                'Authorization' => 'Basic '.base64_encode($this->username.':'.$this->password),
+                'Authorization' => 'Basic ' . base64_encode($this->username . ':' . $this->password),
             ],
             'bearer' => [
-                'Authorization' => 'Bearer '.$this->password,
+                'Authorization' => 'Bearer ' . $this->password,
             ],
-            default => throw new \InvalidArgumentException('Invalid authentication method')
+            default => throw new InvalidArgumentException('Invalid authentication method')
         };
     }
 
@@ -76,180 +86,206 @@ class OxylabsApiClient
         return Http::withHeaders($this->getAuthHeader());
     }
 
+
     /**
-     * @throws ConnectionException
+     * @throws RuntimeException
      */
-    public function makeRequest(string $source, array $payload, ?int $allowedRetries = null, int $retries = 0): PushPullJob
+    public function makePostRequest(string $source, array $payload, ?int $allowedRetries = null): PushPullJob
     {
-        $response = $this->getBaseRequest()
-            ->post($this->baseUrl.'/queries', [
-                'source' => $source,
-                ...$payload,
-            ]);
+        try {
+            $response = $this->makeRequest(
+                'post',
+                $this->baseUrl . '/queries',
+                [
+                    'source' => $source,
+                    ...$payload,
+                ],
+                $allowedRetries ?? 0,
+            );
 
-        if (! $response->successful()) {
-            if (str_contains($response->body(), 'Too many requests') && $retries < ($allowedRetries ?? $this->defaultAllowedDispatchRetries ?? 0)) {
-                sleep(1);
-
-                return $this->makeRequest($source, $payload, $allowedRetries, ++$retries);
+            if (!$response->successful()) {
+                throw new RuntimeException('API request failed: ' . $response->getBody()->getContents(), $response->getStatusCode());
             }
-            throw new RuntimeException('API request failed: '.$response->body());
-        }
 
-        return PushPullJob::from($response->json());
+            return PushPullJob::from(json_decode($response->getBody()->getContents(), true));
+        } catch (Throwable $e) {
+            throw new RuntimeException('API request failed: ' . $e->getMessage(), $e->getCode(), $e);
+        }
     }
 
     /**
-     * @throws ConnectionException
+     * @throws GuzzleException|Throwable
+     */
+    protected function makeRequest(string $method, string $uri, ?array $payload = null, int $retryCount = null): Response
+    {
+        $request = new Request(
+            method: $method,
+            uri: $uri,
+            headers: $this->getAuthHeader(),
+            body: $payload ? json_encode($payload) : null,
+        );
+
+
+        if (config('oxylabs-api.request_logging_enabled', true)) {
+            $logger = OxylabsApiRequestLogger::makeFromGuzzle($request);
+            $logger->save();
+        }
+
+        /**
+         * @var Response $response
+         */
+        $response = retry($retryCount ?? 0, function () use ($request, $method, $payload): PromiseInterface|Response {
+            if (strtolower($method) === 'post') {
+                return Http::withHeaders($request->getHeaders())
+                    ->post($request->getUri(), $payload);
+            } else {
+                return Http::withHeaders($request->getHeaders())
+                    ->get($request->getUri());
+            }
+        }, 2000);
+
+        if (config('oxylabs-api.request_logging_enabled', true)) {
+            $logger->updateFromResponse($response->toPsrResponse());
+        }
+
+        return $response;
+    }
+
+    /**
      * @throws RuntimeException
      */
     public function getResult(
-        string $job_id,
+        string  $job_id,
         ?string $type = null,
-        int $retryCount = 0,
-    ): ?array {
+    ): ?array
+    {
         try {
-            $response = $this->getBaseRequest()
-                ->get($this->baseUrl."/queries/$job_id/results".($type ? "?type=$type" : ''));
-        } catch (\Exception $e) {
-            if (
-                $retryCount < 3
-                && (
-                    str_contains($e->getMessage(), 'Too many request')
-                    || str_contains($e->getMessage(), 'SSL')
-                )
-            ) {
-                sleep(1);
-
-                return $this->getresult($job_id, $type, ++$retryCount);
-            }
-
-            throw $e;
+            $response = $this->makeRequest(
+                'get',
+                $this->baseUrl . "/queries/$job_id/results" . ($type ? "?type=$type" : ''),
+                null,
+                3
+            );
+        } catch (Throwable $e) {
+            throw new RuntimeException('API request failed: ' . $e->getMessage(), $e->getCode(), $e);
         }
 
-        if (! $response->successful()) {
-            throw new RuntimeException('API request failed: '.$response->body(), $response->getStatusCode());
+        if (!$response->successful()) {
+            throw new RuntimeException('API request failed: ' . $response->getBody()->getContents(), $response->getStatusCode());
         }
 
-        return $response->json();
+        return json_decode($response->getBody()->getContents(), true);
     }
 
     /**
      * @throws ConnectionException
+     * @throws Throwable
      */
-    public function getPushPullJob(string $job_id, int $retryCount = 0): PushPullJob
+    public function getPushPullJob(string $job_id): PushPullJob
     {
-        try {
-            $response = $this->getBaseRequest()
-                ->get($this->baseUrl."/queries/$job_id");
-        } catch (\Exception $e) {
-            if (
-                $retryCount < 3
-                && (
-                    str_contains($e->getMessage(), 'Too many request')
-                    || str_contains($e->getMessage(), 'SSL')
-                )
-            ) {
-                sleep(1);
+        $response = $this->makeRequest(
+            'get',
+            $this->baseUrl . "/queries/$job_id",
+            retryCount: 3,
+        );
 
-                return $this->getPushPullJob($job_id, ++$retryCount);
-            }
-
-            throw $e;
+        if (!$response->successful()) {
+            throw new RuntimeException('API request failed: ' . $response->getBody()->getContents(), $response->getStatusCode());
         }
 
-        if (! $response->successful()) {
-            throw new RuntimeException('API request failed: '.$response->body());
-        }
-
-        return PushPullJob::from($response->json());
+        return PushPullJob::from(json_decode($response->getBody()->getContents(), true));
     }
 
     /**
      * @throws ConnectionException
      * @throws RuntimeException
+     * @throws Throwable
      */
     public function getPushPullResults(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = null,
-    ): ?array {
+    ): ?array
+    {
         if ($check_status) {
-            $count = 0;
-            do {
-                $count++;
-                $job = $this->getPushPullJob($job_id);
-                if ($job->isPending()) {
-                    sleep($status_wait_seconds);
-                }
-                // @TODO handle faulted status
-            } while ($job->isPending() && $count < $status_check_limit);
+            retry(
+                $status_check_limit,
+                function () use ($job_id): PushPullJob {
+                    $job = $this->getPushPullJob($job_id);
+                    if (!$job->isDone()) {
+                        throw new Exception("Job $job_id not completed");
+                    }
+
+                    return $job;
+                },
+                $status_wait_seconds,
+            );
         }
 
         return $this->getResult($job_id, $type);
     }
 
     /**
-     * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws ConnectionException|Throwable
      */
     public function getAmazonProductResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): AmazonProductResponse {
+    ): AmazonProductResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonProductResponse::from($response);
     }
 
     /**
-     * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws ConnectionException|RuntimeException|Throwable
      */
     public function getAmazonResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): AmazonResponse {
+    ): AmazonResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonResponse::from($response);
     }
 
     /**
-     * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws ConnectionException|Throwable
      */
     public function getUniversalResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'raw',
-    ): UniversalResponse {
+    ): UniversalResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return UniversalResponse::from($response);
     }
 
     /**
-     * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws ConnectionException|Throwable
      */
     public function getAmazonPricingResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): AmazonPricingResponse {
+    ): AmazonPricingResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonPricingResponse::from($response);
@@ -257,15 +293,16 @@ class OxylabsApiClient
 
     /**
      * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws Throwable
      */
     public function getAmazonSellerResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): AmazonSellerResponse {
+    ): AmazonSellerResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return AmazonSellerResponse::from($response);
@@ -278,144 +315,140 @@ class OxylabsApiClient
     public function makeBatchRequest(BatchRequest $payload): PushPullBatchJobResponse
     {
         $response = $this->getBaseRequest()
-            ->post($this->baseUrl.'/queries/batch', $payload->toArray());
+            ->post($this->baseUrl . '/queries/batch', $payload->toArray());
 
-        if (! $response->successful()) {
-            throw new RuntimeException('API request failed: '.$response->body());
+        if (!$response->successful()) {
+            throw new RuntimeException('API request failed: ' . $response->body());
         }
 
         return PushPullBatchJobResponse::from($response->json());
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function amazon(AmazonRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::TARGET_AMAZON, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::TARGET_AMAZON, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function amazonProduct(AmazonProductRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_PRODUCT, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_PRODUCT, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function amazonSearch(AmazonSearchRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_SEARCH, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_SEARCH, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function amazonPricing(AmazonPricingRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_PRICING, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_PRICING, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function amazonSellers(AmazonSellersRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_AMAZON_SELLERS, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_SELLERS, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function googleSearch(GoogleSearchRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_SEARCH, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_SEARCH, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function universal(UniversalRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest('universal', $request->toArray(), $allowedRetries);
+        return $this->makePostRequest('universal', $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function googleShoppingProduct(GoogleShoppingProductRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRODUCT, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRODUCT, $request->toArray(), $allowedRetries);
     }
 
     /**
      * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws Throwable
      */
     public function getGoogleShoppingProductResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): GoogleShoppingProductResponse {
+    ): GoogleShoppingProductResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return GoogleShoppingProductResponse::from($response);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function googleShoppingPricing(GoogleShoppingPricingRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRICING, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRICING, $request->toArray(), $allowedRetries);
     }
 
     /**
-     * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws ConnectionException|Throwable
      */
     public function getGoogleShoppingPricingResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): GoogleShoppingPricingResponse {
+    ): GoogleShoppingPricingResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return GoogleShoppingPricingResponse::from($response);
     }
 
     /**
-     * @throws ConnectionException
      * @throws RuntimeException
      */
     public function walmartProduct(WalmartProductRequest $request, ?int $allowedRetries = null): PushPullJob
     {
-        return $this->makeRequest(OxylabsApi::SOURCE_WALMART_PRODUCT, $request->toArray(), $allowedRetries);
+        return $this->makePostRequest(OxylabsApi::SOURCE_WALMART_PRODUCT, $request->toArray(), $allowedRetries);
     }
 
+    /**
+     * @throws Throwable
+     * @throws ConnectionException
+     */
     public function getWalmartProductResult(
-        string $job_id,
-        bool $check_status = false,
-        int $status_check_limit = 5,
-        int $status_wait_seconds = 3,
+        string  $job_id,
+        bool    $check_status = false,
+        int     $status_check_limit = 5,
+        int     $status_wait_seconds = 3,
         ?string $type = 'parsed',
-    ): WalmartProductResponse {
+    ): WalmartProductResponse
+    {
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type);
 
         return WalmartProductResponse::from($response);

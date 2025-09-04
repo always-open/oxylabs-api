@@ -5,6 +5,7 @@ namespace AlwaysOpen\OxylabsApi\Tests\Feature;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\OxylabsApiFacade;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiFacadeTest extends BaseTest
@@ -14,13 +15,14 @@ class OxylabsApiFacadeTest extends BaseTest
         parent::setUp();
 
         Http::preventStrayRequests();
+        Config::set('oxylabs-api.request_logging_enabled', false);
     }
 
     public function test_amazon_product()
     {
         Http::fake([
             'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
-            'data.oxylabs.io/v1/queries/7342973874281147393/results/?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_result.json'), 200),
         ]);
 
         $request = new AmazonProductRequest(

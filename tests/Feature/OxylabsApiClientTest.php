@@ -15,10 +15,17 @@ use AlwaysOpen\OxylabsApi\OxylabsApi;
 use AlwaysOpen\OxylabsApi\OxylabsApiClient;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Http\Client\ConnectionException;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 
 class OxylabsApiClientTest extends BaseTest
 {
+    protected function setUp(): void
+    {
+        parent::setUp();
+        Config::set('oxylabs-api.request_logging_enabled', false);
+    }
+
     public function test_amazon_product()
     {
         Http::fake([

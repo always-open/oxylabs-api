@@ -133,10 +133,12 @@ class OxylabsApiClient
         $response = retry($retryCount ?? 0, function () use ($request, $method, $payload): PromiseInterface|Response {
             if (strtolower($method) === 'post') {
                 return Http::withHeaders($request->getHeaders())
-                    ->post($request->getUri(), $payload);
+                    ->post($request->getUri(), $payload)
+                    ->throw();
             } else {
                 return Http::withHeaders($request->getHeaders())
-                    ->get($request->getUri());
+                    ->get($request->getUri())
+                    ->throw();
             }
         }, 2000);
 

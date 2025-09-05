@@ -16,9 +16,9 @@ class AmazonSellerResult extends Data
         public readonly string $job_id,
         public readonly int $status_code,
         public readonly string $parser_type,
-        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
         public readonly ?Carbon $created_at = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
         public readonly ?Carbon $updated_at = null,
     ) {}
 }

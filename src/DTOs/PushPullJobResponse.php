@@ -12,7 +12,7 @@ class PushPullJobResponse extends Data
     public function __construct(
         public readonly int $client_id,
         public readonly array $context,
-        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
         public readonly string $created_at,
         public readonly string $domain,
         public readonly ?string $geo_location,
@@ -32,7 +32,7 @@ class PushPullJobResponse extends Data
         public readonly ?string $storage_type = null,
         public readonly ?string $storage_url = null,
         public readonly ?string $subdomain = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: 'Y-m-d H:i:s')]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
         public readonly ?string $updated_at = null,
         public readonly ?string $user_agent_type = null,
         public readonly ?string $locale = null,

@@ -3,40 +3,32 @@
     {
       "content": {
         "price": {
-          "price": 315.11,
-          "currency": "USD",
+          "price": null,
+          "currency": "",
           "price_strikethrough": null
         },
         "rating": {
-          "count": 1666,
-          "rating": 4.4
-        },
-        "seller": {
-          "id": "89E29380945442589BB5A698104A078F",
-          "url": "https://www.walmart.com/global/seller/101652915",
-          "name": "United Tires",
-          "catalog_id": "101652915",
-          "official_name": "LIMPIC INC"
+          "count": 0,
+          "rating": 0
         },
         "general": {
-          "url": "https://www.walmart.com/ip/Hankook-Ventus-S1-Noble2-H452-All-Season-255-50R20-105H-Passenger-Tire/102109577",
+          "url": "https://www.walmart.com/ip/Women-s-T-Shirt-V-Neck-Short-Sleeve-Queen-Crown/666481742",
           "meta": {
-            "sku": "102109577",
-            "gtin": "715459375028"
+            "sku": "666481742",
+            "gtin": null
           },
           "badge": [],
-          "brand": "Hankook",
-          "title": "Hankook Ventus S1 Noble2 (H452) UHP All Season 255/50R20 105H Passenger Tire",
+          "brand": "Mom's Favorite",
+          "title": "Women's T-Shirt V-Neck Short Sleeve - Queen Crown",
           "images": [
-            "https://i5.walmartimages.com/seo/Hankook-Ventus-S1-Noble2-H452-All-Season-255-50R20-105H-Passenger-Tire_5f2927a3-3934-4c5e-85b0-5a7572ec8b75.c682094780901a7274b1cf195c893874.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/2ae3426e-0a61-4d7a-bdf2-0fc3dc5fbb8d.47606faecc5875f4bf92c816acd775ef.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/ca382555-4d9e-4de6-803b-2c7a0a9a8cd4.f867806513c5acc9cbd1dc4318bf7a62.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/dfdbdc69-88ef-4272-b850-d3c03724c464.dcb6206a0692128e96231fee53989702.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/66fec186-6a58-4b67-be46-fa45af613135.1e119f36ef8f134019efd5c8e1e48591.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
-            "https://i5.walmartimages.com/asr/ebf03529-c44f-4438-8dd9-d6b35ce7964d.ef312a9cb05704088def1f13c7832893.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+            "https://i5.walmartimages.com/seo/MmF-Women-s-T-Shirt-V-Neck-Short-Sleeve-up-to-Women-Size-3XL-Queen-Crown_fc832dcf-07cc-49f1-b83c-15cf116ab4fe_1.885df7bbc74205905c15b76cc5db98df.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/f92f5bf6-e78e-471f-93b5-c805aa79a607_1.e1e1d9001a1513da978a4a370d17de34.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/09ba2036-e763-4894-b350-4708c5d2e946.fa7f49536a42730ccc308a954f0f9eb0.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/0af7b381-b129-4d31-91fa-58053e079f73.e7563510c4c7f8b4aee2924123edcd87.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+            "https://i5.walmartimages.com/asr/590ae8bb-edb9-4b9f-9a40-d2eefc87f8ac.a795de14549f60226d9111f3b87385fe.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
           ],
-          "main_image": "https://i5.walmartimages.com/seo/Hankook-Ventus-S1-Noble2-H452-All-Season-255-50R20-105H-Passenger-Tire_5f2927a3-3934-4c5e-85b0-5a7572ec8b75.c682094780901a7274b1cf195c893874.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
-          "description": "<h2>Hankook Ventus S1 Noble2 (H452) 255/50R20 105H</h2><p><strong>OVERVIEW</strong></p><p>The Hankook Ventus S1 Noble 2 H452 tires blend ultra-high performance with all-season reliability for passenger and sports cars. Driving on these tires is comfortable thanks to their optimal pitch arrangement which minimizes noise. On wet surfaces, grooves expel water to prevent hydroplaning while 3D kerfs provide additional biting edges. The rib blocks on the outside of these tires enhance cornering grip while wide steel belts ensure tread stiffness for better handling.</p><ul>  <li>   <ul>    <li>Aqua hydro block efficiently drains water from the tread for better braking performance on wet roads</li>    <li>Straight rib block on the outside of the tire increases cornering performance and reduces road noises</li>    <li>3D kerf allows for better handling performance by staying stable during acceleration, braking, and cornering</li>    <li>Optimized pitch arrangement reduces road noises and vibrations for a quiet, comfortable ride</li>    <li>Silica-based rubber compound boosts wet grip and lowers rolling resistance to improve fuel efficiency</li>   </ul></li>  <li>Size: 255/50R20</li>  <li>Load Range: SL</li>  <li>Product May Vary From Picture</li>  <li>Wheel/Rim Not Included</li> </ul>"
+          "main_image": "https://i5.walmartimages.com/seo/MmF-Women-s-T-Shirt-V-Neck-Short-Sleeve-up-to-Women-Size-3XL-Queen-Crown_fc832dcf-07cc-49f1-b83c-15cf116ab4fe_1.885df7bbc74205905c15b76cc5db98df.jpeg?odnHeight=573&odnWidth=573&odnBg=FFFFFF",
+          "description": "<p>MmF - Women's T-Shirt V-Neck Short Sleeve, up to Women Size 3XL - Queen Crown</p><p></p><p>Ladies' V-Neck T-Shirt. 5.3 oz./yd² (US) 8.8 oz./L yd (CA),100% preshrunk cotton. Classic midweight fabric. Fiber content varies by color, see color list for exceptions. Sport Grey: 90/10 cotton/polyester. Heather colors: 50/50 cotton/polyester. Semi-fitted. 1/2\" non-topstitched v-neck collar. Taped neck and shoulders.Cap sleeves. Double-needle sleeve and bottom hems. </p><p></p><ul>   <li><p>Women's T-Shirt V-Neck Short Sleeve - Queen Crown</p><p></p><p>Ladies' V-Neck T-Shirt. 5.3 oz./yd² (US) 8.8 oz./L yd (CA),100% preshrunk cotton.</p>    <ul>     <li>Classic midweight fabric. Fiber content varies by color, see color list for exceptions. </li>     <li>Sport Grey: 90/10 cotton/polyester. Heather colors: 50/50 cotton/polyester. </li>     <li>Semi-fitted. 1/2\" non-topstitched v-neck collar. Taped neck and shoulders.</li>     <li>Cap sleeves. Double-needle sleeve and bottom hems. </li>     <li>Side seams. Grey pearlized tear away label. </li>     <li>Semi-Fitted. Available in a wide range of colors to compliment any wardrobe, these womens v-neck tshirt provide the perfect fit and the soft feel essential for everyday wear. </li>     <li>Available in a wide range of colors to compliment any wardrobe, these womens t-shirt provide the perfect fit and the soft feel essential for everyday wear.</li>     <li><p> This Queen Crown women's V-Neck tee is for women. We carry sizes up to 3XL. You can wear this short-sleeve sporty look fashionable graphic v​-​neck t-shirt while you go shopping, gym, school, or add it to your weekend wardrobe to use it daily basis essential. It can be a great gift for someone, gotta have it daily basics, and Queen Crown print is so trendy to have.</p></li>    </ul><p></p></li>   <li>Ultra Lightweight and compressible for easy packing. Super lightweight and flexible. Comfortable in wearing and make you feel great freedom. Lightweight and compressible for easy packing, convenience for leisure or any other sport, outdoor activities. Ideal for any activity; perfect for beach, hiking, camping, fishing, hunting, traveling, long airline flight, yoga, workout, training, gym, fitness, performing pilates exercises aerobics etc.</li>   <li>This garment makes the best gift idea for you, family or a friend. Perfect for Christmas, Father’s Day for Dad, Mother’s Day for Mom, gift idea for friends, the perfect idea for your brother or sister. The welcome home gift they will love. These are long lasting garments, something that you can wear to a party or just a simple movie. Give them as a gift, it is something they will wear all year.</li>  </ul>"
         },
         "location": {
           "city": "Sacramento",
@@ -44,152 +36,311 @@
           "store_id": "3081",
           "zip_code": "95829"
         },
+        "variations": [
+          {
+            "state": "OUT_OF_STOCK",
+            "product_id": "51FRWV09DIZ8"
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "2PSGBVS3BQCX",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Lime Green"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 15.28,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "0UZ27XNDUJZT",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Irish Green"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "XL"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "1EDNMZV2BYPA",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Heliconia Pink"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "XL"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "24L24SYD8GMK",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Black"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "XL"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "3EVNC4C7AEVB",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Charcoal"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "1KIWE1VW8O0R",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Red"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "L"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.24,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "204O96P6HJZV",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Charcoal"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "L"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 21.86,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "5DH1U3ZMLJ8L",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "White"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "XXXL"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 15.28,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "4DXBWBS504F6",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Irish Green"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 22.79,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "1HEB6T4J7X9P",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Charcoal"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "2XL"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "662AP2XXWCAW",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Navy Blue"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "price": {
+              "price": 18.09,
+              "currency": "USD"
+            },
+            "state": "IN_STOCK",
+            "product_id": "4ETQ3XEVL2EU",
+            "selected_options": [
+              {
+                "key": "Color",
+                "value": "Black"
+              },
+              {
+                "key": "Clothing Size",
+                "value": "M"
+              }
+            ]
+          }
+        ],
         "breadcrumbs": [
           {
-            "url": "/cp/auto-tires/91083",
-            "category_name": "Auto & Tires"
+            "url": "/cp/clothing/5438",
+            "category_name": "Clothing"
           },
           {
-            "url": "/cp/tires-accessories/1077064",
-            "category_name": "Tires & Accessories"
+            "url": "/cp/womens-clothing/133162",
+            "category_name": "Womens Clothing"
           },
           {
-            "url": "/cp/tires-by-vehicle/8752379",
-            "category_name": "Tires by Vehicle"
+            "url": "/cp/womens-tops/2290732",
+            "category_name": "Womens Tops"
           },
           {
-            "url": "/cp/automotive-tires/4838964",
-            "category_name": "Automotive Tires"
+            "url": "/cp/tshirts-for-women/6032117",
+            "category_name": "Tshirts for Women"
           },
           {
-            "url": "/cp/car-tires/1063465",
-            "category_name": "Car Tires"
+            "url": "/cp/tshirts-for-women/1199499",
+            "category_name": "Tshirts for Women"
           }
         ],
         "fulfillment": {
           "pickup": false,
           "delivery": false,
-          "shipping": true,
-          "out_of_stock": false,
+          "shipping": false,
+          "out_of_stock": true,
           "free_shipping": false,
           "pickup_information": ", Pickup, Not available",
           "delivery_information": ", Delivery, Not available",
-          "shipping_information": ", Shipping, Arrives Sep 11, Free"
-        },
-        "cheapest_price": {
-          "price": 321.99,
-          "currency": "USD"
+          "shipping_information": ", Shipping, Not available"
         },
         "specifications": [
           {
-            "key": "Tire Diameter",
-            "value": "20 in"
-          },
-          {
-            "key": "Tire Terrain",
-            "value": "Highway Terrain"
-          },
-          {
-            "key": "Construction Type",
-            "value": "Radial"
-          },
-          {
             "key": "Features",
-            "value": "Fits Multiple Makes And models"
+            "value": "Proudly designed / printed in the United States and we ship from beautiful California"
           },
           {
-            "key": "Tire Size",
-            "value": "255/50R20"
+            "key": "Country of Origin - Textiles",
+            "value": "USA"
+          },
+          {
+            "key": "Sleeve Length Style",
+            "value": "Short Sleeve"
+          },
+          {
+            "key": "Fabric Content",
+            "value": "100% Cotton - 100%"
+          },
+          {
+            "key": "Pattern",
+            "value": "Graphic Design"
+          },
+          {
+            "key": "Gender",
+            "value": "Female"
+          },
+          {
+            "key": "Clothing Neck Style",
+            "value": "V-Neck"
+          },
+          {
+            "key": "Character",
+            "value": "Outerwear; Popular Graphic Design"
           },
           {
             "key": "Brand",
-            "value": "Hankook"
-          },
-          {
-            "key": "Vehicle Type",
-            "value": "Car"
-          },
-          {
-            "key": "Tire Width",
-            "value": "255"
-          },
-          {
-            "key": "Tire Aspect Ratio",
-            "value": "50"
-          },
-          {
-            "key": "Wheel Diameter",
-            "value": "20 in"
-          },
-          {
-            "key": "Warranty Distance",
-            "value": "50000 miles"
-          },
-          {
-            "key": "Tire Season",
-            "value": "All-Season"
-          },
-          {
-            "key": "Tire Speed Rating",
-            "value": "H"
-          },
-          {
-            "key": "Has Warranty",
-            "value": "Y"
-          },
-          {
-            "key": "Tire Type",
-            "value": "Passenger Car Tires"
-          },
-          {
-            "key": "Tire Load Index",
-            "value": "105"
-          },
-          {
-            "key": "Uniform Tire Quality Grade (UTQG)",
-            "value": "500 A A"
-          },
-          {
-            "key": "Tire Traction Rating",
-            "value": "A"
-          },
-          {
-            "key": "Tire Treadwear Rating",
-            "value": "500"
-          },
-          {
-            "key": "Tread Depth",
-            "value": "10/32"
-          },
-          {
-            "key": "Assembled Product Weight",
-            "value": "34 lb"
-          },
-          {
-            "key": "Model",
-            "value": "Ventus S1 Noble2 (H452) 1017315"
-          },
-          {
-            "key": "Manufacturer Part Number",
-            "value": "1017315"
+            "value": "Mom's Favorite"
           },
           {
             "key": "Manufacturer",
-            "value": "Hankook"
+            "value": "Mom's Favorite"
           }
         ],
         "parse_status_code": 12000,
-        "cheapest_seller_name": "Walmart.com",
-        "sold_by_walmart_price": {
-          "price": 321.99,
-          "currency": "USD"
-        }
+        "cheapest_seller_name": null,
+        "sold_by_walmart_price": null
       },
-      "created_at": "2025-09-02 18:07:23",
-      "updated_at": "2025-09-02 18:07:26",
+      "created_at": "2025-09-05 03:17:17",
+      "updated_at": "2025-09-05 03:17:20",
       "page": 1,
-      "url": "https://www.walmart.com/ip/ZwnncOAxqcQhYKYl/102109577",
-      "job_id": "7368706123169281025",
+      "url": "https://www.walmart.com/ip/XasmSVkVUFQKXuXf/666481742",
+      "job_id": "7369569284332225537",
       "is_render_forced": false,
       "status_code": 200,
       "type": "parsed",
@@ -201,50 +352,50 @@
     "parse": true,
     "domain": "com",
     "source": "walmart_product",
-    "product_id": "102109577",
-    "id": "7368706123169281025",
+    "product_id": "666481742",
+    "id": "7369569284332225537",
     "status": "done",
-    "created_at": "2025-09-02 18:07:23",
-    "updated_at": "2025-09-02 18:07:26",
+    "created_at": "2025-09-05 03:17:17",
+    "updated_at": "2025-09-05 03:17:20",
     "_links": [
       {
         "rel": "self",
-        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025",
+        "href": "http://data.oxylabs.io/v1/queries/7369569284332225537",
         "method": "GET"
       },
       {
         "rel": "results",
-        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025/results",
+        "href": "http://data.oxylabs.io/v1/queries/7369569284332225537/results",
         "method": "GET"
       },
       {
         "rel": "results-content",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7368706123169281025/results/1/content"
+          "http://data.oxylabs.io/v1/queries/7369569284332225537/results/1/content"
         ],
         "method": "GET"
       },
       {
         "rel": "results-html",
-        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025/results?type=raw",
+        "href": "http://data.oxylabs.io/v1/queries/7369569284332225537/results?type=raw",
         "method": "GET"
       },
       {
         "rel": "results-content-html",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7368706123169281025/results/1/content?type=raw"
+          "http://data.oxylabs.io/v1/queries/7369569284332225537/results/1/content?type=raw"
         ],
         "method": "GET"
       },
       {
         "rel": "results-parsed",
-        "href": "http://data.oxylabs.io/v1/queries/7368706123169281025/results?type=parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7369569284332225537/results?type=parsed",
         "method": "GET"
       },
       {
         "rel": "results-content-parsed",
         "href_list": [
-          "http://data.oxylabs.io/v1/queries/7368706123169281025/results/1/content?type=parsed"
+          "http://data.oxylabs.io/v1/queries/7369569284332225537/results/1/content?type=parsed"
         ],
         "method": "GET"
       }

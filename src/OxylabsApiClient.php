@@ -24,7 +24,6 @@ use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductResponse;
 use AlwaysOpen\OxylabsApi\Models\OxylabsApiRequestLogger;
-use Exception;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Request;
@@ -209,7 +208,7 @@ class OxylabsApiClient
             $attempts = 0;
             do {
                 $job = $this->getPushPullJob($job_id);
-            } while ($job->isPending() && $attempts++ < $status_check_limit && 0 === sleep($status_wait_seconds));
+            } while ($job->isPending() && $attempts++ < $status_check_limit && sleep($status_wait_seconds) === 0);
         }
 
         return $this->getResult($job_id, $type);

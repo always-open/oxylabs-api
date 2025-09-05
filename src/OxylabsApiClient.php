@@ -206,18 +206,10 @@ class OxylabsApiClient
         ?string $type = null,
     ): ?array {
         if ($check_status) {
-            retry(
-                $status_check_limit,
-                function () use ($job_id): PushPullJob {
-                    $job = $this->getPushPullJob($job_id);
-                    if (! $job->isDone()) {
-                        throw new Exception("Job $job_id not completed");
-                    }
-
-                    return $job;
-                },
-                $status_wait_seconds,
-            );
+            $attempts = 0;
+            do {
+                $job = $this->getPushPullJob($job_id);
+            } while ($job->isPending() && $attempts++ < $status_check_limit && 0 === sleep($status_wait_seconds));
         }
 
         return $this->getResult($job_id, $type);

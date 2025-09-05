@@ -79,11 +79,6 @@ class OxylabsApiClient
         };
     }
 
-    protected function getBaseRequest(): Factory|PendingRequest
-    {
-        return Http::withHeaders($this->getAuthHeader());
-    }
-
     /**
      * @throws RuntimeException
      */
@@ -292,13 +287,17 @@ class OxylabsApiClient
     }
 
     /**
-     * @throws ConnectionException
-     * @throws RuntimeException
+     * @throws GuzzleException
+     * @throws Throwable
      */
     public function makeBatchRequest(BatchRequest $payload): PushPullBatchJobResponse
     {
-        $response = $this->getBaseRequest()
-            ->post($this->baseUrl.'/queries/batch', $payload->toArray());
+        $response = $this->makeRequest(
+            'post',
+            $this->baseUrl.'/queries/batch',
+            $payload->toArray(),
+            3
+        );
 
         if (! $response->successful()) {
             throw new RuntimeException('API request failed: '.$response->body());

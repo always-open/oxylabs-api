@@ -147,6 +147,7 @@ class OxylabsApiClient
 
         } catch (Throwable $e) {
             if (config('oxylabs-api.request_logging_enabled', true) && $logger) {
+                $logger->response = $response?->json() ?? null;
                 $logger->exception = substr($e->getMessage(), 0, 512);
                 $logger->save();
             }

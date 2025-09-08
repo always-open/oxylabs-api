@@ -357,56 +357,77 @@ class OxylabsApiClient
     /**
      * @throws RuntimeException
      */
-    public function amazonProduct(AmazonProductRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function amazonProduct(
+        AmazonProductRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_PRODUCT, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
      * @throws RuntimeException
      */
-    public function amazonSearch(AmazonSearchRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function amazonSearch(
+        AmazonSearchRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_SEARCH, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
      * @throws RuntimeException
      */
-    public function amazonPricing(AmazonPricingRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function amazonPricing(
+        AmazonPricingRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_PRICING, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
      * @throws RuntimeException
      */
-    public function amazonSellers(AmazonSellersRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function amazonSellers(
+        AmazonSellersRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_AMAZON_SELLERS, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
      * @throws RuntimeException
      */
-    public function googleSearch(GoogleSearchRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function googleSearch(
+        GoogleSearchRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_SEARCH, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
      * @throws RuntimeException
      */
-    public function universal(UniversalRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function universal(
+        UniversalRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest('universal', $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
      * @throws RuntimeException
      */
-    public function googleShoppingProduct(GoogleShoppingProductRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function googleShoppingProduct(
+        GoogleShoppingProductRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRODUCT, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
@@ -430,9 +451,12 @@ class OxylabsApiClient
     /**
      * @throws RuntimeException
      */
-    public function googleShoppingPricing(GoogleShoppingPricingRequest $request, ?int $allowedRetries = null): PushPullJob
-    {
-        return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRICING, $request->toArray(), $allowedRetries);
+    public function googleShoppingPricing(
+        GoogleShoppingPricingRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
+        return $this->makePostRequest(OxylabsApi::SOURCE_GOOGLE_SHOPPING_PRICING, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**
@@ -454,8 +478,11 @@ class OxylabsApiClient
     /**
      * @throws RuntimeException
      */
-    public function walmartProduct(WalmartProductRequest $request, ?int $allowedRetries = null, bool $logResponseBody = true): PushPullJob
-    {
+    public function walmartProduct(
+        WalmartProductRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_WALMART_PRODUCT, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 

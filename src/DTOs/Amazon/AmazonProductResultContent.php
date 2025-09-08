@@ -98,9 +98,9 @@ class AmazonProductResultContent extends Data
         public readonly ?bool $amazon_choice = null,
         public readonly ?float $coupon_discount_percentage = null,
         public readonly ?string $parent_asin = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $created_at = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $updated_at = null,
         public readonly ?bool $is_prime_pantry = null,
     ) {}

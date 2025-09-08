@@ -19,9 +19,9 @@ class UniversalResult extends Data
         public readonly string $job_id,
         public readonly bool $is_render_forced,
         public readonly int $status_code,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $created_at = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $updated_at = null,
         public readonly ?UniversalSession $session_info = null,
         public readonly ?UniversalResultRequest $_request = null,

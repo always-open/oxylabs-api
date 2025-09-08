@@ -129,31 +129,39 @@ class OxylabsApiClient
             $logger->save();
         }
 
-        /**
-         * @var Response $response
-         */
-        $response = retry($retryCount ?? 0, function () use ($request, $method, $payload): PromiseInterface|Response {
-            if (strtolower($method) === 'post') {
-                return Http::withHeaders($request->getHeaders())
-                    ->post($request->getUri(), $payload)
-                    ->throw();
-            } else {
-                return Http::withHeaders($request->getHeaders())
-                    ->get($request->getUri())
-                    ->throw();
-            }
-        }, 2000);
+        try {
+            /**
+             * @var Response $response
+             */
+            $response = retry($retryCount ?? 0, function () use ($request, $method, $payload): PromiseInterface|Response {
+                if (strtolower($method) === 'post') {
+                    return Http::withHeaders($request->getHeaders())
+                        ->post($request->getUri(), $payload)
+                        ->throw();
+                } else {
+                    return Http::withHeaders($request->getHeaders())
+                        ->get($request->getUri())
+                        ->throw();
+                }
+            }, 2000);
 
-        if (config('oxylabs-api.request_logging_enabled', true)) {
-            if ($logResponseBody) {
-                $logger->updateFromResponse($response->toPsrResponse());
-            } else {
-                $logger->response_code = $response->getStatusCode();
-                $logger->response_headers = $response->getHeaders();
-
+        } catch (Throwable $e) {
+            if (config('oxylabs-api.request_logging_enabled', true) && $logger) {
+                $logger->exception = substr($e->getMessage(), 0, 512);
                 $logger->save();
             }
+            throw $e;
+        } finally {
+            if (config('oxylabs-api.request_logging_enabled', true) && $logger && $response) {
+                if ($logResponseBody) {
+                    $logger->updateFromResponse($response->toPsrResponse());
+                } else {
+                    $logger->response_code = $response->getStatusCode();
+                    $logger->response_headers = $response->getHeaders();
 
+                    $logger->save();
+                }
+            }
         }
 
         return $response;

@@ -21,9 +21,9 @@ class WalmartProductResult extends Data
         public readonly int $status_code,
         public readonly ?string $type = null,
         public readonly ?string $parser_type = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $created_at = null,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $updated_at = null,
         public readonly ?string $parser_preset = null,
     ) {}

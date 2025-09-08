@@ -37,7 +37,7 @@ return new class extends Migration
             $table->json('response_headers')
                 ->nullable();
             // Internal exceptions that occurred during the request
-            $table->string('exception')
+            $table->string('exception', 512)
                 ->nullable();
             // When the request was resolved to the millisecond
             $table->timestamp('occurred_at', 3)->index();

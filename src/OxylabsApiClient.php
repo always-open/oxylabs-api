@@ -148,8 +148,7 @@ class OxylabsApiClient
             if (strtolower($method) === 'post') {
                 return Http::withHeaders($request->getHeaders())
                     ->post($request->getUri(), $payload)
-                    ->throw($logException)
-                    ;
+                    ->throw($logException);
             } else {
                 return Http::withHeaders($request->getHeaders())
                     ->get($request->getUri())

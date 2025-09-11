@@ -117,6 +117,10 @@ class OxylabsApiClient
         ?int $retryCount = null,
         bool $logResponseBody = true,
     ): Response {
+        $logger = null;
+        $response = null;
+        $logException = null;
+
         $request = new Request(
             method: $method,
             uri: $uri,
@@ -127,41 +131,40 @@ class OxylabsApiClient
         if (config('oxylabs-api.request_logging_enabled', true)) {
             $logger = OxylabsApiRequestLogger::makeFromGuzzle($request);
             $logger->save();
+
+            $logException = function (Response $response, $exception) use ($logger) {
+                $logger->response = $response->json();
+                $logger->response_code = $response->getStatusCode();
+                $logger->response_headers = $response->getHeaders();
+                $logger->exception = substr($exception->getMessage(), 0, 512);
+                $logger->save();
+            };
         }
 
-        try {
-            /**
-             * @var Response $response
-             */
-            $response = retry($retryCount ?? 0, function () use ($request, $method, $payload): PromiseInterface|Response {
-                if (strtolower($method) === 'post') {
-                    return Http::withHeaders($request->getHeaders())
-                        ->post($request->getUri(), $payload)
-                        ->throw();
-                } else {
-                    return Http::withHeaders($request->getHeaders())
-                        ->get($request->getUri())
-                        ->throw();
-                }
-            }, 2000);
-
-        } catch (Throwable $e) {
-            if (config('oxylabs-api.request_logging_enabled', true) && $logger) {
-                $logger->response = $response?->json() ?? null;
-                $logger->exception = substr($e->getMessage(), 0, 512);
-                $logger->save();
+        /**
+         * @var Response|null $response
+         */
+        $response = retry($retryCount ?? 0, function () use ($request, $method, $payload, $logException): PromiseInterface|Response {
+            if (strtolower($method) === 'post') {
+                return Http::withHeaders($request->getHeaders())
+                    ->post($request->getUri(), $payload)
+                    ->throw($logException)
+                    ;
+            } else {
+                return Http::withHeaders($request->getHeaders())
+                    ->get($request->getUri())
+                    ->throw($logException);
             }
-            throw $e;
-        } finally {
-            if (config('oxylabs-api.request_logging_enabled', true) && $logger && $response) {
-                if ($logResponseBody) {
-                    $logger->updateFromResponse($response->toPsrResponse());
-                } else {
-                    $logger->response_code = $response->getStatusCode();
-                    $logger->response_headers = $response->getHeaders();
+        }, 2000);
 
-                    $logger->save();
-                }
+        if (config('oxylabs-api.request_logging_enabled', true) && $logger && $response) {
+            if ($logResponseBody) {
+                $logger->updateFromResponse($response?->toPsrResponse());
+            } else {
+                $logger->response_code = $response?->getStatusCode();
+                $logger->response_headers = $response?->getHeaders();
+
+                $logger->save();
             }
         }
 

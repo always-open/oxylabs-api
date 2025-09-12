@@ -7,7 +7,7 @@ use Spatie\LaravelData\Data;
 class WalmartProductResultContentRating extends Data
 {
     public function __construct(
-        public readonly int $count,
-        public readonly float $rating,
+        public readonly int|string $count,
+        public readonly float|string $rating,
     ) {}
 }

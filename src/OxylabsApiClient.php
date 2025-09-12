@@ -118,7 +118,6 @@ class OxylabsApiClient
         bool $logResponseBody = true,
     ): Response {
         $logger = null;
-        $response = null;
         $logException = null;
 
         $request = new Request(
@@ -158,10 +157,10 @@ class OxylabsApiClient
 
         if (config('oxylabs-api.request_logging_enabled', true) && $logger && $response) {
             if ($logResponseBody) {
-                $logger->updateFromResponse($response?->toPsrResponse());
+                $logger->updateFromResponse($response->toPsrResponse());
             } else {
-                $logger->response_code = $response?->getStatusCode();
-                $logger->response_headers = $response?->getHeaders();
+                $logger->response_code = $response->getStatusCode();
+                $logger->response_headers = $response->getHeaders();
 
                 $logger->save();
             }

@@ -2,6 +2,7 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs;
 
+use AlwaysOpen\OxylabsApi\Traits\Headers;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Attributes\WithCast;
@@ -10,6 +11,8 @@ use Spatie\LaravelData\Data;
 
 class PushPullJob extends Data
 {
+    use Headers;
+
     public function __construct(
         #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly Carbon $created_at,

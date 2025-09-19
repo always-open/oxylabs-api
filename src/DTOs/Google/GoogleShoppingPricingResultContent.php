@@ -14,7 +14,7 @@ class GoogleShoppingPricingResultContent extends Data
         public readonly int $parse_status_code,
         public readonly ?string $url = null,
         public readonly ?string $title = null,
-        public readonly ?int $rating = null,
+        public readonly ?float $rating = null,
         /* @var GoogleShoppingPricingOffer[] $pricing */
         #[DataCollectionOf(GoogleShoppingPricingOffer::class)]
         public readonly ?array $pricing = null,

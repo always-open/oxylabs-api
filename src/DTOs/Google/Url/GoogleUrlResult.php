@@ -2,7 +2,6 @@
 
 namespace AlwaysOpen\OxylabsApi\DTOs\Google\Url;
 
-use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingResultContent;
 use AlwaysOpen\OxylabsApi\Traits\Renderable;
 use Illuminate\Support\Carbon;
 use Spatie\LaravelData\Attributes\WithCast;
@@ -30,11 +29,6 @@ class GoogleUrlResult extends Data
         public readonly ?string $parser_type = null,
         public readonly ?string $parser_preset = null,
     ) {}
-
-    public function hasMaxResults(): bool
-    {
-        return count($this->content->pricing ?? []) >= self::MAX_PRICES_PER_PAGE;
-    }
 
     public function nextPage(): int
     {

@@ -16,6 +16,8 @@ use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Google\Url\GoogleUrlRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Google\Url\GoogleUrlResponse;
 use AlwaysOpen\OxylabsApi\DTOs\GoogleSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullBatchJobResponse;
 use AlwaysOpen\OxylabsApi\DTOs\PushPullJob;
@@ -503,5 +505,33 @@ class OxylabsApiClient
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type, $logResponseBody);
 
         return WalmartProductResponse::from($response);
+    }
+
+    /**
+     * @throws RuntimeException
+     */
+    public function googleUrl(
+        GoogleUrlRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
+        return $this->makePostRequest(OxylabsApi::TARGET_GOOGLE, $request->toArray(), $allowedRetries, $logResponseBody);
+    }
+
+    /**
+     * @throws Throwable
+     * @throws ConnectionException
+     */
+    public function getGoogleUrlResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+        ?string $type = 'parsed',
+        bool $logResponseBody = true,
+    ): GoogleUrlResponse {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type, $logResponseBody);
+
+        return GoogleUrlResponse::from($response);
     }
 }

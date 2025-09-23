@@ -8,6 +8,7 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Google\Url\GoogleUrlRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductRequest;
 use AlwaysOpen\OxylabsApi\Enums\ParseStatus;
 use AlwaysOpen\OxylabsApi\Enums\RenderOption;
@@ -285,6 +286,29 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertTrue($result->results[0]->isRaw());
         $saved = $result->results[0]->saveImageTo(__DIR__.'/7350883412053343233_walmart.png');
         $this->assertTrue($saved);
+    }
+
+    public function test_google_url()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('push_pull_job.json'), 200),
+            'data.oxylabs.io/v1/queries/7350883412053343233/results?type=html' => Http::response($this->getFixtureJsonContent('google_url_results.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $request = new GoogleUrlRequest(
+            source: OxylabsApi::TARGET_GOOGLE,
+            domain: 'com',
+            query: '123456',
+            render: RenderOption::HTML,
+        );
+
+        $client->googleUrl($request);
+
+        $result = $client->getGoogleUrlResult('7350883412053343233', type: 'html');
+
+        $this->assertTrue($result->results[0]->isRaw());
     }
 
     public function test_amazon_screenshot()

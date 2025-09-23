@@ -16,7 +16,7 @@ class GoogleUrlResult extends Data
 
     public function __construct(
         // @TODO handle parsed results in next version
-        public readonly string $content,
+        public readonly ?string $content,
         public readonly int $page,
         public readonly string $url,
         public readonly string $job_id,

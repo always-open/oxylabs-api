@@ -10,7 +10,7 @@ class GoogleShoppingPricingRequest extends Data
         public readonly string $source,
         public readonly string $domain,
         public readonly string $query,
-        public readonly ?bool  $parse = null,
+        public readonly ?bool $parse = null,
         public readonly ?array $context = null
     ) {}
 

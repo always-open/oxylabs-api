@@ -15,7 +15,7 @@ class GoogleUrlResult extends Data
     public const int MAX_PRICES_PER_PAGE = 3;
 
     public function __construct(
-        //@TODO handle parsed results in next version
+        // @TODO handle parsed results in next version
         public readonly string $content,
         public readonly int $page,
         public readonly string $url,

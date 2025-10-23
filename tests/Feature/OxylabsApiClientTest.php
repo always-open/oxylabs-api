@@ -263,6 +263,19 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertCount(1, $result->results);
     }
 
+    public function test_walmart_product_raw()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7342973874281147393/results?type=raw' => Http::response($this->getFixtureJsonContent('walmart_raw_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $result = $client->getWalmartProductResult('7342973874281147393', type: 'raw');
+
+        $this->assertIsString($result->results[0]->content);
+    }
+
     public function test_walmart_screenshot()
     {
         Http::fake([

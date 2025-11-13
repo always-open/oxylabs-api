@@ -1,0 +1,39 @@
+{
+  "source": "ebay_search",
+  "query": "shoes",
+  "id": "7394841187565211649",
+  "status": "pending",
+  "created_at": "2025-11-13 20:58:48",
+  "updated_at": "2025-11-13 20:58:48",
+  "_links": [
+    {
+      "rel": "self",
+      "href": "http://data.oxylabs.io/v1/queries/7394841187565211649",
+      "method": "GET"
+    },
+    {
+      "rel": "results",
+      "href": "http://data.oxylabs.io/v1/queries/7394841187565211649/results",
+      "method": "GET"
+    },
+    {
+      "rel": "results-content",
+      "href_list": [
+        "http://data.oxylabs.io/v1/queries/7394841187565211649/results/1/content"
+      ],
+      "method": "GET"
+    },
+    {
+      "rel": "results-html",
+      "href": "http://data.oxylabs.io/v1/queries/7394841187565211649/results?type=raw",
+      "method": "GET"
+    },
+    {
+      "rel": "results-content-html",
+      "href_list": [
+        "http://data.oxylabs.io/v1/queries/7394841187565211649/results/1/content?type=raw"
+      ],
+      "method": "GET"
+    }
+  ]
+}

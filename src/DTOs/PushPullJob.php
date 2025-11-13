@@ -16,13 +16,13 @@ class PushPullJob extends Data
     public function __construct(
         #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly Carbon $created_at,
-        public readonly string $domain,
         public readonly string $id,
-        public readonly bool $parse,
         public readonly string $source,
         public readonly string $status,
         #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
         public readonly Carbon $updated_at,
+        public readonly ?string $domain = null,
+        public readonly ?bool $parse = null,
         public readonly ?bool $xhr = null,
         public readonly ?int $client_id = null,
         public readonly ?int $limit = null,

@@ -6,6 +6,7 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
+use AlwaysOpen\OxylabsApi\DTOs\eBay\ProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\Url\GoogleUrlRequest;
@@ -413,5 +414,25 @@ class OxylabsApiClientTest extends BaseTest
         $result = $client->getUniversalResult('7350883412053343234');
 
         $this->assertEquals(ParseStatus::FAILURE_COULD_NOT_PARSE->value, $result->results[0]->content->parse_status_code);
+    }
+
+    public function test_ebay_request()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('ebay_creation_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7394841187565211649/results?type=raw' => Http::response($this->getFixtureJsonContent('ebay_search_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $productRequest = new ProductRequest('asdf');
+
+        $creationResult = $client->makePostRequest(OxylabsApi::SOURCE_EBAY_SEARCH, $productRequest->toArray());
+
+        $this->assertNotEmpty($creationResult->query);
+
+        $result = $client->geteBayResult($creationResult->id);
+
+        $this->assertTrue($result->results[0]->isRaw());
     }
 }

@@ -12,6 +12,7 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSearchRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellerResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\BatchRequest;
+use AlwaysOpen\OxylabsApi\DTOs\eBay\eBayResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
@@ -533,5 +534,22 @@ class OxylabsApiClient
         $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type, $logResponseBody);
 
         return GoogleUrlResponse::from($response);
+    }
+
+    /**
+     * @throws Throwable
+     * @throws ConnectionException
+     */
+    public function geteBayResult(
+        string $job_id,
+        bool $check_status = false,
+        int $status_check_limit = 5,
+        int $status_wait_seconds = 3,
+        ?string $type = 'raw',
+        bool $logResponseBody = true,
+    ): eBayResponse {
+        $response = $this->getPushPullResults($job_id, $check_status, $status_check_limit, $status_wait_seconds, $type, $logResponseBody);
+
+        return eBayResponse::from($response);
     }
 }

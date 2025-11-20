@@ -17,7 +17,7 @@ class eBayResultContent extends Data
         public readonly float $price,
         public readonly string $title,
         public readonly string $currency,
-        public readonly float|null $old_price,
+        public readonly ?float $old_price,
         public readonly string $description,
         public readonly bool $availability,
         public readonly int $parse_status_code,

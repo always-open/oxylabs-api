@@ -1,0 +1,323 @@
+{
+  "results": [
+    {
+      "content": {
+        "ids": [
+          {
+            "gtin13": "0017030006339"
+          },
+          {
+            "mpn": "410633"
+          }
+        ],
+        "url": "https://www.ebay.com/itm/202974877973",
+        "brand": "Vetoquinol",
+        "image": "https://i.ebayimg.com/images/g/h0sAAOSwwzJeo3pE/s-l1600.jpg",
+        "price": 49.95,
+        "title": "Vetoquinol Viralys Oral Powder for Cats 100 g L-Lysine Nutritional Supplement ",
+        "currency": "$",
+        "old_price": null,
+        "description": "Highly palatable powder may be sprinkled over dry food or mixed with a small amount of canned food. A highly palatable L-Lysine HCI Nutritional oral powder for cats that may be sprinkled over dry food or mixed with a small amount of canned food.",
+        "availability": true,
+        "parse_status_code": 12000,
+        "additional_properties": []
+      },
+      "created_at": "2025-11-20 16:54:46",
+      "updated_at": "2025-11-20 16:55:01",
+      "page": 1,
+      "url": "https://www.ebay.com/itm/202974877973",
+      "job_id": "7397316489943985153",
+      "is_render_forced": false,
+      "status_code": 200,
+      "type": "parsed",
+      "parser_type": "ecommerce_product",
+      "parser_preset": null,
+      "_request": {
+        "cookies": [],
+        "headers": {
+          "Accept": "*/*",
+          "Referer": "https://www.yahoo.com/",
+          "Sec-Ch-Ua": "\"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+          "Sec-Fetch-Dest": "empty",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Site": "cross-site",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.8",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"Windows\""
+        }
+      },
+      "_response": {
+        "cookies": [
+          {
+            "key": "s",
+            "path": "/",
+            "value": "CgAD4ACBpIJlYYTIzMGEzZDExOWEwYThkNWZlNDUyNDExZmZmN2Y1Mzj5EdiG",
+            "domain": ".ebay.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "ds2",
+            "path": "/",
+            "value": "amsg/a230aa1619a0ac6a2640fb75fffa209f^",
+            "domain": ".ebaydesc.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "ebay",
+            "path": "/",
+            "value": "%5Esbf%3D%23000000%5E",
+            "domain": ".ebay.com",
+            "secure": true,
+            "comment": "",
+            "expires": -1,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__uzma",
+            "path": "/",
+            "value": "f596b28d-0dcb-453f-a869-74d1b20ab38c",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1779209689.831114,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__uzmb",
+            "path": "/",
+            "value": "1763657687",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1779209689.831128,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__uzme",
+            "path": "/",
+            "value": "1123",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1779209689.831167,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "ak_bmsc",
+            "path": "/",
+            "value": "A921B8AA9C20581CFCFE6135239F8364~000000000000000000000000000000~YAAQfN5FaL1alneaAQAA6qUwoh2oLmbQEfOiwmORLcS7bgUl7b0CwOEdxLCujlRjUt+qc3dr43qHLbtJuPBV+4vq0Yhzsdpkva7ebxLXk9iEcUtRRtuyn+uWKZ43yKZH8CA10ijICD7yJHG/H2pw5FiVOOwFB0Sr6ITD5CatfPOLWbVNPru5BLnbmaLt7bX4PTg7uST82PVuSHUrdOPALg+Ef+0AzTkmqLn4VX/r1tWH5oaus3TYDykHY0i41w9sTYMLeXtVJDlDCIawymyKWSOQjWbikU5yklMbsWDtDzyv8EeymL4619Gr2mgYpiNeTeqr4JPxTISn5PrgwREaJnRmVW/Ix6eKHrRGVuNvgbfacl0C3LncUUSohtUO8JoQy3/sV8cx+Kjx2rw=",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1763664887.571413,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__uzmc",
+            "path": "/",
+            "value": "848891399663",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1779209689.83114,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__uzmd",
+            "path": "/",
+            "value": "1763657689",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1779209689.831156,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__uzmf",
+            "path": "/",
+            "value": "7f6000b644d546-ea48-46e1-a472-06d2d15f968f17636576879731721-a6076c606ab0c33913",
+            "domain": ".ebay.com",
+            "secure": false,
+            "comment": "",
+            "expires": 1779209689.831179,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "__deba",
+            "path": "/",
+            "value": "VM1HDx6JIlvEteaq2y8VZfHqR99qYhwbXQjiZdBWi6gKeqIQQWjSM2owiegol7ZSXR8UW1J2_XMwSXzXGqPFGCyT4gB9_wgPzA3hAXbo4xq28-f8XM-7gCLm4Q1EeONDx90tOnNS9VPeJA7DVaolxQ==",
+            "domain": ".ebay.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1779209692.886599,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "thx_guid",
+            "path": "/",
+            "value": "eb151b7ebea56af1554f862f1aeef7e5",
+            "domain": "src.ebay-us.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1798217693.408197,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "tmx_guid",
+            "path": "/",
+            "value": "AAzsZJMO2CDhgbFBQsp2Q9l7v7bKgEopylnEGUvN921Usa8hRbOaUU-uAg5dXseDh1i1ul6nIZAcx2JuT4LFcQ8OoDKUTA",
+            "domain": "src.ebay-us.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1798217693.408252,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "nonsession",
+            "path": "/",
+            "value": "BAQAAAZpgwzgIAAaAADMAB2sAe2FFQzJOM0FSAMoAIGzhruFhMjMwYTNkMTE5YTBhOGQ1ZmU0NTI0MTFmZmY3ZjUzOADLAAFpH07pNJDXlybYHHusRAsKDFhzkRl4ST7O",
+            "domain": ".ebay.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1798217697.673153,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          },
+          {
+            "key": "dp1",
+            "path": "/",
+            "value": "bpbf/%23e000000000000000006b007b61^bl/GB6ce1aee1^",
+            "domain": ".ebay.com",
+            "secure": true,
+            "comment": "",
+            "expires": 1798217697.673176,
+            "max-age": "",
+            "version": "",
+            "httponly": "",
+            "samesite": ""
+          }
+        ],
+        "headers": {
+          "date": "Thu, 20 Nov 2025 16:54:48 GMT",
+          "vary": "Accept-Encoding",
+          "rlogid": "t6q4pnmjbb70ehmq%3C%3Dq4pnmjbb70ehmq%2B%3E4%3C1d%603%3E1.qctp450.mu24n-19aa230a3b2-0x1905",
+          "server": "ebay-proxy-server",
+          "accept-ch": "sec-ch-ua-model,sec-ch-ua-full-version,sec-ch-ua-platform-version",
+          "content-type": "text/html; charset=utf-8",
+          "x-frame-options": "SAMEORIGIN",
+          "content-encoding": "gzip",
+          "x-xss-protection": "1; mode=block",
+          "x-content-type-options": "nosniff",
+          "strict-transport-security": "max-age=31536000",
+          "x-envoy-upstream-service-time": "627"
+        }
+      },
+      "session_info": {
+        "id": null,
+        "expires_at": null,
+        "remaining": null
+      }
+    }
+  ],
+  "job": {
+    "parse": true,
+    "source": "ebay_product",
+    "product_id": "202974877973",
+    "id": "7397316489943985153",
+    "status": "done",
+    "created_at": "2025-11-20 16:54:46",
+    "updated_at": "2025-11-20 16:55:01",
+    "_links": [
+      {
+        "rel": "self",
+        "href": "http://data.oxylabs.io/v1/queries/7397316489943985153",
+        "method": "GET"
+      },
+      {
+        "rel": "results",
+        "href": "http://data.oxylabs.io/v1/queries/7397316489943985153/results",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7397316489943985153/results/1/content"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-html",
+        "href": "http://data.oxylabs.io/v1/queries/7397316489943985153/results?type=raw",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-html",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7397316489943985153/results/1/content?type=raw"
+        ],
+        "method": "GET"
+      },
+      {
+        "rel": "results-parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7397316489943985153/results?type=parsed",
+        "method": "GET"
+      },
+      {
+        "rel": "results-content-parsed",
+        "href_list": [
+          "http://data.oxylabs.io/v1/queries/7397316489943985153/results/1/content?type=parsed"
+        ],
+        "method": "GET"
+      }
+    ]
+  }
+}

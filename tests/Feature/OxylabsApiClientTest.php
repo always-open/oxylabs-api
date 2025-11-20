@@ -435,4 +435,25 @@ class OxylabsApiClientTest extends BaseTest
 
         $this->assertTrue($result->results[0]->isRaw());
     }
+
+    public function test_ebay_product_request()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('ebay_creation_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7394841187565211649/results?type=parsed' => Http::response($this->getFixtureJsonContent('ebay_product_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $productRequest = new ProductRequest('asdf');
+
+        $creationResult = $client->makePostRequest(OxylabsApi::SOURCE_EBAY_PRODUCT, $productRequest->toArray());
+
+        $this->assertNotEmpty($creationResult->query);
+
+        $result = $client->geteBayResult($creationResult->id, type: 'parsed');
+
+        $this->assertFalse($result->results[0]->isRaw());
+        $this->assertEquals(49.95, $result->results[0]->content->price);
+    }
 }

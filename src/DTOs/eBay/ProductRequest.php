@@ -12,6 +12,7 @@ class ProductRequest extends Data
         public readonly ?string $user_agent_type = null,
         public readonly ?RenderOption $render = null,
         public readonly ?string $domain = null,
+        public readonly ?bool $parse = null,
         //        public readonly ?string $callback_url = null,
         //        public readonly ?string $storage_type = null,
         //        public readonly ?string $storage_url = null,
@@ -24,6 +25,7 @@ class ProductRequest extends Data
             'user_agent_type' => $this->user_agent_type,
             'render' => $this->render,
             'domain' => $this->domain,
+            'parse' => $this->parse,
         ]);
     }
 }

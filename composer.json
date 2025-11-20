@@ -22,7 +22,9 @@
         "always-open/laravel-request-logger": "^3.0",
         "illuminate/contracts": "~10.0||~11.0||~12.0",
         "spatie/laravel-data": "~4.16",
-        "spatie/laravel-package-tools": "^1.16"
+        "spatie/laravel-package-tools": "^1.16",
+      "ext-dom": "*",
+      "ext-libxml": "*"
     },
     "require-dev": {
         "laravel/pint": "^1.14",

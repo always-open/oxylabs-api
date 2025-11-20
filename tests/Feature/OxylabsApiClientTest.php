@@ -6,7 +6,9 @@ use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
+use AlwaysOpen\OxylabsApi\DTOs\eBay\eBayProductPage;
 use AlwaysOpen\OxylabsApi\DTOs\eBay\ProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\eBay\UrlRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\GoogleShoppingProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Google\Url\GoogleUrlRequest;
@@ -455,5 +457,30 @@ class OxylabsApiClientTest extends BaseTest
 
         $this->assertFalse($result->results[0]->isRaw());
         $this->assertEquals(49.95, $result->results[0]->content->price);
+    }
+
+    public function test_ebay_url_request()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response($this->getFixtureJsonContent('ebay_creation_result.json'), 200),
+            'data.oxylabs.io/v1/queries/7394841187565211649/results?type=raw' => Http::response($this->getFixtureJsonContent('ebay_url_result.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $productRequest = new UrlRequest('https://www.ebay.com/itm/202974877973?chn=ps&mkevt=1&mkcid=28&google_free_listing_action=view_item&srsltid=AfmBOopnESLQHMaLFRlfk5Jyz5VjR96TMYNIZiER8upQUED9maQJs20TtgM');
+
+        $creationResult = $client->makePostRequest(OxylabsApi::SOURCE_EBAY, $productRequest->toArray());
+
+        $this->assertNotEmpty($creationResult->query);
+
+        $result = $client->geteBayResult($creationResult->id);
+
+        $this->assertTrue($result->results[0]->isRaw());
+
+        $productPage = new eBayProductPage($result->results[0]->content);
+        $pageContent = $productPage->arrayContent();
+        $this->assertIsArray($pageContent);
+        $this->assertEquals('US $49.95', $pageContent['price']);
     }
 }

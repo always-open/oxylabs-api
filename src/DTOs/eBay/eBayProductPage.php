@@ -3,16 +3,13 @@
 namespace AlwaysOpen\OxylabsApi\DTOs\eBay;
 
 use AlwaysOpen\OxylabsApi\Traits\Renderable;
-use Illuminate\Support\Carbon;
-use Spatie\LaravelData\Attributes\WithCast;
-use Spatie\LaravelData\Casts\DateTimeInterfaceCast;
 use Spatie\LaravelData\Data;
 
 class eBayProductPage extends Data
 {
     use Renderable;
 
-    protected \DOMXPath|null $domXPath = null;
+    protected ?\DOMXPath $domXPath = null;
 
     public function __construct(
         public readonly string $content,
@@ -21,7 +18,7 @@ class eBayProductPage extends Data
     public function getXPath(): \DOMXPath
     {
         if (! $this->domXPath) {
-            $dom = new \DOMDocument();
+            $dom = new \DOMDocument;
             libxml_use_internal_errors(true);
             $dom->loadHTML($this->content);
             libxml_clear_errors();

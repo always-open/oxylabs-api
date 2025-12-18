@@ -7,7 +7,8 @@ use Spatie\LaravelData\Data;
 class ProductDetails extends Data
 {
     public function __construct(
-        public readonly string $asin,
+        public readonly ?string $asin = null,
+        public readonly ?string $department = null,
         public readonly ?string $manufacturer = null,
         public readonly ?string $brand = null,
         public readonly ?string $customer_reviews = null,

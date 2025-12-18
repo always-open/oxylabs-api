@@ -10,7 +10,7 @@ use Spatie\LaravelData\Data;
 class AmazonProductResult extends Data
 {
     public function __construct(
-        public readonly AmazonProductResultContent $content,
+        public readonly AmazonProductResultContent|string $content,
         public readonly int $page,
         public readonly string $url,
         public readonly string $job_id,

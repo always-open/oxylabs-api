@@ -56,6 +56,7 @@ class OxylabsApi
     public const string SOURCE_WALMART_SEARCH = 'walmart_search';
 
     public const string SOURCE_EBAY = 'ebay';
+
     public const string SOURCE_EBAY_SEARCH = 'ebay_search';
 
     public const string SOURCE_EBAY_PRODUCT = 'ebay_product';

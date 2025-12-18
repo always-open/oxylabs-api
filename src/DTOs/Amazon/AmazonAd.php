@@ -7,16 +7,16 @@ use Spatie\LaravelData\Data;
 class AmazonAd extends Data
 {
     public function __construct(
-        public readonly int|null $pos = null,
-        public readonly string|null $asin = null,
-        public readonly string|null $type = null,
-        public readonly float|null $price = null,
-        public readonly string|null $title = null,
-        public readonly array|null $images = null,
-        public readonly float|null $rating = null,
-        public readonly string|null $location = null,
-        public readonly float|null $price_upper = null,
-        public readonly int|null $reviews_count = null,
-        public readonly bool|null $is_prime_eligible = null,
+        public readonly ?int $pos = null,
+        public readonly ?string $asin = null,
+        public readonly ?string $type = null,
+        public readonly ?float $price = null,
+        public readonly ?string $title = null,
+        public readonly ?array $images = null,
+        public readonly ?float $rating = null,
+        public readonly ?string $location = null,
+        public readonly ?float $price_upper = null,
+        public readonly ?int $reviews_count = null,
+        public readonly ?bool $is_prime_eligible = null,
     ) {}
 }

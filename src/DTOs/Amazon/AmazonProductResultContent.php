@@ -23,6 +23,7 @@ class AmazonProductResultContent extends Data
         public readonly ?string $url = null,
         public readonly ?int $page = null,
         public readonly ?string $page_type = null,
+        public readonly ?string $type = null,
         public readonly ?string $asin = null,
         public readonly ?string $asin_in_url = null,
         public readonly ?string $title = null,

@@ -8,9 +8,9 @@ use Spatie\LaravelData\Data;
 class WarrantyAndSupport extends Data
 {
     public function __construct(
-        public readonly string $description,
+        public readonly ?string $description = null,
         /* @var Link[] $links */
         #[DataCollectionOf(Link::class)]
-        public readonly array $links,
+        public readonly ?array $links = null,
     ) {}
 }

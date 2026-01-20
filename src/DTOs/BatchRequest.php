@@ -50,6 +50,7 @@ class BatchRequest extends Data
             'geo_location' => $this->geo_location,
             'context' => $this->context,
             'render' => $this->render,
+            'browser_instructions' => $this->browser_instructions,
         ]);
     }
 }

@@ -36,7 +36,9 @@ class PushPullJob extends Data
         public readonly ?string $parse_type = null,
         public readonly ?string $parse_preset = null,
         public readonly ?string $parsing_instructions = null,
-        public readonly ?string $browser_instructions = null,
+        /** @var BrowserInstruction[] $browser_instructions */
+        #[DataCollectionOf(BrowserInstruction::class)]
+        public readonly ?array $browser_instructions = null,
         public readonly ?string $render = null,
         public readonly ?string $url = null,
         public readonly ?string $query = null,

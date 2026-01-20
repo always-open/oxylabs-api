@@ -17,7 +17,6 @@ class BrowserInstruction extends Data
         public readonly ?string $filter = null,
     ) {}
 
-
     public function toArray(): array
     {
         return array_filter([

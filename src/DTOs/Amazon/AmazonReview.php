@@ -14,7 +14,8 @@ class AmazonReview extends Data
         public readonly string $content,
         public readonly string $timestamp,
         public readonly bool $is_verified,
-        public readonly string $review_from,
+        public readonly ?int $helpful_count = null,
+        public readonly ?string $review_from = null,
         public readonly ?string $profile_id = null,
         public readonly ?string $product_attributes = null,
     ) {}

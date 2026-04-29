@@ -5,344 +5,351 @@
         "ads": [
           {
             "pos": 1,
-            "asin": "B01N14Z8KU",
+            "asin": "B08G3BP7VL",
             "type": "organic_also_viewed",
-            "price": 269.99,
-            "title": "Yakima Upright Bike Rack Mount, Car and SUV Roof Bicycle Carrier with Low Profile Tray and Universal Mounting Hardware, HighR",
+            "price": 391.99,
+            "title": "Novogratz Brittany Futon Sofa Bed and Couch Sleeper, Camel Faux Leather",
             "images": [
-              "https:\/\/m.media-amazon.com\/images\/I\/71hwK02XT8L._AC_SS57_.jpg"
+              "data:image/jpeg;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             ],
-            "rating": 4.5,
+            "rating": 3.8,
             "location": "carousel",
-            "price_upper": 269.99,
-            "reviews_count": 45,
-            "is_prime_eligible": false
+            "price_upper": 391.99,
+            "reviews_count": 38,
+            "is_prime_eligible": true
           },
           {
             "pos": 2,
-            "asin": "B003BAHTC8",
+            "asin": "B086DNGR3D",
             "type": "organic_also_viewed",
-            "price": 228.95,
-            "title": "Yakima Rooftop Bike Rack Mount, Heavy-Duty Car & SUV Roof Carrier, FrontLoader, Black - Bicycle Storage Equipment and Accesso",
+            "price": 159.99,
+            "title": "JUMMICO Faux Leather Futon Sofa Bed Futon Couch with Removable Armrests Adjustable Sleeper Sofa Bed with 2 Cup Holders for Li",
             "images": [
-              "https:\/\/m.media-amazon.com\/images\/I\/61E09mkUbxL._AC_SS57_.jpg"
+              "data:image/jpeg;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             ],
-            "rating": 4.3,
+            "rating": 3.9,
             "location": "carousel",
-            "price_upper": 228.95,
-            "reviews_count": 43,
-            "is_prime_eligible": false
+            "price_upper": 159.99,
+            "reviews_count": 39,
+            "is_prime_eligible": true
           },
           {
             "pos": 3,
-            "asin": "B07M93XCFX",
+            "asin": "B0D1C7PNZY",
             "type": "organic_also_viewed",
-            "price": 349.95,
-            "title": "Thule ProRide XT Roof Bike Rack",
+            "price": 319.99,
+            "title": "Fadware Faux Leather Couch, Convertible Futon Sofa Bed with Adjustable Backrest, Mid Century Leather Sofa Loveseat with Side ",
             "images": [
-              "https:\/\/m.media-amazon.com\/images\/I\/81yWlh+3HML._AC_SS57_.jpg"
+              "data:image/jpeg;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             ],
-            "rating": 4.3,
+            "rating": 4.1,
             "location": "carousel",
-            "price_upper": 349.95,
-            "reviews_count": 43,
+            "price_upper": 319.99,
+            "reviews_count": 41,
+            "is_prime_eligible": true
+          },
+          {
+            "pos": 4,
+            "asin": "B0DSZQZSWJ",
+            "type": "organic_also_viewed",
+            "price": 299.99,
+            "title": "HALLYBEE 85” Futon Sofa Bed, Sleeper Sofa, Small Couch with Storage Adjustable Armrests Pillows, Faux Leather Loveseat, Mid Century Modern Couches for Living Room, Bedroom, Apartment, Brown",
+            "images": [
+              "https://images-na.ssl-images-amazon.com/images/I/81jP5Xwn0AL._AC_UL165_SR165,165_.jpg"
+            ],
+            "rating": 0,
+            "location": "carousel",
+            "price_upper": 299.99,
+            "reviews_count": 42,
             "is_prime_eligible": false
           }
         ],
-        "url": "https:\/\/www.amazon.com\/dp\/B0CYVN8CCQ?language=en_US",
-        "asin": "B0CYVN8CCQ",
+        "url": "https://www.amazon.com/dp/B0823GYJ1R?th=1&psc=1&language=en_US",
+        "asin": "B0823GYJ1R",
         "page": 1,
-        "brand": "Yakima",
-        "price": 328.95,
-        "stock": "Only 7 left in stock - order soon.",
-        "title": "Yakima Highroad Rooftop Upright Bike Mount with TorqueRight Knob and Tray for Bicycle, Car, Sports and Outdoor Use, Black",
+        "brand": "DHP",
+        "price": 0,
+        "stock": "Currently unavailable. We don't know when or if this item will be back in stock.",
+        "title": "DHP Nia Modern Futon Sofa Bed, Camel Faux Leather, Mid Century Design, Multi-Functional, Sturdy Wood Construction",
         "buybox": [
           {
-            "price": 328.95,
-            "stock": "Only 7 left in stock - order soon.",
-            "condition": " Buy new: ",
-            "delivery_details": [
-              {
-                "date": {
-                  "by": "Wednesday, June 25"
-                },
-                "type": "FREE delivery"
-              },
-              {
-                "date": {
-                  "by": "Wednesday, June 25"
-                },
-                "type": "FREE delivery"
-              }
-            ]
-          },
-          {
-            "price": 328.95,
-            "delivery_details": [
-              {
-                "date": {
-                  "by": "Wednesday, June 25"
-                },
-                "type": "FREE delivery"
-              }
-            ]
-          },
-          {
-            "price": 296.06,
-            "stock": "Only 1 left in stock - order soon.",
-            "condition": " Save with Used - Like New ",
-            "delivery_details": [
-              {
-                "date": {
-                  "by": "27",
-                  "from": "June 26"
-                },
-                "type": "FREE delivery"
-              },
-              {
-                "date": {
-                  "by": "27",
-                  "from": "June 26"
-                },
-                "type": "FREE delivery"
-              }
-            ]
-          },
-          {
-            "price": 296.06,
-            "delivery_details": [
-              {
-                "date": {
-                  "by": "27",
-                  "from": "June 26"
-                },
-                "type": "FREE delivery"
-              }
-            ]
+            "price": -1,
+            "stock": "Currently unavailable. We don't know when or if this item will be back in stock. Delivering to Los Angeles 90017 - Update location Add to List Added to Unable to add item to List. Please try again. Sorry, there was a problem. There was an error retrieving your Wish Lists. Please try again. Sorry, there was a problem. List unavailable."
           }
         ],
         "coupon": "",
         "images": [
-          "https:\/\/m.media-amazon.com\/images\/I\/61SNYJvXtvL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/61hbaqyoG6L._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/713nkV3rzBL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/61jYOLzu5DL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/611VW9naWxL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/71yWF+jC-mL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/81J83-ZhhAL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/81s9DUaMFPL._AC_SL1500_.jpg",
-          "https:\/\/m.media-amazon.com\/images\/I\/810eKSoDaEL._AC_SL1500_.jpg"
+          "https://m.media-amazon.com/images/I/51CrLP4SOXL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/71bLvvHf6lL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51gxU3nzPNL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51c1slPVVyL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51HwG0s8jyL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/517H5AbrTPL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/616nVpYpJ+L._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51IyWPNF2hL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51iwKUlurCL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51VA3CkGCTL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51hx-qAFHdL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51IJYMeLqdL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/51nuE2jkTpL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/71heifzG4kL._AC_SL1400_.jpg",
+          "https://m.media-amazon.com/images/I/71MTb0k0LwL._AC_SL1400_.jpg"
         ],
-        "rating": 4.6,
+        "rating": 4.3,
         "reviews": [
           {
-            "id": "R2HVJ0F019RDM9",
-            "title": "5.0 out of 5 stars Cost",
-            "author": "Tarin Lawrence",
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "Natalia",
             "rating": 5,
-            "content": "Perfect good value for the money",
-            "timestamp": "Reviewed in the United States January 30, 2025",
-            "profile_id": "AHWFZNMPEFZJSYVOBWBOI2JZDKHA",
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States April 14, 2021",
             "is_verified": true,
-            "review_from": "Top reviews from the United States"
+            "helpful_count": 2
           },
           {
-            "id": "R174M4ISLE4W3Z",
-            "title": "5.0 out of 5 stars Safe way to transport delicate carbon bikes",
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
             "author": "Amazon Customer",
+            "rating": 4,
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States October 20, 2024",
+            "is_verified": true
+          },
+          {
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "Star",
             "rating": 5,
-            "content": "The bike rack supports bikes without touching the frame. Excellent for high end bikes that are made of carbon or aluminum. These frames are easily cracked or crushed by the wrong type of rack.Very easy and quick to use. Stable in the wind.The built in lock is not going to deter a thief.",
-            "timestamp": "Reviewed in the United States September 3, 2024",
-            "profile_id": "AFJSJRH22SLTU76YYLKMAVGHI2ZQ",
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States August 28, 2022",
             "is_verified": true,
-            "review_from": "Top reviews from the United States"
+            "helpful_count": 6
+          },
+          {
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "Melissa Konitzer",
+            "rating": 5,
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States January 6, 2024",
+            "is_verified": true,
+            "helpful_count": 3
+          },
+          {
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "Adam C Emery",
+            "rating": 3,
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States March 21, 2023",
+            "is_verified": true,
+            "helpful_count": 11
+          },
+          {
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "Jayden Ellsworth",
+            "rating": 2,
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States July 9, 2025",
+            "is_verified": true
+          },
+          {
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "David Sims",
+            "rating": 5,
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States December 16, 2024",
+            "is_verified": true
+          },
+          {
+            "id": "Error while parsing `id`: `Could not parse review id.`.",
+            "title": "Error while parsing `title`: `Could not parse review title.`.",
+            "author": "Krishna mummadisingu",
+            "rating": 4,
+            "content": "Error while parsing `content`: `Could not parse review content.`.",
+            "timestamp": "Reviewed in the United States May 4, 2024",
+            "is_verified": true,
+            "helpful_count": 1
           }
         ],
         "category": [
           {
             "ladder": [
               {
-                "url": "\/sports-outdoors\/b\/ref=dp_bc_1?ie=UTF8&node=3375251",
-                "name": "Sports & Outdoors"
+                "url": "/home-garden-kitchen-furniture-bedding/b/ref=dp_bc_1?ie=UTF8&node=1055398",
+                "name": "Home & Kitchen"
               },
               {
-                "url": "\/outdoor-recreation\/b\/ref=dp_bc_2?ie=UTF8&node=706814011",
-                "name": "Outdoor Recreation"
+                "url": "/Furniture/b/ref=dp_bc_2?ie=UTF8&node=1063306",
+                "name": "Furniture"
               },
               {
-                "url": "\/outdoor-accessories\/b\/ref=dp_bc_3?ie=UTF8&node=11051400011",
-                "name": "Accessories"
+                "url": "/Living-Room-Furniture/b/ref=dp_bc_3?ie=UTF8&node=1063318",
+                "name": "Living Room Furniture"
               },
               {
-                "url": "\/car-racks-and-carriers\/b\/ref=dp_bc_4?ie=UTF8&node=491437011",
-                "name": "Car Racks & Carriers"
-              },
-              {
-                "url": "\/bike-racks-and-carriers\/b\/ref=dp_bc_5?ie=UTF8&node=491440011",
-                "name": "Bike Racks"
+                "url": "/Sofas-and-Couches/b/ref=dp_bc_4?ie=UTF8&node=3733551",
+                "name": "Sofas & Couches"
               }
             ]
           }
         ],
         "currency": "USD",
-        "delivery": [
-          {
-            "date": {
-              "by": "Wednesday, June 25"
-            },
-            "type": "FREE delivery"
-          }
-        ],
+        "delivery": [],
         "page_type": "Product",
         "price_sns": 0,
-        "store_url": "\/stores\/Yakima\/page\/FB2B094C-2DE4-422B-8FE2-0791DE1EBD4C?lp_asin=B0CYVN8CCQ&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto",
+        "store_url": "/stores/DorelIndustries-DHP/page/D259FF79-FE09-4F98-A6C9-0044D840777C?lp_asin=B0823GYJ1R&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto",
         "variation": [],
-        "has_videos": true,
+        "has_videos": false,
         "sales_rank": [
           {
-            "rank": 548340,
+            "rank": 2784352,
             "ladder": [
               {
-                "url": "\/gp\/bestsellers\/automotive\/ref=pd_zg_ts_automotive",
-                "name": "Automotive "
+                "url": "/gp/bestsellers/home-garden/ref=pd_zg_ts_home-garden",
+                "name": "Home & Kitchen"
               }
             ]
           },
           {
-            "rank": 487,
+            "rank": 8426,
             "ladder": [
               {
-                "url": "\/gp\/bestsellers\/sporting-goods\/491440011\/ref=pd_zg_hrsr_sporting-goods",
-                "name": "Bicycle Car Racks"
-              }
-            ]
-          },
-          {
-            "rank": 2807,
-            "ladder": [
-              {
-                "url": "\/gp\/bestsellers\/automotive\/15735241\/ref=pd_zg_hrsr_automotive",
-                "name": "Cargo Management Products"
+                "url": "/gp/bestsellers/home-garden/3733551/ref=pd_zg_hrsr_home-garden",
+                "name": "Sofas & Couches"
               }
             ]
           }
         ],
-        "asin_in_url": "B0CYVN8CCQ",
-        "buy_it_with": [
-          {
-            "asin": "B0000AT0R9",
-            "price": 49.99,
-            "title": "YAKIMA - SKS Lock Cores for Yakima Car Rack System Components"
-          },
-          {
-            "asin": "B0171A6FJG",
-            "price": 269.95,
-            "title": "YAKIMA - JetStream Bar Aerodynamic Crossbars for Roof Rack Systems"
-          }
-        ],
-        "description": "Yakima started with  hardcore kayaker cyclist founders, Steve Cole and Don Banducci. We are a group of wild souls who want to give everyone freedom to wonder.\nHeavy-duty vehicle gear racks, cargo storage, accessories, and more. For nearly four decades, our trusted solutions have transformed the way people travel.\nFrom skiing powder-covered peaks or kayaking on rushing whitewater to resting in secret camp spots or roaming the open road, our gear-mounting system and outdoor products can take you anywhere you want to take it easy.",
-        "parent_asin": "B0CYVN8CCQ",
-        "price_upper": 328.95,
-        "pricing_str": "New & Used (10) from $296.06$296.06 & FREE Shipping",
-        "pricing_url": "https:\/\/www.amazon.com\/gp\/offer-listing\/B0CYVN8CCQ\/ref=dp_olp_ALL_mbc?ie=UTF8&condition=ALL",
-        "manufacturer": "Yakima",
-        "max_quantity": 7,
-        "price_buybox": 328.95,
-        "product_name": "Yakima Highroad Rooftop Upright Bike Mount with TorqueRight Knob and Tray for Bicycle, Car, Sports and Outdoor Use, Black",
-        "bullet_points": "Effortless Bike Transportation: Simplify the process of transporting your bike with this rooftop upright bike mount\nUltimate Bike Protection: Secure your bike by the wheels, without any contact with the frame, ideal for carbon fiber bikes and custom paint jobs\nSleek and Low-Profile Design: Minimize hatch interference with the HighRoad's sleek tray, seamlessly blending with your vehicle's aesthetics\nUniversal Compatibility: Enjoy versatile mounting options with tool-free, universal hardware that fits most roof racks; Requires a crossbar spread between 18 and 40 inches\nEnhanced Security Features: Add your own bike lock for additional security and peace of mind during stops, and easily integrate SKS Locks (sold separately) for added protection",
+        "asin_in_url": "B0823GYJ1R",
+        "description": "Introducing the DHP Nia Upholstered Modern, Adjustable Sofa Bed and Couch in Camel Faux Leather - the perfect blend of mid-century style and modern functionality. This stylish futon is a versatile addition to any small living space, offering both comfort and style. Upholstered in eye-catching faux leather, the Nia features a tufted back and tapered wooden legs for a chic look. The split back design allows for three different positions of comfort, making it ideal for lounging or accommodating overnight guests at a moment's notice. With a sturdy wood construction and wide track arms, the Nia provides extra comfort and support for up to 600lbs. This multi-functional piece ships in one box and assembles quickly and easily, making setup a breeze. Available in Camel Faux Leather, Blue Velvet, or Grey Velvet, the Nia can be paired with the matching Nia modern chair for a complete look in your home. Sofa dimensions: 78.5\"L x 34\"W x 32.5\"H Sleeping Dimensions: 78.5\"L x 43.5\"W x 24\"H Carton dimensions: 45.5\"L x 36\"W x 17.5\"H Weight Limit: 600 lbs Don't compromise on style or comfort - bring home the DHP Nia Upholstered Modern, Adjustable Sofa Bed and Couch today. Futon sofa bed leather at its finest.",
+        "parent_asin": "B08NFVBYVK",
+        "price_upper": 0,
+        "pricing_str": "",
+        "pricing_url": "https://www.amazon.com/gp/offer-listing/B0823GYJ1R?startIndex=0",
+        "manufacturer": "DorelIndustries DHP",
+        "price_buybox": -1,
+        "product_name": "DHP Nia Modern Futon Sofa Bed, Camel Faux Leather, Mid Century Design, Multi-Functional, Sturdy Wood Construction",
+        "bullet_points": "Faux Leather\nMid Century modern design upholstered in faux leather with a tufted back and tapered wood legs\nMulti-functional piece ideal for small living spaces with a split back design that provides multiple positions of comfort. Converts quickly and easily into a lounger and sleeper\nSturdy wood construction with wide track arms to provide extra comfort\nShips in one box. Assembles quickly. Also available in Blue velvet or grey velvet. Pair with the matching Nola modern chair\nSofa dimensions: 78.5\"L x 34\"W x 32.5\"H. Sleeping Dimensions: 78.5\"L x 43.5\"W x 24\"H. Carton dimensions: 45.5\"L x 36\"W x 17.5\"H. Weight Limit: 600 lbs",
         "price_initial": 0,
         "pricing_count": 1,
-        "reviews_count": 4,
+        "reviews_count": 136,
         "sns_discounts": [],
         "developer_info": [],
         "price_shipping": 0,
         "product_details": {
-          "asin": "B0CYVN8CCQ",
-          "brand": "‎Yakima",
-          "manufacturer": "‎Yakima",
-          "customer_reviews": "4.6 4.6 out of 5 stars 4 ratings 4.6 out of 5 stars",
-          "best_sellers_rank": "#548,340 in Automotive (See Top 100 in Automotive) #487 in Bicycle Car Racks #2,807 in Cargo Management Products",
-          "item_model_number": "‎Yakima",
-          "date_first_available": "March 22, 2024",
-          "manufacturer_part_number": "‎8002139"
+          "upc": "026737375334",
+          "asin": "B0823GYJ1R",
+          "size": "unspecified",
+          "color": "Camel Faux Leather",
+          "shape": "Rectangular",
+          "theme": "Mid-Century",
+          "pattern": "unspecified",
+          "arm_style": "Track",
+          "leg_style": "Tapered Leg",
+          "room_type": "Bedroom,Den,Family Room,Home Office,Living Room",
+          "arm_height": "24 Inches",
+          "back_style": "Tufted Back",
+          "brand_name": "DHP",
+          "item_depth": "34 inches",
+          "model_name": "Nia",
+          "seat_depth": "34 inches",
+          "style_name": "Futon",
+          "unit_count": "1.0 Count",
+          "fabric_type": "Faux Leather",
+          "form_factor": "unspecified",
+          "item_weight": "93 Pounds",
+          "seat_height": "32.5 Inches",
+          "finish_types": "Wood",
+          "manufacturer": "DHP",
+          "model_number": "DZ37533",
+          "cushion_style": "Tufted",
+          "fill_material": "unspecified",
+          "material_type": "Faux Leather",
+          "seat_material": "Wood",
+          "item_type_name": "SOFA",
+          "is_customizable": "No",
+          "item_dimensions": "34 x 78.5 x 32.5 inches",
+          "customer_reviews": "4.3 4.3 out of 5 stars (136) 4.3 out of 5 stars",
+          "furniture_finish": "Tan",
+          "best_sellers_rank": "#2,784,352 in Home & Kitchen (See Top 100 in Home & Kitchen) #8,426 in Sofas & Couches",
+          "required_assembly": "Yes",
+          "additional_features": "Assembly Required, Fire Resistant, Upholstered Leather",
+          "frame_material_type": "Fabric",
+          "included_components": "DHP Nia Modern Futon Sofa Bed, Camel Faux Leather, Mid Century Design, Multi-Functional, Sturdy Wood Construction",
+          "indoor_outdoor_usage": "Indoor",
+          "age_range_description": "Adult",
+          "upholstery_fabric_type": "Faux Leather",
+          "manufacturer_part_number": "DZ37533",
+          "reclining_position_count": "3",
+          "item_dimensions_d_x_w_x_h": "34\"D x 78.5\"W x 32.5\"H",
+          "product_care_instructions": "Wipe Clean",
+          "number_of_height_positions": "3",
+          "recommended_uses_for_product": "Sleeping",
+          "maximum_weight_recommendation": "600 Pounds",
+          "assembly_instructions_description": "Requires Assembly",
+          "manufacturer_warranty_description": "1 year limited warranty."
         },
-        "product_overview": [
-          {
-            "title": "Vehicle Service Type",
-            "description": "Car"
-          },
-          {
-            "title": "Material",
-            "description": "Alloy Steel"
-          }
-        ],
-        "featured_merchant": {
-          "link": "\/sp?marketplaceID=ATVPDKIKX0DER&seller=A3H4WLNRBGPVMC&ref_=dp_merchant_link&asin=B0CYVN8CCQ",
-          "name": "Rack Attack",
-          "seller_id": "A3H4WLNRBGPVMC",
-          "shipped_from": "Rack Attack",
-          "is_amazon_fulfilled": false
-        },
+        "featured_merchant": [],
         "is_prime_eligible": true,
         "parse_status_code": 12000,
         "warranty_and_support": {
           "links": [
             {
-              "url": "\/gp\/feature.html\/ref=dp_warranty_request_3P?docId=1002406021",
-              "title": "click here"
+              "url": "/gp/help/customer/display.html/ref=orc_hp_s_retpol?ie=UTF8&nodeId=201819200",
+              "title": "Return details"
             }
           ],
-          "description": "Product Warranty: For warranty information about this product, please click here"
+          "description": "Amazon.com Return Policy: Regardless of your statutory right of withdrawal, you enjoy a 30-day right of return for many products. For exceptions and conditions, see Return details."
         },
+        "important_information": [
+          {
+            "title": "Safety Information",
+            "description": "check instructions manual"
+          }
+        ],
         "answered_questions_count": 0,
         "rating_stars_distribution": [
           {
             "rating": 5,
-            "percentage": 64
+            "percentage": 61
           },
           {
             "rating": 4,
-            "percentage": 36
+            "percentage": 20
           },
           {
             "rating": 3,
-            "percentage": 0
+            "percentage": 9
           },
           {
             "rating": 2,
-            "percentage": 0
+            "percentage": 8
           },
           {
             "rating": 1,
-            "percentage": 0
-          }
-        ],
-        "frequently_bought_together": [
-          {
-            "asin": "B0CYVN8CCQ"
-          },
-          {
-            "asin": "B0000AT0R9"
-          },
-          {
-            "asin": "B0171A6FJG"
+            "percentage": 2
           }
         ]
       },
-      "created_at": "2025-06-23 17:56:37",
-      "updated_at": "2025-06-23 17:56:40",
+      "created_at": "2026-04-29 02:31:53",
+      "updated_at": "2026-04-29 02:32:01",
       "page": 1,
-      "url": "https:\/\/www.amazon.com\/dp\/B0CYVN8CCQ?language=en_US",
+      "url": "https://www.amazon.com/dp/B0823GYJ1R?th=1&psc=1&language=en_US",
       "job_id": "7342973874281147393",
       "is_render_forced": false,
       "status_code": 200,
+      "type": "parsed",
       "parser_type": "",
       "parser_preset": null
     }
   ],
   "job": {
     "callback_url": null,
-    "client_id": 118513,
+    "client_id": 160980,
     "context": [
       {
         "key": "force_headers",
@@ -358,7 +365,7 @@
       },
       {
         "key": "autoselect_variant",
-        "value": false
+        "value": true
       },
       {
         "key": "check_empty_geo",
@@ -370,12 +377,16 @@
       },
       {
         "key": "currency",
-        "value": null
+        "value": "USD"
+      },
+      {
+        "key": "successful_parse_status_codes",
+        "value": []
       }
     ],
-    "created_at": "2025-06-23 17:56:37",
+    "created_at": "2026-04-29 02:31:53",
     "domain": "com",
-    "geo_location": "90210",
+    "geo_location": null,
     "id": "7342973874281147393",
     "limit": 10,
     "locale": null,
@@ -389,59 +400,59 @@
     "xhr": false,
     "markdown": false,
     "url": null,
-    "query": "B0CYVN8CCQ",
+    "query": "B0823GYJ1R",
     "source": "amazon_product",
     "start_page": 1,
     "status": "done",
     "storage_type": null,
     "storage_url": null,
+    "aggregate_name": null,
     "subdomain": "www",
     "content_encoding": "utf-8",
-    "updated_at": "2025-06-23 17:56:40",
+    "updated_at": "2026-04-29 02:32:01",
     "user_agent_type": "desktop",
     "session_info": null,
     "statuses": [],
-    "proxy_plan": null,
     "client_notes": null,
     "_links": [
       {
         "rel": "self",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393",
+        "href": "http://data.oxylabs.io/v1/queries/7342973874281147393",
         "method": "GET"
       },
       {
         "rel": "results",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results",
+        "href": "http://data.oxylabs.io/v1/queries/7342973874281147393/results",
         "method": "GET"
       },
       {
         "rel": "results-content",
         "href_list": [
-          "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results\/1\/content"
+          "http://data.oxylabs.io/v1/queries/7342973874281147393/results/1/content"
         ],
         "method": "GET"
       },
       {
         "rel": "results-html",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results?type=raw",
+        "href": "http://data.oxylabs.io/v1/queries/7342973874281147393/results?type=raw",
         "method": "GET"
       },
       {
         "rel": "results-content-html",
         "href_list": [
-          "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results\/1\/content?type=raw"
+          "http://data.oxylabs.io/v1/queries/7342973874281147393/results/1/content?type=raw"
         ],
         "method": "GET"
       },
       {
         "rel": "results-parsed",
-        "href": "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results?type=parsed",
+        "href": "http://data.oxylabs.io/v1/queries/7342973874281147393/results?type=parsed",
         "method": "GET"
       },
       {
         "rel": "results-content-parsed",
         "href_list": [
-          "http:\/\/data.oxylabs.io\/v1\/queries\/7342973874281147393\/results\/1\/content?type=parsed"
+          "http://data.oxylabs.io/v1/queries/7342973874281147393/results/1/content?type=parsed"
         ],
         "method": "GET"
       }

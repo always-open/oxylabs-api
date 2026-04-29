@@ -4,6 +4,7 @@ namespace AlwaysOpen\OxylabsApi\Models;
 
 use AlwaysOpen\ProcessStamps\ProcessStampable;
 use AlwaysOpen\RequestLogger\Models\RequestLogBaseModel;
+use Carbon\Carbon;
 
 /**
  * AlwaysOpen\OxylabsApi\Models\OxylabsApiRequestLogger
@@ -17,7 +18,7 @@ use AlwaysOpen\RequestLogger\Models\RequestLogBaseModel;
  * @property array|string|null $response
  * @property array|string|null $response_headers
  * @property string|null $exception
- * @property \Carbon\Carbon|null $occurred_at
+ * @property Carbon|null $occurred_at
  */
 class OxylabsApiRequestLogger extends RequestLogBaseModel
 {

@@ -13,6 +13,6 @@ class AmazonProductBuyBox extends Data
         public readonly ?string $condition = null,
         /* @var AmazonDeliveryDetail[] $delivery_details */
         #[DataCollectionOf(AmazonDeliveryDetail::class)]
-        public readonly array $delivery_details = [],
+        public readonly ?array $delivery_details = [],
     ) {}
 }

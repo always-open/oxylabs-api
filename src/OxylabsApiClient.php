@@ -26,6 +26,7 @@ use AlwaysOpen\OxylabsApi\DTOs\UniversalRequest;
 use AlwaysOpen\OxylabsApi\DTOs\UniversalResponse;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartProductResponse;
+use AlwaysOpen\OxylabsApi\DTOs\Walmart\WalmartUrlRequest;
 use AlwaysOpen\OxylabsApi\Models\OxylabsApiRequestLogger;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Promise\PromiseInterface;
@@ -489,6 +490,17 @@ class OxylabsApiClient
         bool $logResponseBody = true,
     ): PushPullJob {
         return $this->makePostRequest(OxylabsApi::SOURCE_WALMART_PRODUCT, $request->toArray(), $allowedRetries, $logResponseBody);
+    }
+
+    /**
+     * @throws RuntimeException
+     */
+    public function walmartUrl(
+        WalmartUrlRequest $request,
+        ?int $allowedRetries = null,
+        bool $logResponseBody = true,
+    ): PushPullJob {
+        return $this->makePostRequest(OxylabsApi::TARGET_WALMART, $request->toArray(), $allowedRetries, $logResponseBody);
     }
 
     /**

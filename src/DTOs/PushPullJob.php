@@ -14,12 +14,12 @@ class PushPullJob extends Data
     use Headers;
 
     public function __construct(
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s.uP', 'Y-m-d H:i:s.u'])]
         public readonly Carbon $created_at,
         public readonly string $id,
         public readonly string $source,
         public readonly string $status,
-        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:s\+H:i', 'Y-m-d H:i:s.u'])]
+        #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s.uP', 'Y-m-d H:i:s.u'])]
         public readonly Carbon $updated_at,
         public readonly ?string $domain = null,
         public readonly ?bool $parse = null,

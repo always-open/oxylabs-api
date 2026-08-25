@@ -30,7 +30,7 @@ class AmazonProductResultContent extends Data
         public readonly ?string $manufacturer = null,
         public readonly ?string $product_name = null,
         public readonly null|string|array $description = null,
-        public readonly ?int $rating = null,
+        public readonly ?float $rating = null,
         public readonly ?float $price = null,
         public readonly ?float $price_sns = null,
         public readonly ?float $price_initial = null,

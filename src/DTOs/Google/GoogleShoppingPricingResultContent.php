@@ -11,7 +11,7 @@ class GoogleShoppingPricingResultContent extends Data
     use ParseStatus;
 
     public function __construct(
-        public readonly int $parse_status_code,
+        public readonly ?int $parse_status_code = null,
         public readonly ?string $url = null,
         public readonly ?string $title = null,
         public readonly ?float $rating = null,

@@ -22,7 +22,7 @@ class AmazonSellerResultContent extends Data
         public readonly string $description,
         /* @var SellerFeedback[] $recent_feedback */
         #[DataCollectionOf(SellerFeedback::class)]
-        public readonly int $parse_status_code,
+        public readonly ?int $parse_status_code = null,
         public readonly ?string $seller_name = null,
         public readonly ?string $business_name = null,
         public readonly ?string $business_address = null,

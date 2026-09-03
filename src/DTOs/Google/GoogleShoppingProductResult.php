@@ -16,7 +16,7 @@ class GoogleShoppingProductResult extends Data
         public readonly string $job_id,
         public readonly bool $is_render_forced,
         public readonly int $status_code,
-        public readonly string $parser_type,
+        public readonly ?string $parser_type = null,
         #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s.uP', 'Y-m-d H:i:s.u'])]
         public readonly ?Carbon $created_at = null,
         #[WithCast(DateTimeInterfaceCast::class, format: ['Y-m-d H:i:s', 'Y-m-d\TH:i:sP', 'Y-m-d\TH:i:s.uP', 'Y-m-d H:i:s.u'])]

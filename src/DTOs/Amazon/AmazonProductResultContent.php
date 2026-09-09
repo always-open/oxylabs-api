@@ -19,7 +19,7 @@ class AmazonProductResultContent extends Data
     use ParseStatus;
 
     public function __construct(
-        public readonly int $parse_status_code,
+        public readonly ?int $parse_status_code = null,
         public readonly ?string $url = null,
         public readonly ?int $page = null,
         public readonly ?string $page_type = null,

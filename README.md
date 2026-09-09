@@ -56,6 +56,26 @@ $oxylabsApi = new AlwaysOpen\OxylabsApi();
 echo $oxylabsApi->echoPhrase('Hello, AlwaysOpen!');
 ```
 
+## Parse status
+
+`parse_status_code` is a field of *a response the Oxylabs parser actually produced*, not of every
+Oxylabs response. When the parser never ran - bot-check / CAPTCHA / error-page classes, unsupported
+page types, raw `type=html` retrievals - Oxylabs omits the key entirely. The content DTOs therefore
+type it as `?int`, and `getParseStatusCode()` distinguishes three states:
+
+| state | `parse_status_code` | `hasParseStatus()` | `getParseStatusCode()` |
+|---|---|---|---|
+| vendor reported a status we model | e.g. `12000` | `true` | that case, e.g. `ParseStatus::SUCCESS` |
+| vendor reported a status we do not model yet | e.g. `12001` | `true` | `ParseStatus::UNKNOWN` |
+| vendor reported no status at all | `null` | `false` | `ParseStatus::NOT_REPORTED` |
+
+`ParseStatus::NOT_REPORTED` is a local sentinel (`0`) deliberately outside the vendor's `120xx`
+numbering space - it is never a code Oxylabs sent.
+
+**A `NOT_REPORTED` status means every other field on that content object is untrustworthy.** Guard on
+`$content->success()` or `$content->hasParseStatus()`, never on `instanceof` (now satisfied by an
+all-null object) and never on `empty()` (always `false` for an object).
+
 ## Testing
 
 ```bash

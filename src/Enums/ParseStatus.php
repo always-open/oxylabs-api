@@ -4,6 +4,14 @@ namespace AlwaysOpen\OxylabsApi\Enums;
 
 enum ParseStatus: int
 {
+    /**
+     * Sentinel for "Oxylabs reported no parse status at all".
+     *
+     * Deliberately outside the vendor 120xx numbering space: it is our
+     * statement about a missing field, never a code Oxylabs sent us.
+     */
+    case NOT_REPORTED = 0;
+
     case SUCCESS = 12000;
     case FAILURE_COULD_NOT_PARSE = 12002;
     case NOT_SUPPORTED = 12003;

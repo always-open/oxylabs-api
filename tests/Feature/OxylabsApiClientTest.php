@@ -4,6 +4,7 @@ namespace AlwaysOpen\OxylabsApi\Tests\Feature;
 
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductRequest;
+use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonProductResultContent;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonRequest;
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonSellersRequest;
 use AlwaysOpen\OxylabsApi\DTOs\eBay\eBayProductPage;
@@ -67,6 +68,21 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertCount(1, $result_response->results);
         $this->assertNotEquals(ParseStatus::SUCCESS->value, $result_response->results[0]->content->parse_status_code);
         $this->assertEquals('faulted', $result_response->job->status);
+    }
+
+    public function test_amazon_product_missing_parse_status_code()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries/7362153370909442049/results?type=parsed' => Http::response($this->getFixtureJsonContent('amazon_product_missing_parse_status.json'), 200),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+        $result_response = $client->getAmazonProductResult('7362153370909442049');
+
+        $this->assertCount(1, $result_response->results);
+        $this->assertInstanceOf(AmazonProductResultContent::class, $result_response->results[0]->content);
+        $this->assertNull($result_response->results[0]->content->parse_status_code);
+        $this->assertSame(ParseStatus::NOT_REPORTED, $result_response->results[0]->content->getParseStatusCode());
     }
 
     public function test_amazon_pricing_faulted()

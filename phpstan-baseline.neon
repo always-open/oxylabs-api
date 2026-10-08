@@ -7,18 +7,6 @@ parameters:
 			path: src/DTOs/eBay/eBayResultContent.php
 
 		-
-			message: '#^Call to an undefined method Illuminate\\Http\\Client\\Response\:\:getHeaders\(\)\.$#'
-			identifier: method.notFound
-			count: 4
-			path: src/OxylabsApiClient.php
-
-		-
-			message: '#^Call to an undefined method Illuminate\\Http\\Client\\Response\:\:getStatusCode\(\)\.$#'
-			identifier: method.notFound
-			count: 5
-			path: src/OxylabsApiClient.php
-
-		-
 			message: '#^Call to method toArray\(\) on an unknown class AlwaysOpen\\OxylabsApi\\DTOs\\Walmart\\WalmartUrlRequest\.$#'
 			identifier: class.notFound
 			count: 1

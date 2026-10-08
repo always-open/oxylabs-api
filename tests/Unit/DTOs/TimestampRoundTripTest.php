@@ -4,6 +4,7 @@ namespace AlwaysOpen\OxylabsApi\Tests\Unit\DTOs;
 
 use AlwaysOpen\OxylabsApi\DTOs\Amazon\AmazonPricingResponse;
 use AlwaysOpen\OxylabsApi\Tests\BaseTest;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 /**
  * Result timestamps survive a serialize/hydrate round trip.
@@ -75,9 +76,7 @@ class TimestampRoundTripTest extends BaseTest
         );
     }
 
-    /**
-     * @dataProvider timestampFormatProvider
-     */
+    #[DataProvider('timestampFormatProvider')]
     public function test_supported_timestamp_formats_parse_to_the_expected_instant(string $input, string $expected)
     {
         $response = AmazonPricingResponse::from($this->pricingPayload($input));

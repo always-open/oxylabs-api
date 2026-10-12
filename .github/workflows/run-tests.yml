@@ -2,9 +2,9 @@ name: run-tests
 
 on:
   push:
-    branches: [main, 1.x]
+    branches: [main, 1.x, 0.10.x]
   pull_request:
-    branches: [main, 1.x]
+    branches: [main, 1.x, 0.10.x]
 
 jobs:
   test:
@@ -14,10 +14,8 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         php: [8.3, 8.4, 8.5]
-        laravel: [11.*]
+        laravel: [12.*, 13.*]
         stability: [prefer-stable]
-        include:
-          - laravel: 11.*
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
@@ -39,6 +37,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: Execute tests

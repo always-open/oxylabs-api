@@ -22,6 +22,7 @@ use AlwaysOpen\OxylabsApi\Tests\BaseTest;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
+use RuntimeException;
 
 class OxylabsApiClientTest extends BaseTest
 {
@@ -258,6 +259,39 @@ class OxylabsApiClientTest extends BaseTest
         $this->assertCount(1, $result->results);
         $this->assertEquals('Adidas Samba OG Black/White for Kids IE3676 - 6', $result->results[0]->content->title);
         $this->assertEquals(80, $result->results[0]->content->pricing[0]->price);
+    }
+
+    public function test_failed_request_reports_the_http_status_as_the_exception_code()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response('Too many requests', 429),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        try {
+            $client->walmartProduct(new WalmartProductRequest(source: 'walmart_product', domain: 'com', product_id: '123456'));
+            $this->fail('Expected a RuntimeException for a 429 response.');
+        } catch (RuntimeException $e) {
+            $this->assertSame(429, $e->getCode());
+        }
+    }
+
+    public function test_push_pull_job_carries_the_response_headers()
+    {
+        Http::fake([
+            'data.oxylabs.io/v1/queries' => Http::response(
+                $this->getFixtureJsonContent('push_pull_job.json'),
+                200,
+                ['X-Ratelimit-Remaining' => '42'],
+            ),
+        ]);
+
+        $client = new OxylabsApiClient(username: 'user', password: 'pass');
+
+        $job = $client->walmartProduct(new WalmartProductRequest(source: 'walmart_product', domain: 'com', product_id: '123456'));
+
+        $this->assertSame(['42'], $job->getHeaderValue('X-Ratelimit-Remaining'));
     }
 
     public function test_walmart_product()

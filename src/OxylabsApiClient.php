@@ -102,10 +102,10 @@ class OxylabsApiClient
             );
 
             if (! $response->successful()) {
-                throw new RuntimeException('API request failed: '.$response->body(), $response->getStatusCode());
+                throw new RuntimeException('API request failed: '.$response->body(), $response->status());
             }
 
-            return PushPullJob::from($response->json())->setHeaders($response->getHeaders());
+            return PushPullJob::from($response->json())->setHeaders($response->headers());
         } catch (Throwable $e) {
             throw new RuntimeException('API request failed: '.$e->getMessage(), $e->getCode(), $e);
         }
@@ -137,8 +137,8 @@ class OxylabsApiClient
 
             $logException = function (Response $response, $exception) use ($logger) {
                 $logger->response = $response->json();
-                $logger->response_code = $response->getStatusCode();
-                $logger->response_headers = $response->getHeaders();
+                $logger->response_code = $response->status();
+                $logger->response_headers = $response->headers();
                 $logger->exception = substr($exception->getMessage(), 0, 512);
                 $logger->save();
             };
@@ -163,8 +163,8 @@ class OxylabsApiClient
             if ($logResponseBody) {
                 $logger->updateFromResponse($response->toPsrResponse());
             } else {
-                $logger->response_code = $response->getStatusCode();
-                $logger->response_headers = $response->getHeaders();
+                $logger->response_code = $response->status();
+                $logger->response_headers = $response->headers();
 
                 $logger->save();
             }
@@ -194,7 +194,7 @@ class OxylabsApiClient
         }
 
         if (! $response->successful()) {
-            throw new RuntimeException('API request failed: '.$response->body(), $response->getStatusCode());
+            throw new RuntimeException('API request failed: '.$response->body(), $response->status());
         }
 
         return $response->json();
@@ -216,7 +216,7 @@ class OxylabsApiClient
         );
 
         if (! $response->successful()) {
-            throw new RuntimeException('API request failed: '.$response->body(), $response->getStatusCode());
+            throw new RuntimeException('API request failed: '.$response->body(), $response->status());
         }
 
         return PushPullJob::from($response->json());
@@ -346,7 +346,7 @@ class OxylabsApiClient
             throw new RuntimeException('API request failed: '.$response->body());
         }
 
-        return PushPullBatchJobResponse::from($response->json())->setHeaders($response->getHeaders());
+        return PushPullBatchJobResponse::from($response->json())->setHeaders($response->headers());
     }
 
     /**

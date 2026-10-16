@@ -11,6 +11,6 @@ class WalmartProductResultContentSeller extends Data
         public readonly ?string $url,
         public readonly string $name,
         public readonly ?string $catalog_id,
-        public readonly string $official_name,
+        public readonly ?string $official_name = null,
     ) {}
 }

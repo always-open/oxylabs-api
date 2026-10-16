@@ -2,6 +2,17 @@
 
 All notable changes to `oxylabs-api` will be documented in this file.
 
+## v0.10.1 - 2026-10-16
+
+### Fixed
+
+- `official_name` is now `?string` (default `null`) on `WalmartProductResultContentSeller`.
+  Oxylabs omits the key from parsed `walmart_product` sellers (from 2026-10-14 for a growing
+  share of results), and a required `string` made every such payload unrepresentable: spatie's
+  union fallback handed the raw array to the parent constructor and the job died with
+  `TypeError: WalmartProductResult::__construct(): Argument #1 ($content) must be of type
+  WalmartProductResultContent|string, array given`.
+
 ## v0.8.8 - 2026-09-03
 
 ### Fixed
